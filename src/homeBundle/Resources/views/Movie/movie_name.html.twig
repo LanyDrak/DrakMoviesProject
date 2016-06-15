@@ -1,0 +1,7 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+<h2>La fiche complète du film {{ movieName|upper }}</h2>
+
+<p>critique rédigée par {{ firstName ~ ' ' ~ lastName }}</p>
+{% endblock %}

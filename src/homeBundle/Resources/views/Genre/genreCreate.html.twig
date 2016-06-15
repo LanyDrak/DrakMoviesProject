@@ -1,0 +1,28 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+    <div class="col-lg-4">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title"><span class="fa fa-film"></span>  Ajouter une catégorie de film</h3>
+            </div>
+            <div class="box-body">
+                {{ form_start(formGenre, {attr: {novalidate: 'novalidate'}}) }}
+                {{ form_errors(formGenre) }}
+                <div class="form-group">
+                    {{ form_label(formGenre.nom, "Nom :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formGenre.nom) }}
+                    {{ form_widget(formGenre.nom, {attr: {class:"form-control"}}) }}
+                </div>
+                <div class="box-footer">
+                    <div  class="form-group">
+                        {{ form_widget(formGenre.ajouter,  {attr: {class:"btn btn-primary"}}) }}
+                        <a class="btn btn-danger pull-right" href="{{ path('genre_homepage') }}">Annuler</a>
+                    </div>
+                </div>
+                {{ form_end(formGenre) }}
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+{% endblock %}

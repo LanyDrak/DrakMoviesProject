@@ -1,0 +1,28 @@
+acteur_homepage:
+    path:     /
+    defaults: { _controller: homeBundle:Acteur:index }
+
+acteur_create_homepage:
+    path:     /create
+    defaults: { _controller: homeBundle:Acteur:createActeur }
+
+acteur_show_homepage:
+    path:     /{id}
+    defaults: { _controller: homeBundle:Acteur:showActeur }
+    requirements:
+        id: \d+
+
+acteur_edit_homepage:
+    path:     /edit/{id}
+    defaults: { _controller: homeBundle:Acteur:edit }
+    methods: [GET, POST]
+    requirements:
+        id: \d+
+
+acteur_delete_homepage:
+    path:     /delete/{id}
+    defaults: { _controller: homeBundle:Acteur:delete }
+
+acteur_showName:
+    path:     /{nom}
+    defaults: { _controller: homeBundle:Acteur:showByName }

@@ -1,0 +1,79 @@
+.content-wrapper{
+    padding: 20px;
+}
+
+.btn-spaced{
+    margin: 8% 20%;
+}
+
+.poster-link:hover{
+    opacity: 0.5;
+    transition: all 200ms;
+}
+
+.poster-link > img{
+    height: 114px;
+    margin: 2px;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-film-img{
+    margin: 0 auto;
+    width: 100%;
+    padding: 3px;
+    height: 305px;
+}
+
+.content{
+    min-height: 50px;
+}
+
+#acteur-thumbnail{
+    height: initial;
+}
+
+.users-list > .user-li {
+    width: 33%;
+}
+
+.users-list > .user-li img{
+    border-radius: 50%;
+}
+
+.users-list > li p{
+    text-transform: capitalize;
+    margin: 7px 0 0;
+}
+
+.users-list > li img{
+    border-radius: 0%;
+}
+
+.col-lg-3{
+    padding-left: 0;
+}
+
+.user-name{
+    text-transform: capitalize;
+}
+
+.dropdown-menu{
+    box-shadow: 0px 4px 5px 0px rgba(230,230,230,0.8);
+}

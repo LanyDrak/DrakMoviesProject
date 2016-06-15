@@ -1,0 +1,33 @@
+film_homepage:
+    path:     /
+    defaults: { _controller: homeBundle:Film:index }
+
+film_show_homepage:
+    path:     /{id}
+    defaults: { _controller: homeBundle:Film:show }
+    requirements:
+        id: \d+
+
+film_create_homepage:
+    path:     /create
+    defaults: { _controller: homeBundle:Film:create }
+
+film_showName:
+    path:     /{nom}
+    defaults: { _controller: homeBundle:Film:showByName }
+
+film_showPoster:
+    path:     /{id}
+    defaults: { _controller: homeBundle:Film:showByPoster }
+
+film_edit_homepage:
+    path:     /edit/{id}
+    defaults: { _controller: homeBundle:Film:edit }
+    methods: [GET, POST]
+    requirements:
+        id: \d+
+
+film_delete_homepage:
+    path:     /delete/{id}
+    defaults: { _controller: homeBundle:Film:delete }
+

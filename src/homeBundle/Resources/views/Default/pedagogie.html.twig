@@ -1,0 +1,7 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+        {{ app.request.locale }}
+        {{ app.request.getLocale() }}
+        <h2>{{ 'Hello'|trans }} {{ term }}</h2>
+{% endblock %}

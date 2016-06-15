@@ -1,0 +1,38 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+    <div class="box box-default">
+        <div class="box-header with-border">
+            <h3 class="box-title"><span class="glyphicon glyphicon-envelope"></span> Formulaire de contact</h3>
+            {% for flash_message in app.session.flashbag.get('success_mail') %}
+                <div class="alert alert-success">
+                    {{ flash_message }}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="box-body">
+            {{ form_start(formContact) }}
+                {{ form_errors(formContact) }}
+                <div class="form-group">
+                    {{ form_label(formContact.firstname, "Prénom :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formContact.firstname) }}
+                    {{ form_widget(formContact.firstname, {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formContact.email, "E-mail :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formContact.email) }}
+                    {{ form_widget(formContact.email, {attr: {class:"form-control", placeholder:"E-mail"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formContact.message_perso,  "Message :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formContact.message_perso) }}
+                    {{ form_widget(formContact.message_perso,  {attr: {class:"form-control", placeholder:"Message additionnel"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_widget(formContact.Send,  {attr: {class:"btn btn-primary"}}) }}
+                </div>
+            {{ form_end(formContact) }}
+        </div>
+    </div>
+
+{% endblock %}

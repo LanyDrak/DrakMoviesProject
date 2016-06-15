@@ -1,0 +1,13 @@
+front:
+    resource: "@frontBundle/Resources/config/routing.yml"
+    prefix:   /
+
+home:
+    resource: "@homeBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}
+    requirements:
+      _locale:  fr|en|de|ar|es
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

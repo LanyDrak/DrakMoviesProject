@@ -1,0 +1,41 @@
+Hello: Hello
+'NAVIGATION PRINCIPALE': 'MAIN NAVIGATION'
+'Liste des films': 'Movie List'
+'Liste des acteurs': 'Actor List'
+'Formulaire de contact': 'Contact Form'
+'Formulaire Feedback': 'Feedback Form'
+'Ajouter un film': 'Add a Movie'
+'Ajouter un acteur': 'Add an Actor'
+'Ajouter un genre de film': 'Add a Film Category'
+'Liste des Films': 'Movie List'
+'Tableau des films': 'Movie Table'
+'Nom du Film': 'Movie Name'
+Pays: Country
+Genre: Category
+Budget: Budget
+'Date de sortie': 'Release Date'
+'Box Office FR': 'Box Office FR'
+Durée: Duration
+'Note Spectateurs': 'Viewers Rate'
+'Liste des affiches': 'Posters List'
+'Films à voir': 'Movies to see'
+'Voir la liste': 'Show the Movies List'
+'Acteur présents dans la base': '__Acteur présents dans la base'
+'Catégories de film': '__Catégories de film'
+Utilisateurs: __Utilisateurs
+'Les 5 derniers films mis en ligne': '__Les 5 derniers films mis en ligne'
+'A voir absolument (comme tous les autres)': '__A voir absolument (comme tous les autres)'
+'Catégorie :': '__Catégorie :'
+'Année de sortie': '__Année de sortie'
+'Note Spectateurs :': '__Note Spectateurs :'
+'Voir la fiche complète': '__Voir la fiche complète'
+'Slideshow des films': '__Slideshow des films'
+'Répartition des films par catégorie': '__Répartition des films par catégorie'
+'Les 5 derniers acteurs/actrices mis en ligne': '__Les 5 derniers acteurs/actrices mis en ligne'
+'Voir la liste complète des acteurs': '__Voir la liste complète des acteurs'
+'Les utilisateurs': '__Les utilisateurs'
+Précedent: Previous
+Suivant: Next
+'Ajouter une catégorie de film': 'Add a category'
+'Ajouter un utilisateur': 'Add a user'
+'Liste des photos': '__Liste des photos'

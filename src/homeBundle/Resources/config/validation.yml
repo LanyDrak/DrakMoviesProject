@@ -1,0 +1,24 @@
+homeBundle\Entity\Feedback:
+        properties:
+              lastname:
+                  - Length: { min: 3 }
+                  - NotBlank: ~
+
+              firstname:
+                  - Length: { min: 3 }
+                  - NotBlank: ~
+
+              email:
+                  - Length: { min: 3 }
+                  - NotBlank: ~
+                  - Email: ~
+
+              select:
+                  - NotBlank: ~
+                  - Choice:
+                      choices:  ["Bug", "Annotation", "Translate", "Autre"]
+                      message:  "Choose a valid type"  # http://symfony.com/doc/current/reference/constraints/Choice.html
+
+              message_perso:
+                  - NotBlank: ~
+                  - Length: { min: 10, max: 200 }

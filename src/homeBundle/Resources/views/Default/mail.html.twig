@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ asset('dist/css/mail.css', absolute=true) }}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>Drak Movies</h1>
+                <p>Place to be for movies lovers</p>
+            </header>
+            <h4>Vous avez reçu un message de {{ firstname }} ({{ email }}).</h4>
+            <p>Il vous dit : <em>{{ message_perso }}</em></p>
+        </div>
+    </body>
+</html>

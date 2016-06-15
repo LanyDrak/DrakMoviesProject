@@ -1,0 +1,67 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+    <div class="col-lg-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title"><span class="fa fa-user-plus"></span>  Ajouter un utilisateur</h3>
+            </div>
+            <div class="box-body">
+                {{ form_start(formUser, {attr: {novalidate: 'novalidate'}}) }}
+                {{ form_errors(formUser) }}
+                <div class="form-group">
+                    {{ form_label(formUser.gender,  "Sexe :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formUser.gender) }}
+                    {{ form_widget(formUser.gender) }}
+                </div>
+                <div class="form-group">
+                    {{ form_label(formUser.login, "Login :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formUser.login) }}
+                    {{ form_widget(formUser.login, {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formUser.email,  "Email :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_widget(formUser.email, {attr: {class:"", type:"file"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formUser.password,  "Password :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formUser.password) }}
+                    {{ form_widget(formUser.password,  {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formUser.phone,  "Téléphone :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formUser.phone) }}
+                    {{ form_widget(formUser.phone) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formUser.dateDeNaissance,  "Date de Naissance :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formUser.dateDeNaissance) }}
+                    {{ form_widget(formUser.dateDeNaissance) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formUser.userRole,  "Rôle sur le site :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formUser.userRole) }}
+                    {{ form_widget(formUser.userRole) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formUser.contribution,  "Contribution :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formUser.contribution) }}
+                    {{ form_widget(formUser.contribution) }}
+                </div>
+                <div class="form-group">
+                    {{ form_label(formUser.file,  "Photo de profil :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formUser.file) }}
+                    {{ form_widget(formUser.file) }}
+                </div>
+                <div class="box-footer">
+                    <div  class="form-group">
+                        {{ form_widget(formUser.ajouter,  {attr: {class:"btn btn-primary"}}) }}
+                        <a class="btn btn-danger pull-right" href="{{ path('acteur_homepage') }}">Annuler</a>
+                    </div>
+                </div>
+                {{ form_end(formUser) }}
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+{% endblock %}

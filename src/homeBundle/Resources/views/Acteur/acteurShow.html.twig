@@ -1,0 +1,71 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+    <div class="col-lg-2">
+        <div class="box box-solid">
+            <div class="box-header bg-black">
+                <h3 class="box-title">Photo</h3>
+            </div>
+            <div class="box-body">
+                <img src="{{ asset(acteur.webPath) }}" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="box box-solid">
+            <div class="box-header with-border">
+                <h3 class="box-title">Informations</h3>
+            </div>
+            <div class="box-body">
+                <dl class="dl-horizontal">
+                    <dt>Nom :</dt>
+                    <dd>{{ acteur.nom }}</dd>
+                    <dt>Prénom :</dt>
+                    <dd>{{ acteur.prenom }}</dd>
+                    <dt>Date de naissance :</dt>
+                    <dd>{{ acteur.dateNaissance|date("d m Y") }}</dd>
+                    <dt>Nationalité :</dt>
+                    <dd>{{ acteur.nationalite }}</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="box box-solid">
+            <div class="box-header with-border">
+                <h3 class="box-title">Biographie</h3>
+            </div>
+            <div class="box-body">
+                <p>{{ acteur.bio }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Filmographie</h3>
+            </div>
+            <div class="box-body">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr role="row">
+                        <th class="sorting">Année</th>
+                        <th class="sorting">Nom du film</th>
+                        <th class="sorting">Réalisateur</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% if acteur.films is defined %}
+                        {% for film in acteur.films %}
+                            <tr>
+                                <td>{{ film.dateSortie|date("Y") }}</td>
+                                <td><a href="{{ path('film_showName', {nom : film.nom} ) }}"><strong style="color: #3c8dbc">{{ film.nom }}</strong></a></td></td>
+                                <td>{{ film.director }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<div class="clearfix"></div>
+{% endblock %}

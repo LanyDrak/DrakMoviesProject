@@ -1,0 +1,91 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+    <div class="col-lg-4">
+        <div class="box box-solid">
+            <div class="box-header bg-black">
+                <h3 class="box-title">Affiche du film</h3>
+            </div>
+            <div class="box-body">
+                <img src="{{ asset(film.webPath) }}" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="box box-widget widget-user-2">
+            <div class="widget-user-header bg-black">
+                <h3 class="widget-user-username">{{ film.nom }}</h3>
+                <h5 class="widget-user-desc">{{ film.director }}</h5>
+            </div>
+            <div class="box-footer no-padding">
+                <ul class="nav nav-stacked">
+                    <li><a href="#">Année de sortie <span class="pull-right badge bg-gray">{{ film.dateSortie|date("Y") }}</span></a></li>
+                    <li><a href="#">Pays <span class="pull-right badge bg-gray">{{ film.pays }}</span></a></li>
+                    <li><a href="#">Genre
+                            <span class="pull-right badge bg-gray">
+                                {% if film.genre.nom is defined %}
+                                {{ film.genre.nom }}
+                                {% endif %}
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href="#">Budget <span class="pull-right badge bg-gray">{{ film.budget|number_format(0, '.', ' ') }} $</span></a></li>
+                    <li><a href="#">Durée <span class="pull-right badge bg-gray">{{ film.duree }} min</span></a></li>
+                    <li><a href="#">Note Spectateurs
+                            <span class="pull-right">
+                            {% for i in 1..film.noteSpectateur if film.noteSpectateur>0 %}
+                                <i class="fa fa-star" style="color: #000"></i>
+                            {% endfor %}
+                            {% for i in (film.noteSpectateur+1)..5  if film.noteSpectateur<5 %}
+                                    <i class="fa fa-star-o" style="color: #000"></i>
+                            {% endfor %}
+                            </span></a></li>
+                    <li><a href="#">Box Office France <span class="pull-right badge bg-gray">{{ film.boxOfficeFrance|number_format(0, '.', ' ') }} entrées</span></a></li>
+                    <li><a href="#">Numéro de Visa d'exploitation <span class="pull-right badge bg-gray">{{ film.numVisa }}</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box box-solid">
+            <div class="box-header bg-black">
+                <h3 class="box-title">Synopsis</h3>
+            </div>
+            <div class="box-body">
+                <p>{{ film.synopsis }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="box box-solid">
+            <div class="box-header bg-black">
+                <h3 class="box-title">Trailer</h3>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/{{ film.trailer }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Acteurs/Actrices</h3>
+            </div>
+            <div class="box-body no-padding">
+                <ul class="users-list">
+                {% if film.acteurs is defined %}
+                    {% for acteur in film.acteurs %}
+                        <li>
+                            <a class="poster-link" href="{{ path('acteur_show_homepage', {id : acteur.id} ) }}"><img src="{{ asset(acteur.webPath) }}" style="width: 100px;" alt="{{ acteur.nom }}"></a>
+                            <a class="users-list-name" href="{{ path('acteur_showName', {nom : acteur.nom} ) }}">{{ acteur.prenom~" "~acteur.nom }}</a>
+
+                        </li>
+                    {% endfor %}
+                {% endif %}
+                </ul>
+            </div>
+            <div class="box-footer text-center">
+                <a href="{{ path('acteur_homepage') }}" class="uppercase">Voir la liste des acteurs</a>
+            </div>
+        </div>
+    </div>
+<div class="clearfix"></div>
+{% endblock %}

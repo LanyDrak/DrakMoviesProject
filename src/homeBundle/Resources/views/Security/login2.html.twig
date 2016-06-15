@@ -1,0 +1,78 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}DrakMOVIES Login{% endblock %}
+
+{% block bodyclass %}<body class="hold-transition login-page">{% endblock %}
+{% block body %}
+<script type="text/javascript">
+    var init = [];
+    init.push(function () {
+        $("#signin-form_id").validate({
+            ignore: '.ignore, .select2-input',
+            focusInvalid: false,
+            rules: {
+                '_username': {
+                    required: true,
+                    minlength: 4
+                },
+                '_password': {
+                    required: true,
+                    minlength: 4
+                }
+            },
+            messages: {
+                '_username': "Vous devez mettre un login valide",
+                '_password': "Vous devez mettre mot de passe valide"
+            }
+        });
+    });
+    //window.PixelAdmin.start(init);
+</script>
+
+
+<div class="login-box">
+    <div class="login-logo">
+        <a href="{{ path('home_homepage') }}"><b>Drak</b>MOVIES</a>
+    </div>
+    {{ include('homeBundle:partials:flashdatas.html.twig') }}
+    {% if error %}
+        <div class="alert alert-danger alert-dark">
+            {% if error %}
+                <div><i class="fa fa-warning"></i> {{ error.messageKey|trans(error.messageData) }}</div>
+            {% endif %}
+        </div>
+    {% endif %}
+    <div class="login-box-body">
+        <p class="login-box-msg">Connection</p>
+
+        <form id="signin-form_id" action="{{ path('login_check') }}" method="post" class="panel">
+            <div class="form-group has-feedback">
+                {{ form_widget(form._username) }}
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                {{ form_widget(form._password) }}
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                        <div class="icheckbox_square-blue" style="position: relative;">
+                            <label>
+                                <input type="checkbox"> Se souvenir de moi
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                </div>
+            </div>
+        </form>
+
+        <a href="#">I forgot my password</a><br>
+        <a href="#" class="text-center">Register a new membership</a>
+        {{ form_widget(form._token) }}
+    </div>
+</div>
+{% endblock %}

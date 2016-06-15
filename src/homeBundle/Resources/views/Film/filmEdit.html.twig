@@ -1,0 +1,92 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+    <div class="col-lg-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title"><span class="fa fa-film"></span>  Modifier un film</h3>
+            </div>
+            <div class="box-body">
+                {{ form_start(editFormFilm, {attr: {novalidate: 'novalidate'}}) }}
+                {{ form_errors(editFormFilm) }}
+                <div class="form-group">
+                    {{ form_label(editFormFilm.nom, "Titre du film :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.nom) }}
+                    {{ form_widget(editFormFilm.nom, {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.file,  "Chargement de l'affiche :", {label_attr: {class:"label label-primary"}}) }}
+                    {{ form_widget(editFormFilm.file, {attr: {class:"", type:"file"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.pays,  "Pays :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.pays) }}
+                    {{ form_widget(editFormFilm.pays,  {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.director,  "Réalisateur :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.director) }}
+                    {{ form_widget(editFormFilm.director,  {attr: {class:"form-control"}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_label(editFormFilm.genre,  "Genre :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.genre) }}
+                    {{ form_widget(editFormFilm.genre) }}
+                </div>
+                <div class="form-group">
+                    {{ form_label(editFormFilm.acteurs,  "Acteurs :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.acteurs) }}
+                    {{ form_widget(editFormFilm.acteurs) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.dateSortie,  "Date de sortie :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.dateSortie) }}
+                    {{ form_widget(editFormFilm.dateSortie) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.budget,  "Budget :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.budget) }}
+                    {{ form_widget(editFormFilm.budget,  {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.synopsis,  "Synopsis :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.synopsis) }}
+                    {{ form_widget(editFormFilm.synopsis,  {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.numVisa,  "Numéro de Visa d'exploitation :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.numVisa) }}
+                    {{ form_widget(editFormFilm.numVisa,  {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.boxOfficeFrance,  "Box Office France :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.boxOfficeFrance) }}
+                    {{ form_widget(editFormFilm.boxOfficeFrance,  {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.duree,  "Durée :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.duree) }}
+                    {{ form_widget(editFormFilm.duree,  {attr: {class:"form-control"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.noteSpectateur,  "Note Spectateur :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.noteSpectateur) }}
+                    {{ form_widget(editFormFilm.noteSpectateur) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.trailer,  "ID url trailer YouTube :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.trailer) }}
+                    {{ form_widget(editFormFilm.trailer) }}
+                </div>
+                <div class="box-footer">
+                    <div  class="form-group">
+                        {{ form_widget(editFormFilm.modifier,  {attr: {class:"btn btn-primary"}}) }}
+                        <a class="btn btn-danger pull-right" href="{{ path('film_homepage') }}">Annuler</a>
+                    </div>
+                </div>
+                {{ form_end(editFormFilm) }}
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+{% endblock %}

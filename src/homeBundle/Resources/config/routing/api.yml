@@ -1,0 +1,7 @@
+api_webservice:
+    path:     /actor
+    defaults:
+              _controller: "homeBundle:Acteur:api_getActorList"
+              _format: json
+    requirements:
+              _method:  GET

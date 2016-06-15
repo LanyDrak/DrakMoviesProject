@@ -1,0 +1,14 @@
+{% extends 'homeBundle::layout.html.twig' %}
+
+{%  block content %}
+    <h2>Liste des films</h2>
+        <ul>
+            {% for movie in movies %}
+                <li>
+                    <h2>{{ movie.title }}</h2>
+                    <p>{{ movie.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+{% endblock %}
+

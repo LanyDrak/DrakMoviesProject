@@ -1,0 +1,74 @@
+home_homepage:
+    path:     /
+    defaults: { _controller: homeBundle:Default:index }
+
+homeBundle_login:
+    path:   /login
+    defaults: { _controller: homeBundle:Security:login }
+
+homeBundle_login_check:
+    path:   /login_check
+
+homeBundle_logout:
+    path:   /logout
+
+homeBundle_create_user:
+    path:   /create_user
+    defaults: { _controller: homeBundle:Security:createUser }
+
+
+movie_homepage:
+    path:     /movie
+    defaults: { _controller: homeBundle:Movie:movie }
+
+movie_name_homepage:
+    path:     /movie/{movieName}
+    defaults: { _controller: homeBundle:Movie:movieName }
+
+contact_homepage:
+    path:     /contact
+    defaults: { _controller: homeBundle:Contact:contact }
+
+asterix_homepage:
+    path:     /admin/asterix
+    defaults: { _controller: homeBundle:Asterix:index }
+
+feedback_homepage:
+    path:     /feedback
+    defaults: { _controller: homeBundle:Feedback:feedback }
+
+crud_homepage:
+    path:     /crud
+    defaults: { _controller: homeBundle:Crud:create }
+
+create_reduction_homepage:
+    path:     /createReduction
+    defaults: { _controller: homeBundle:Crud:createReduction }
+
+movie_create_homepage:
+    path:     /movieCreate
+    defaults: { _controller: homeBundle:Movie:movieCreate }
+
+homeBundle_film:
+    resource: "@homeBundle/Resources/config/routing/films.yml"
+    prefix:   /films
+
+homeBundle_acteur:
+    resource: "@homeBundle/Resources/config/routing/acteur.yml"
+    prefix:   /acteur
+
+homeBundle_genre:
+    resource: "@homeBundle/Resources/config/routing/genre.yml"
+    prefix:   /genre
+
+homeBundle_api:
+    resource: "@homeBundle/Resources/config/routing/api.yml"
+    prefix:   /api
+
+translation_page:
+    path:   /pedagogie/translation/{term}/
+    defaults: { _controller: homeBundle:Pedagogie:translation }
+    requirements:
+        _locale:  fr|en|de|ar|es
+
+
