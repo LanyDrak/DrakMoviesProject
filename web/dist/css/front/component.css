@@ -22,22 +22,22 @@
 }
 
 .og-grid li.og-expanded > a::after {
-	top: auto;
 	border: solid transparent;
 	content: " ";
 	height: 0;
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #ddd;
+	border-bottom-color: #2d2d2d;
 	border-width: 15px;
+    bottom: 0;
 	left: 50%;
 	margin: -20px 0 0 -15px;
 }
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: #2d2d2d;
 	top: auto;
 	left: 0;
 	width: 100%;
@@ -68,7 +68,7 @@
 	width: 100%;
 	top: 50%;
 	height: 1px;
-	background: #888;
+	background: #F9FFC1;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -109,6 +109,7 @@
 }
 
 .og-details h3 {
+    color: #F9FFC1;
 	font-weight: 300;
 	font-size: 52px;
 	padding: 40px 0 10px;

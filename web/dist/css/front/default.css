@@ -1,5 +1,4 @@
-/* General Demo Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
 
 html { height: 100%; }
 
@@ -13,7 +12,6 @@ html { height: 100%; }
 	margin: 0;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -29,8 +27,8 @@ html { height: 100%; }
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    background: #2d2d2d;
     font-weight: 300;
     font-size: 15px;
     color: #333;
@@ -61,12 +59,23 @@ a {
 	text-align: center;
 }
 
-.container > header h1 {
-	font-size: 34px;
-	line-height: 38px;
-	margin: 0 auto;
-	font-weight: 700;
-	color: #333;
+.container > header h1 a{
+    font-size: 92px;
+    color: #202020;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .5em;
+    font-weight: 300;
+    text-shadow:
+        -1px -1px 1px #111,
+        2px 2px 1px #363636;
+    transition: 800ms;
+}
+
+.container > header h1 a:hover{
+    transition: 600ms;
+    color: #F9FFC1;
 }
 
 .container > header h1 span {
