@@ -65,7 +65,10 @@ class FormFilmType extends AbstractType
                 'expanded'  => false,
                 'multiple'  =>false,
             ))
-            ->add('trailer', Type\TextType::class);
+            ->add('trailer', Type\TextType::class)
+            ->add('reviewN6tyrell', Type\TextareaType::class)
+            ->add('reviewN6marzoni', Type\TextareaType::class)
+            ->add('reviewN6palm', Type\TextareaType::class);
     }
 
     /**

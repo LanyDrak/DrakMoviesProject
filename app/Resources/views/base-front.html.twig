@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <title>{% block title %}DrakMovies | Admin{% endblock %}</title>
+        {% block stylesheets %}
+
+
+            <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
+            <link rel="stylesheet" href="{{ asset('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('dist/css/AdminLTE.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('dist/css/AdminLTE.css') }}">
+            <link rel="stylesheet" href="{{ asset('dist/css/skins/_all-skins.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('plugins/iCheck/flat/blue.css') }}">
+            <link rel="stylesheet" href="{{ asset('dist/css/style.css') }}">
+
+            <link rel="stylesheet" href="{{ asset('dist/css/front.css') }}">
+            <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+            <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+            <!-- FRONT -->
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+            <link href="{{ asset('dist/css/essentials.css') }}" rel="stylesheet" type="text/css" />
+            <link href="{{ asset('dist/css/layout.css') }}" rel="stylesheet" type="text/css" />
+            <link href="{{ asset('dist/css/adjust.css') }}" rel="stylesheet" type="text/css" />
+
+            <link href="{{ asset('dist/css/header-1.css') }}" rel="stylesheet" type="text/css" />
+            <link href="{{ asset('dist/css/darkblue.css') }}" rel="stylesheet" type="text/css" id="color_scheme" />
+
+
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+        <script src="{{ asset('https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js') }}"></script>
+        <script src="{{ asset('https://oss.maxcdn.com/respond/1.4.2/respond.min.js') }}"></script>
+        <script src="{{ asset('dist/js/front-js/ie-support/html5.js') }}"></script>
+        <script src="{{ asset('dist/js/front-js/ie-support/respond.js') }}"></script>
+
+    </head>
+    {% block bodyclass %}
+        <body class="smoothscroll enable-animation">
+
+    {% endblock %}
+
+        {% block body %}{% endblock %}
+
+
+        {% block javascripts %}
+            <script type="text/javascript">var plugin_path = '{{ asset('plugins/') }}';</script>
+            <script src="{{ asset('plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
+            <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('plugins/fastclick/fastclick.min.js') }}"></script>
+            <script src="{{ asset('dist/js/app.min.js') }}"></script>
+
+            <script src="{{ asset('dist/js/front-js/jquery-1.11.1.min.js') }}"></script>
+            <script src="{{ asset('dist/js/front-js/plugins.js') }}"></script>
+            <script src="{{ asset('dist/js/front-js/app.js') }}"></script>
+
+            <!-- FRONT scripts -->
+            <script type="text/javascript" src="{{ asset('dist/js/scripts.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

@@ -51,6 +51,35 @@ class Film
     /**
      * @var string
      *
+     * @ORM\Column(name="frontThumbnail", type="string", length=255, nullable=true)
+     */
+    private $frontThumbnail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reviewN6tyrell", type="text")
+     */
+    private $reviewN6tyrell;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reviewN6marzoni", type="text")
+     */
+    private $reviewN6marzoni;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reviewN6palm", type="text")
+     */
+    private $reviewN6palm;
+
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="nom", type="string", length=50)
      */
     private $nom;
@@ -809,5 +838,101 @@ class Film
     public function getCreationTimestamp()
     {
         return $this->creationTimestamp;
+    }
+
+    /**
+     * Set frontThumbnail
+     *
+     * @param string $frontThumbnail
+     *
+     * @return Film
+     */
+    public function setFrontThumbnail($frontThumbnail)
+    {
+        $this->frontThumbnail = $frontThumbnail;
+
+        return $this;
+    }
+
+    /**
+     * Get frontThumbnail
+     *
+     * @return string
+     */
+    public function getFrontThumbnail()
+    {
+        return $this->frontThumbnail;
+    }
+
+    /**
+     * Set reviewN6tyrell
+     *
+     * @param string $reviewN6tyrell
+     *
+     * @return Film
+     */
+    public function setReviewN6tyrell($reviewN6tyrell)
+    {
+        $this->reviewN6tyrell = $reviewN6tyrell;
+
+        return $this;
+    }
+
+    /**
+     * Get reviewN6tyrell
+     *
+     * @return string
+     */
+    public function getReviewN6tyrell()
+    {
+        return $this->reviewN6tyrell;
+    }
+
+    /**
+     * Set reviewN6marzoni
+     *
+     * @param string $reviewN6marzoni
+     *
+     * @return Film
+     */
+    public function setReviewN6marzoni($reviewN6marzoni)
+    {
+        $this->reviewN6marzoni = $reviewN6marzoni;
+
+        return $this;
+    }
+
+    /**
+     * Get reviewN6marzoni
+     *
+     * @return string
+     */
+    public function getReviewN6marzoni()
+    {
+        return $this->reviewN6marzoni;
+    }
+
+    /**
+     * Set reviewN6palm
+     *
+     * @param string $reviewN6palm
+     *
+     * @return Film
+     */
+    public function setReviewN6palm($reviewN6palm)
+    {
+        $this->reviewN6palm = $reviewN6palm;
+
+        return $this;
+    }
+
+    /**
+     * Get reviewN6palm
+     *
+     * @return string
+     */
+    public function getReviewN6palm()
+    {
+        return $this->reviewN6palm;
     }
 }

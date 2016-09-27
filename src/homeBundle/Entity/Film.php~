@@ -51,6 +51,35 @@ class Film
     /**
      * @var string
      *
+     * @ORM\Column(name="frontThumbnail", type="string", length=255, nullable=true)
+     */
+    private $frontThumbnail;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reviewN6tyrell", type="text")
+     */
+    private $reviewN6tyrell;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reviewN6marzoni", type="text")
+     */
+    private $reviewN6marzoni;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reviewN6palm", type="text")
+     */
+    private $reviewN6palm;
+
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="nom", type="string", length=50)
      */
     private $nom;
@@ -217,9 +246,15 @@ class Film
         return $this->affiche;
     }
 
-    public function webPath()
+    public function webPath($thumbnail = null)
     {
-        return "dist/img/uploads/affiches/".$this->affiche;
+        $output = "dist/img/uploads/affiches/".$this->affiche;
+
+        if (array_key_exists($thumbnail, $this->thumbnails)) {
+            $output = "dist/img/uploads/affiches/".$thumbnail."-".$this->affiche;
+        }
+
+        return $output;
     }
 
     /**
@@ -769,5 +804,63 @@ class Film
     public function UpdateDate()
     {
         $this->dateUpdated = new \DateTime();
+    }
+
+
+    /**
+     * @ORM\PrePersist()
+     */
+    public function createCreationDate()
+    {
+        $this->creationTimestamp = new \DateTime();
+    }
+
+
+    /**
+     * Set creationTimestamp
+     *
+     * @param \DateTime $creationTimestamp
+     *
+     * @return Film
+     */
+    public function setCreationTimestamp($creationTimestamp)
+    {
+        $this->creationTimestamp = $creationTimestamp;
+
+        return $this;
+    }
+
+    /**
+     * Get creationTimestamp
+     *
+     * @return \DateTime
+     */
+    public function getCreationTimestamp()
+    {
+        return $this->creationTimestamp;
+    }
+
+    /**
+     * Set frontThumbnail
+     *
+     * @param string $frontThumbnail
+     *
+     * @return Film
+     */
+    public function setFrontThumbnail($frontThumbnail)
+    {
+        $this->frontThumbnail = $frontThumbnail;
+
+        return $this;
+    }
+
+    /**
+     * Get frontThumbnail
+     *
+     * @return string
+     */
+    public function getFrontThumbnail()
+    {
+        return $this->frontThumbnail;
     }
 }

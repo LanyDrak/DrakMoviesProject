@@ -14,7 +14,7 @@ class FilmController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $films = $em->getRepository("homeBundle:Film")  ->filmEtGenre();
+        $films = $em->getRepository("homeBundle:Film")  ->allFilmsbyDate();
 
         $paginator = $this->get('knp_paginator');
         $pagination = $paginator->paginate(
