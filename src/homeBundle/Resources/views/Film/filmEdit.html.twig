@@ -15,8 +15,12 @@
                     {{ form_widget(editFormFilm.nom, {attr: {class:"form-control"}}) }}
                 </div>
                 <div  class="form-group">
-                    {{ form_label(editFormFilm.file,  "Chargement de l'affiche :", {label_attr: {class:"label label-primary"}}) }}
+                    {{ form_label(editFormFilm.file,  "Affiche :", {label_attr: {class:"label label-primary"}}) }}
                     {{ form_widget(editFormFilm.file, {attr: {class:"", type:"file"}}) }}
+                </div>
+                <div  class="form-group">
+                    {{ form_label(editFormFilm.frontThumbnail,  "Image front :", {label_attr: {class:"label label-primary"}}) }}
+                    {{ form_widget(editFormFilm.frontThumbnail, {attr: {class:"", type:"file"}}) }}
                 </div>
                 <div  class="form-group">
                     {{ form_label(editFormFilm.pays,  "Pays :", {label_attr: {class:"label label-default"}}) }}

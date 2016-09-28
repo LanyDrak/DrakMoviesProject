@@ -10,15 +10,10 @@
         </header>
         <div class="main">
             <ul id="og-grid" class="og-grid">
-                <li>
-                    <a href="">
-                        <img src="{{ asset('dist/img/images-test/thumbs/test.jpg') }}" alt="film">
-                    </a>
-                </li>
                 {% for film in films %}
                     <li>
                         <a href="" data-largesrc="{{ asset(film.webPath("md")) }}" data-title="{{ film.nom }}" data-description="">
-                            <img src="{{ asset('dist/img/images-test/thumbs/1.jpg') }}" alt="film">
+                            <img src="{{ asset(film.webPath2) }}" alt="film">
                         </a>
                     </li>
                 {% endfor %}

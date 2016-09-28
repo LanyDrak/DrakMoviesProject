@@ -189,7 +189,6 @@ class Film
     protected $file;
 
 
-
     /**
      * @ORM\ManyToOne(targetEntity="Genre")
      * @ORM\JoinColumn(name="genre_id", referencedColumnName="id")
@@ -252,6 +251,21 @@ class Film
 
         if (array_key_exists($thumbnail, $this->thumbnails)) {
             $output = "dist/img/uploads/affiches/".$thumbnail."-".$this->affiche;
+        }
+
+        return $output;
+    }
+
+    public function webPath2($thumbnail = null)
+    {
+        $output = "dist/img/images-test/thumbs/null.jpg";
+
+        if ($this->frontThumbnail != null){
+            $output = "dist/img/uploads/frontThumbnails/".$this->frontThumbnail;
+        }
+
+        if (array_key_exists($thumbnail, $this->thumbnails)) {
+            $output = "dist/img/uploads/frontThumbnails/".$thumbnail."-".$this->frontThumbnail;
         }
 
         return $output;
