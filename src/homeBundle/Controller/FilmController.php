@@ -20,7 +20,7 @@ class FilmController extends Controller
         $pagination = $paginator->paginate(
             $films,
             $this->get('request')->query->get('page', 1),
-            15
+            25
         );
 
         return $this->render('homeBundle:Film:index.html.twig', ['films' => $pagination]);

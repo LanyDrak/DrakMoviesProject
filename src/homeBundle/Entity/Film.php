@@ -58,21 +58,21 @@ class Film
     /**
      * @var string
      *
-     * @ORM\Column(name="reviewN6tyrell", type="text")
+     * @ORM\Column(name="reviewN6tyrell", type="text", nullable=true)
      */
     private $reviewN6tyrell;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="reviewN6marzoni", type="text")
+     * @ORM\Column(name="reviewN6marzoni", type="text", nullable=true)
      */
     private $reviewN6marzoni;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="reviewN6palm", type="text")
+     * @ORM\Column(name="reviewN6palm", type="text", nullable=true)
      */
     private $reviewN6palm;
 

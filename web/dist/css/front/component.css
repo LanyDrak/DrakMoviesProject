@@ -15,11 +15,21 @@
 
 .og-grid li > a,
 .og-grid li > a img {
-	border: none;
+    border: none;
 	outline: none;
 	display: block;
 	position: relative;
 }
+
+.og-grid li > a img{
+    opacity: 0.25;
+    transition: all 0.4s ease-in-out;
+}
+
+.og-grid li > a:hover img{
+    opacity: 1;
+}
+
 
 .og-grid li.og-expanded > a::after {
 	border: solid transparent;

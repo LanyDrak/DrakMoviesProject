@@ -39,6 +39,9 @@
                         </div>
                     </div>
                     <div class="box-body">
+                        <div>
+                            {{ knp_pagination_render(films) }}
+                        </div>
                         <table class="table table-bordered table-hover">
                             <thead>
                                 <tr role="row">
@@ -95,9 +98,7 @@
                     </div>
                     <div class="box-body">
                         {% for film in films %}
-                            <div class="col-lg-3 cadre-photo">
-                                <a class="poster-link" href="{{ path('film_show_homepage', {id : film.id} ) }}"><img src="{{ asset(film.webPath) }}"></a>
-                            </div>
+                            <a class="poster-link" href="{{ path('film_show_homepage', {id : film.id} ) }}"><img src="{{ asset(film.webPath) }}" style="width: 80px;"></a>
                         {% endfor %}
                     </div>
                 </div>

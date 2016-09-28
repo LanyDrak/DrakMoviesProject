@@ -191,7 +191,7 @@ var Grid = (function() {
 		support = Modernizr.csstransitions,
 		// default settings
 		settings = {
-			minHeight : 500,
+			minHeight : 400,
 			speed : 350,
 			easing : 'ease'
 		};
@@ -289,7 +289,7 @@ var Grid = (function() {
 	}
 
 	function showPreview( $item ) {
-
+        
 		var preview = $.data( this, 'preview' ),
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
