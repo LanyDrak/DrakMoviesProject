@@ -67,7 +67,8 @@ class FormFilmType extends AbstractType
             ))
             ->add('trailer', Type\TextType::class)
             ->add('frontThumbnail', Type\TextType::class)
-            ->add('reviewN6tyrell', Type\TextareaType::class)
+            ->add( "reviewN6tyrell", Type\TextareaType::class)
+            /*->add( "reviewN6tyrell", "froala")*/
             ->add('reviewN6marzoni', Type\TextareaType::class)
             ->add('reviewN6palm', Type\TextareaType::class);
     }

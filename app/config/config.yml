@@ -81,3 +81,21 @@ knp_paginator:
     template:
         pagination: homeBundle:partials:perso-pagination-bootstrap.html.twig     # sliding pagination controls template
         sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig # sort link template
+
+#kms_froala_editor:
+  # The Froala editor path.
+  # Default: the editor version included in the bundle.
+  #basePath: "/yourCustomFroalaEditorPath/"
+
+  # The editor language.
+  # Default: "en_us".
+  # More : see Resources/public/js/langs for all languages.
+  # language: "fr"
+
+  #######################################################################
+  # See https://editor.froala.com/options to all configurations bellow. #
+  #######################################################################
+
+  # The inline mode.
+  # Default: false.
+  # inlineMode: false

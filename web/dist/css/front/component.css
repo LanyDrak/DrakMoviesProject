@@ -15,7 +15,6 @@
 
 .og-grid li > a,
 .og-grid li > a img {
-    border: none;
 	outline: none;
 	display: block;
 	position: relative;
@@ -27,6 +26,7 @@
 }
 
 .og-grid li > a:hover img{
+    border-bottom: 2px solid #F9FFC1;
     opacity: 1;
 }
 
@@ -95,9 +95,8 @@
 	background: #333;
 }
 
-.og-fullimg,
-.og-details {
-	width: 50%;
+.og-fullimg{
+	width: 20%;
 	float: left;
 	height: 100%;
 	overflow: hidden;
@@ -105,6 +104,11 @@
 }
 
 .og-details {
+    width: 35%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 	padding: 0 40px 0 20px;
 }
 
@@ -122,15 +126,29 @@
     color: #F9FFC1;
 	font-weight: 300;
 	font-size: 52px;
-	padding: 40px 0 10px;
-	margin-bottom: 10px;
+    margin: 0;
+}
+
+.og-details h4 {
+    color: #F9FFC1;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: #262626;
+    padding: 8px 9px;
+    margin-bottom: 0;
 }
 
 .og-details p {
-	font-weight: 400;
-	font-size: 16px;
+	font-weight: 200;
+	font-size: 15px;
 	line-height: 22px;
-	color: #999;
+	color: #EEE;
+}
+
+.og-details .dateDeSortie{
+    background-color: #212121;
+    padding: 8px 9px;
+    margin-top: 0;
 }
 
 .og-details a {
@@ -141,7 +159,7 @@
 	letter-spacing: 2px;
 	padding: 10px 20px;
 	border: 3px solid #333;
-	display: inline-block;
+	display: none;
 	margin: 30px 0 0;
 	outline: none;
 }

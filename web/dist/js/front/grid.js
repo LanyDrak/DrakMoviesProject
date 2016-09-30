@@ -191,7 +191,7 @@ var Grid = (function() {
 		support = Modernizr.csstransitions,
 		// default settings
 		settings = {
-			minHeight : 400,
+			minHeight : 500,
 			speed : 350,
 			easing : 'ease'
 		};
@@ -343,9 +343,11 @@ var Grid = (function() {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
+            this.$director = $( '<h4></h4>');
+            this.$year = $( '<p class="dateDeSortie"></p>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href="#">Visit website</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
+			this.$href = $( '<a href="#">Voir Fiche</a>' );
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$director, this.$year, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -382,11 +384,15 @@ var Grid = (function() {
 					href : $itemEl.attr( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
-					description : $itemEl.data( 'description' )
+                    director: $itemEl.data ('director'),
+					description : $itemEl.data( 'description' ),
+                    year : $itemEl.data( 'year')
 				};
 
 			this.$title.html( eldata.title );
+            this.$director.html (eldata.director);
 			this.$description.html( eldata.description );
+            this.$year.html( eldata.year);
 			this.$href.attr( 'href', eldata.href );
 
 			var self = this;

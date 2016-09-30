@@ -18,6 +18,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new homeBundle\homeBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            /*new KMS\FroalaEditorBundle\KMSFroalaEditorBundle(),*/
+            /*new Trsteel\CkeditorBundle\TrsteelCkeditorBundle(),*/
             new frontBundle\frontBundle(),
         );
 

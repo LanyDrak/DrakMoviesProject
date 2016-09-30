@@ -475,7 +475,7 @@ class Film
     {
         $this->file = $file;
         $this->oldAfficheName = $this->affiche;
-        $this->affiche = "lancement lifecycle de la méthode upload pour l'update";
+        /*$this->affiche = "lancement lifecycle de la méthode upload pour l'update";*/
     }
 
     public function getAbsolutePath()
@@ -527,6 +527,7 @@ class Film
         if (null === $this->file){
             return;
         }
+        
 
         if ($this->oldAfficheName != null)
         {

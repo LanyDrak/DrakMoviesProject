@@ -7,12 +7,26 @@
     <div class="container">
         <header class="clearfix">
             <h1><a href="#">Nexus-6</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">liste films</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="main">
             <ul id="og-grid" class="og-grid">
                 {% for film in films %}
                     <li>
-                        <a href="" data-largesrc="{{ asset(film.webPath("md")) }}" data-title="{{ film.nom }}" data-description="">
+                        <a href=""  data-largesrc="{{ asset(film.webPath("md")) }}"
+                                    data-title="{{ film.nom }}"
+                                    data-director="{{ film.director }}"
+                                    data-year="{{ film.dateSortie|date("Y") }}"
+                                    data-description="{{ film.synopsis }}">
+
+
                             <img src="{{ asset(film.webPath2) }}" alt="film">
                         </a>
                     </li>
