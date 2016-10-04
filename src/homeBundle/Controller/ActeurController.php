@@ -25,7 +25,7 @@ class ActeurController extends Controller
         $pagination = $paginator->paginate(
             $acteurs,
             $this->get('request')->query->get('page', 1),
-            15
+            25
         );
 
         return $this->render('homeBundle:Acteur:index.html.twig', ['acteurs' => $pagination]);

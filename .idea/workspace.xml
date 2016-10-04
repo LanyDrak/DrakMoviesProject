@@ -2,47 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5479fbcd-a514-4893-8cb3-fb3e27c47fac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/57233f8192c734.13207677-Cannibal Holocaust.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/amelie.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/eva.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/gattaca.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/mulholland.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/ring.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/running.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/two-sisters.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/x-men.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/images-test/thumbs/test.jpg" afterPath="$PROJECT_DIR$/web/dist/img/images-test/thumbs/test.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/57ebb63036f7e5.56458530-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/57ebb63036f7e5.56458530-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/57ebb6b058d806.36949501-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/57ebb6b058d806.36949501-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/lg-57ebb63036f7e5.56458530-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/lg-57ebb63036f7e5.56458530-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/lg-57ebb6b058d806.36949501-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/lg-57ebb6b058d806.36949501-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/md-57ebb63036f7e5.56458530-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/md-57ebb63036f7e5.56458530-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/md-57ebb6b058d806.36949501-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/md-57ebb6b058d806.36949501-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/sm-57ebb63036f7e5.56458530-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/sm-57ebb63036f7e5.56458530-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/sm-57ebb6b058d806.36949501-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/sm-57ebb6b058d806.36949501-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/xs-57ebb63036f7e5.56458530-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/xs-57ebb63036f7e5.56458530-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/xs-57ebb6b058d806.36949501-Melancholia.jpeg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/affiches/xs-57ebb6b058d806.36949501-Melancholia.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/angelheart.jpg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/angelheart.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/battleroyale.jpg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/battleroyale.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/collector.jpg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/collector.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/kickboxer.jpg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/kickboxer.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/manearth.jpg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/manearth.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/melancholia.jpg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/melancholia.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/poignardsvolants.jpg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/poignardsvolants.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/timemachine.jpg" afterPath="$PROJECT_DIR$/web/dist/img/uploads/frontThumbnails/timemachine.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/drakmovies.iml" afterPath="$PROJECT_DIR$/.idea/drakmovies.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/28-days.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/571a3babf101d3.43066559civilwar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/571f30e67d2704.29856351edenlake.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/571fc65a2d4614.9347036337847_blade_runner_poster.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/cannibal.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/cube.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/descent.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/diewelle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/livide.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/dist/img/uploads/affiches/maddog.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/frontBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Entity/Film.php" afterPath="$PROJECT_DIR$/src/homeBundle/Entity/Film.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php" afterPath="$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Controller/ActeurController.php" afterPath="$PROJECT_DIR$/src/homeBundle/Controller/ActeurController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Repository/FilmRepository.php" afterPath="$PROJECT_DIR$/src/homeBundle/Repository/FilmRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmShow.html.twig" afterPath="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmShow.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/index.html.twig" afterPath="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/css/front/component.css" afterPath="$PROJECT_DIR$/web/dist/css/front/component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/js/front/grid.js" afterPath="$PROJECT_DIR$/web/dist/js/front/grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/css/front/default.css" afterPath="$PROJECT_DIR$/web/dist/css/front/default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/css/style.css" afterPath="$PROJECT_DIR$/web/dist/css/style.css" />
     </list>
     <ignored path="drakmovies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,61 +58,19 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grid.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/dist/js/front/grid.js">
+      <file leaf-file-name="ActeurController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/homeBundle/Controller/ActeurController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="193" column="25" selection-start-line="193" selection-start-column="25" selection-end-line="193" selection-end-column="25" />
+            <state relative-caret-position="289">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/dist/css/front/component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/dist/css/front/default.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Film.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/homeBundle/Entity/Film.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filmShow.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmShow.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#343#363#0#HTML" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -141,13 +83,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Genre/genreIndex.html.twig" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Entity/Genre.php" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Acteur/index.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/Entity/Acteur.php" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Controller/ActeurController.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/Controller/UserControler.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/archivesEntity/User.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/archivesEntity/OldUser.php" />
@@ -160,21 +98,14 @@
         <option value="$PROJECT_DIR$/src/homeBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/homeBundle/Utils/essai.php" />
-        <option value="$PROJECT_DIR$/web/dist/css/style.css" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Default/UserCreate.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/homeBundle/translations/messages.fr.yml" />
         <option value="$PROJECT_DIR$/app/Resources/homeBundle/translations/messages.en.yml" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Resources/config/routing/films.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/frontBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/config/routing.yml" />
         <option value="$USER_HOME$/Téléchargements/ThumbnailGridExpandingPreview/ThumbnailGridExpandingPreview/add.html" />
         <option value="$PROJECT_DIR$/web/app.php" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Repository/FilmRepository.php" />
-        <option value="$PROJECT_DIR$/web/dist/css/front/default.css" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Controller/FilmController.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Security/login.html.twig" />
@@ -182,16 +113,27 @@
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmEdit.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/web/dist/js/front/grid.js" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Entity/Film.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/frontBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/web/dist/js/front/grid.js" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/web/dist/css/front/default.css" />
         <option value="$PROJECT_DIR$/web/dist/css/front/component.css" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Resources/config/routing/films.yml" />
+        <option value="$PROJECT_DIR$/src/frontBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/frontBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Form/FormSearchType.php" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Repository/FilmRepository.php" />
         <option value="$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Entity/Film.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="/var/www/html/GitKraken/DrakMoviesProject/web/dist/js/front/nexusGlobal.js" />
+        <option value="$PROJECT_DIR$/web/dist/js/front/nexusGlobal.js" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmShow.html.twig" />
+        <option value="$PROJECT_DIR$/web/dist/css/style.css" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Controller/ActeurController.php" />
       </list>
     </option>
   </component>
@@ -241,6 +183,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -496,6 +439,128 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homeBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routing" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homeBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homeBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homeBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homeBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -621,21 +686,42 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../57-restau" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lanydrakDotCom" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -723,15 +809,16 @@
       <workItem from="1475151921367" duration="5846000" />
       <workItem from="1475222338171" duration="229000" />
       <workItem from="1475222970295" duration="10036000" />
+      <workItem from="1475480290688" duration="33048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72272000" />
+    <option name="totallyTimeSpent" value="105320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1873" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21462893" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -768,79 +855,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/homeBundle/translations/messages.fr.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/homeBundle/translations/messages.en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/config/routing/films.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontBundle/frontBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../nexus6/wp-content/themes/nexus6theme/header.php" />
-    <entry file="file://$USER_HOME$/Téléchargements/ThumbnailGridExpandingPreview/ThumbnailGridExpandingPreview/add.html" />
-    <entry file="file://$PROJECT_DIR$/web/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Téléchargements/ThumbnailGridExpandingPreview/ThumbnailGridExpandingPreview/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="158" column="187" selection-start-line="158" selection-start-column="151" selection-end-line="158" selection-end-column="187" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -875,13 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="86" column="155" selection-start-line="86" selection-start-column="155" selection-end-line="86" selection-end-column="175" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Repository/FilmRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -941,80 +948,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/dist/css/AdminLTE.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dist/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/dist/css/front.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="18" column="117" selection-start-line="18" selection-start-column="117" selection-end-line="18" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Controller/FilmController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Entity/Acteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="165" selection-start-line="100" selection-start-column="165" selection-end-line="100" selection-end-column="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="69" column="62" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1025,24 +962,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+        <state relative-caret-position="851">
+          <caret line="82" column="92" selection-start-line="82" selection-start-column="92" selection-end-line="82" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="64" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,53 +1002,253 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/dist/css/front/component.css">
+    <entry file="file://$PROJECT_DIR$/web/dist/css/AdminLTE.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/dist/css/front/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="18" />
+        <state relative-caret-position="298">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/css/front/component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/config/routing/genre.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/config/routing/films.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Form/FormActeurType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/AbstractType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Repository/FilmRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+          <folding>
+            <element signature="e#41#75#0#PHP" expanded="true" />
+            <marker date="1475590500047" expanded="true" signature="405:483" ph="SELECT f, g homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="801:839" ph="SELECT count... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="1036:1186" ph="SELECT g.nom... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="1369:1434" ph="SELECT f FRO... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="1713:1778" ph="SELECT f FRO... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="1874:1964" ph="SELECT f FRO... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="2062:2127" ph="SELECT f FRO... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="2304:2422" ph="SELECT f FRO... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="2529:2647" ph="SELECT f FRO... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="2754:2872" ph="SELECT f FRO... homeBundle" />
+            <marker date="1475590500047" expanded="true" signature="2930:2965" ph="SELECT f FRO... homeBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Entity/Film.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="544">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        <state relative-caret-position="-799">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Form/FormSearchType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="e#35#75#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///var/www/html/GitKraken/DrakMoviesProject/web/dist/js/front/grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///var/www/html/GitKraken/DrakMoviesProject/web/dist/js/front/modernizr.custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="129" selection-start-line="3" selection-start-column="129" selection-end-line="3" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///var/www/html/GitKraken/DrakMoviesProject/web/dist/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///var/www/html/GitKraken/DrakMoviesProject/web/dist/js/front-js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///var/www/html/GitKraken/DrakMoviesProject/web/dist/js/front/nexusGlobal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/js/front/nexusGlobal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmShow.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="68" column="50" selection-start-line="68" selection-start-column="50" selection-end-line="68" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="59" column="79" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Entity/Acteur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Repository/ActeurRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#343#363#0#HTML" expanded="true" />
+            <marker date="1474967956388" expanded="true" signature="521:561" ph="SELECT count... homeBundle" />
+            <marker date="1474967956388" expanded="true" signature="739:806" ph="SELECT a FRO... homeBundle" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Controller/FilmController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Controller/ActeurController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

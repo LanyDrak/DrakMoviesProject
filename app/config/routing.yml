@@ -8,10 +8,6 @@ home:
     requirements:
       _locale:  fr|en|de|ar|es
 
-#kms_froala_editor:
-    #resource: "@KMSFroalaEditorBundle/Resources/config/routing.yml"
-    #prefix:   /froalaeditor
-
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

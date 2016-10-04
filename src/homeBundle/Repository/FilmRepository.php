@@ -70,7 +70,30 @@ class FilmRepository extends EntityRepository
     {
         $em = $this->getEntityManager();
 
-        $query = $em->createQuery('SELECT f FROM homeBundle:Film f ORDER BY f.creationTimestamp DESC');
+        if (!isset($_GET['genre']) && !isset($_GET['dateSortie'])){
+            $query = $em->createQuery("SELECT f FROM homeBundle:Film f ORDER BY f.creationTimestamp DESC");
+        } else{
+            $genre = $_GET['genre'];
+            $query = $em->createQuery("SELECT f FROM homeBundle:Film f WHERE f.genre = '$genre' ORDER BY f.creationTimestamp DESC");
+        }
+
+        /*if (!isset($_GET['dateSortie'])){
+            $query = $em->createQuery("SELECT f FROM homeBundle:Film f ORDER BY f.creationTimestamp DESC");
+        } else{
+            $dateSortie = $_GET['dateSortie'];
+            switch ($dateSortie){
+                case '1980':
+                    $query = $em->createQuery("SELECT f FROM homeBundle:Film f WHERE f.dateSortie BETWEEN 1980-01-01 AND 1989-12-31 ORDER BY f.creationTimestamp DESC");
+                    break;
+                case '1990':
+                    $query = $em->createQuery("SELECT f FROM homeBundle:Film f WHERE f.dateSortie BETWEEN 1990-01-01 AND 1999-12-31 ORDER BY f.creationTimestamp DESC");
+                    break;
+                case '2000':
+                    $query = $em->createQuery("SELECT f FROM homeBundle:Film f WHERE f.dateSortie BETWEEN 2000-01-01 AND 2009-12-31 ORDER BY f.creationTimestamp DESC");
+                    break;
+            }
+
+        }*/
 
         return $query->getResult();
     }

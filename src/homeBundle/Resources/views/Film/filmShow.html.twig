@@ -2,7 +2,7 @@
 
 {%  block content %}
 
-    <div class="col-lg-4">
+    <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="box box-solid">
             <div class="box-header bg-black">
                 <h3 class="box-title">Affiche du film</h3>
@@ -12,7 +12,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-xs-12 col-sm-6 col-lg-3">
         <div class="box box-widget widget-user-2">
             <div class="widget-user-header bg-black">
                 <h3 class="widget-user-username">{{ film.nom }}</h3>
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-lg-4">
         <div class="box box-solid">
             <div class="box-header bg-black">
                 <h3 class="box-title">Trailer</h3>
@@ -56,7 +56,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-lg-4">
         <div class="box">
             <div class="box-header">
                 <h3 class="box-title">Acteurs/Actrices</h3>
@@ -66,7 +66,7 @@
                 {% if film.acteurs is defined %}
                     {% for acteur in film.acteurs %}
                         <li>
-                            <a class="poster-link" href="{{ path('acteur_show_homepage', {id : acteur.id} ) }}"><img src="{{ asset(acteur.webPath) }}" style="width: 100px;" alt="{{ acteur.nom }}"></a>
+                            <a class="poster-link-actor" href="{{ path('acteur_show_homepage', {id : acteur.id} ) }}"><img src="{{ asset(acteur.webPath) }}" alt="{{ acteur.nom }}"></a>
                             <a class="users-list-name" href="{{ path('acteur_showName', {nom : acteur.nom} ) }}">{{ acteur.prenom~" "~acteur.nom }}</a>
                         </li>
                     {% endfor %}
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-7">
+    <div class="col-xs-12 col-sm-12 col-lg-7">
         <div class="box box-solid">
             <div class="box-header bg-black">
                 <h3 class="box-title">Synopsis</h3>
@@ -89,33 +89,33 @@
         </div>
     </div>
 <div class="clearfix"></div>
-    <div class="col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-lg-4">
         <div class="box box-solid">
             <div class="box-header bg-blue">
                 <h3 class="box-title">l'avis de N6TYRELL</h3>
             </div>
             <div class="box-body">
-                <p>{{ film.reviewN6tyrell|nl2br|default("pas de critique pour le moment") }}</p>
+                <p>{{ film.reviewN6tyrell|raw|default("pas de critique pour le moment") }}</p>
             </div>
         </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-lg-4">
         <div class="box box-solid">
             <div class="box-header bg-blue">
                 <h3 class="box-title">l'avis de N6MARZONI</h3>
             </div>
             <div class="box-body">
-                <p>{{ film.reviewN6marzoni|nl2br|default("pas de critique pour le moment") }}</p>
+                <p>{{ film.reviewN6marzoni|raw|default("pas de critique pour le moment") }}</p>
             </div>
         </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-xs-12 col-sm-12 col-lg-4">
         <div class="box box-solid">
             <div class="box-header bg-blue">
                 <h3 class="box-title">l'avis de N6PALM</h3>
             </div>
             <div class="box-body">
-                <p>{{ film.reviewN6palm|nl2br|default("pas de critique pour le moment") }}</p>
+                <p>{{ film.reviewN6palm|raw|default("pas de critique pour le moment") }}</p>
             </div>
         </div>
     </div>

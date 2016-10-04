@@ -7,16 +7,27 @@
     <div class="container">
         <header class="clearfix">
             <h1><a href="#">Nexus-6</a></h1>
-            <nav>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="#">liste films</a></li>
+                    <li><a href="#">movies</a></li>
                     <li><a href="#">news</a></li>
-                    <li><a href="#">about us</a></li>
+                    <li><a href="#">about</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
         </header>
         <div class="main">
+            <nav class="selector-nav">
+                <ul>
+                    <li><a href="?{{ path('front_homepage') }}">all</a></li>
+                    <li><a href="?genre=1">horror</a></li>
+                    <li><a href="?genre=2">sci-fi</a></li>
+                    <li><a href="?genre=6">drama</a></li>
+                    <li><a href="?dateSortie=1980">80'</a></li>
+                    <li><a href="?dateSortie=1990">90'</a></li>
+                    <li><a href="?dateSortie=2000">00'</a></li>
+                </ul>
+            </nav>
             <ul id="og-grid" class="og-grid">
                 {% for film in films %}
                     <li>

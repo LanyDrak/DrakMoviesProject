@@ -2,6 +2,10 @@
     padding: 20px;
 }
 
+.box-tools .input-group{
+    width: 300px;
+}
+
 .btn-spaced{
     margin: 8% 20%;
 }
@@ -12,7 +16,12 @@
 }
 
 .poster-link > img{
-    height: 114px;
+    width: 23%;
+    margin: 2px;
+}
+
+.poster-link-actor > img{
+    width: 100%;
     margin: 2px;
 }
 
@@ -76,4 +85,146 @@
 
 .dropdown-menu{
     box-shadow: 0px 4px 5px 0px rgba(230,230,230,0.8);
+}
+
+/******* front *******/
+/******* header *******/
+
+header .main-nav{
+    margin: 0 auto;
+    width: 638px;
+}
+
+header .main-nav ul{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .main-nav ul li,
+.main .selector-nav ul li{
+    list-style-type: none;
+}
+
+header .main-nav ul li a{
+    color: #333;
+    padding: 0 5px;
+    background-color: #202020;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    transition: 600ms;
+}
+
+header .main-nav ul li a.MenuItemSelected{
+    color: #F9FFC1;
+    background-color: #2d2d2d;
+    transition: 400ms;
+}
+
+/******* main *******/
+
+.main .selector-nav{
+    width: 41.6%;
+    margin: 0 auto;
+    background-color: #202020;
+    -webkit-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.main .selector-nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.main .selector-nav ul li a{
+    text-transform: uppercase;
+    padding: 0 25px;
+    font-size: 1.2rem;
+    transition: 600ms;
+}
+
+.main .selector-nav ul li a:hover{
+    color: #F9FFC1;
+    transition: 400ms;
+}
+
+.main .selector-nav ul li a.selected{
+    color: #F9FFC1;
+}
+
+/******* footer *******/
+footer{
+    width: 97.7%;
+    margin: 25px auto 0;
+    height: 150px;
+    background-color: #202020;
+}
+
+
+/******* queries iPad *******/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .table > thead:first-child > tr:first-child > th{
+        width: 25%;
+    }
+
+    .table tbody tr td:nth-child(1),
+    .table tbody tr td:nth-child(4),
+    .table tbody tr td:nth-child(5),
+    .table tbody tr td:nth-child(6),
+    .table thead tr th:nth-child(1),
+    .table thead tr th:nth-child(4),
+    .table thead tr th:nth-child(5),
+    .table thead tr th:nth-child(6){
+        display: none;
+    }
+
+    .poster-link.actor>img{
+        width: 100%;
+    }
+
+    .poster-link>img{
+        width: 45%;
+    }
+
+}
+
+
+/******* queries iPhone6 *******/
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .input-group{
+        width: 100%;
+    }
+
+    .poster-link.actor>img{
+        width: 100%;
+    }
+
+    .table > thead:first-child > tr:first-child > th{
+        width: 25%;
+    }
+
+    .table tbody tr td:nth-child(1),
+    .table tbody tr td:nth-child(3),
+    .table tbody tr td:nth-child(4),
+    .table tbody tr td:nth-child(5),
+    .table tbody tr td:nth-child(6),
+    .table tbody tr td:nth-child(7),
+    .table thead tr th:nth-child(1),
+    .table thead tr th:nth-child(3),
+    .table thead tr th:nth-child(4),
+    .table thead tr th:nth-child(5),
+    .table thead tr th:nth-child(6),
+    .table thead tr th:nth-child(7),
+    .input-group-btn>a{
+        display: none;
+    }
 }

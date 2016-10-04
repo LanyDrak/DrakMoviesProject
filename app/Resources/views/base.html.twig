@@ -32,6 +32,9 @@
         <script src="{{ asset('dist/js/front-js/ie-support/html5.js') }}"></script>
         <script src="{{ asset('dist/js/front-js/ie-support/respond.js') }}"></script>
 
+        {#<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+        <script>tinymce.init({ selector:'textarea' });</script>#}
+
     </head>
     {% block bodyclass %}
     {% if is_granted('ROLE_ADMIN') %}
@@ -54,12 +57,15 @@
             <!-- front -->
             <script src="{{ asset('dist/js/front/modernizr.custom.js') }}"></script>
             <script src="{{ asset('dist/js/front/grid.js') }}"></script>
+            <script src="{{ asset('dist/js/front/nexusGlobal.js') }}"></script>
 
             <script>
                 $(function() {
                     Grid.init();
                 });
             </script>
+
+
 
         {% endblock %}
     </body>
