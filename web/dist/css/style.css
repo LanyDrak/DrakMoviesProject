@@ -139,7 +139,7 @@ header .main-nav ul li a.MenuItemSelected{
 
 .main .selector-nav ul li a{
     text-transform: uppercase;
-    padding: 0 25px;
+    padding: 0 15px;
     font-size: 1.2rem;
     transition: 600ms;
 }

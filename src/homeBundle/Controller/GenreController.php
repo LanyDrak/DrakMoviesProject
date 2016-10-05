@@ -18,7 +18,7 @@ class GenreController extends Controller
         $pagination = $paginator->paginate(
             $genres,
             $this->get('request')->query->get('page', 1),
-            15
+            30
         );
 
         return $this->render('homeBundle:Genre:genreIndex.html.twig', ['genres' => $pagination]);

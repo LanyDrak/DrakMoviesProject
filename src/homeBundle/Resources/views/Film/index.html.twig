@@ -26,9 +26,9 @@
                         <h3 class="box-title">{{ 'Tableau des films'|trans }}</h3>
 
                         <div class="box-tools">
-                            <div class="input-group input-group-sm">
+                            <div class="input-group input-group-sm" style="width: 300px;">
 
-                                <input type="search" name="table_search" class="form-control pull-right" placeholder="Search">
+                                <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                                 <div class="input-group-btn">
                                     <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                                     {% if is_granted('ROLE_ADMIN') %}
@@ -98,7 +98,7 @@
                     </div>
                     <div class="box-body">
                         {% for film in films %}
-                            <a class="poster-link" href="{{ path('film_show_homepage', {id : film.id} ) }}"><img src="{{ asset(film.webPath) }}"></a>
+                            <a class="poster-link" href="{{ path('film_show_homepage', {id : film.id} ) }}"><img src="{{ asset(film.webPath) }}" style="width: 80px;"></a>
                         {% endfor %}
                     </div>
                 </div>

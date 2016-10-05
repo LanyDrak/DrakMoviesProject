@@ -35,7 +35,7 @@ class Genre
      *     min = 4,
      *     max = 7)
      *
-     * @ORM\Column(name="couleur", type="string")
+     * @ORM\Column(name="couleur", type="string", nullable=true)
      */
     private $couleur;
 

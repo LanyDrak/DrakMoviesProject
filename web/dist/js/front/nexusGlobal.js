@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-    $('.main-nav ul li:first-child a').addClass('MenuItemSelected');
-
     $('body').on('mouseenter', 'header .main-nav ul li a', function (e){
 
         $('.main-nav ul li:first-child a').removeClass('MenuItemSelected');
