@@ -345,13 +345,15 @@ var Grid = (function() {
 			this.$title = $( '<h3></h3>' );
             this.$director = $( '<h4></h4>');
             this.$year = $( '<p class="dateDeSortie"></p>' );
-			this.$description = $( '<p></p>' );
+            this.$country = $( '<p class="pays"></p>');
+			this.$description = $( '<p class="synopsis"></p>' );
 			this.$href = $( '<a href="#">Voir Fiche</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$director, this.$year, this.$description, this.$href );
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$director, this.$year, this.$country, this.$description);
+            this.$linkSingle = $( '<div class="og-linkSingle"></div>' ).append(this.$href);
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
-			this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
+			this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details, this.$linkSingle );
 			this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
 			// append preview element to the item
 			this.$item.append( this.getEl() );
@@ -386,13 +388,15 @@ var Grid = (function() {
 					title : $itemEl.data( 'title' ),
                     director: $itemEl.data ('director'),
 					description : $itemEl.data( 'description' ),
-                    year : $itemEl.data( 'year')
+                    year : $itemEl.data( 'year'),
+                    country : $itemEl.data( 'country')
 				};
 
 			this.$title.html( eldata.title );
             this.$director.html (eldata.director);
 			this.$description.html( eldata.description );
-            this.$year.html( eldata.year);
+            this.$year.html(eldata.year);
+            this.$country.html(eldata.country);
 			this.$href.attr( 'href', eldata.href );
 
 			var self = this;

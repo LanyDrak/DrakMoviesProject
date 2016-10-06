@@ -138,41 +138,56 @@
     margin-bottom: 0;
 }
 
-.og-details p {
-	font-weight: 200;
-	font-size: 15px;
-	line-height: 22px;
-	color: #EEE;
+.og-details p.synopsis{
+    margin: 10px 0;
 }
 
-.og-details .dateDeSortie{
+.og-details p.dateDeSortie,
+.og-details p.pays,
+.og-details p.synopsis{
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+    color: #EEE;
+    padding: 2px 7px 2px 9px;
+}
+
+.og-details p.dateDeSortie,
+.og-details p.pays{
+    display: inline-block;
+    margin: 0;
     background-color: #212121;
-    padding: 8px 9px;
-    margin-top: 0;
 }
 
-.og-details a {
-	font-weight: 700;
+.og-details p.pays{
+    padding: 2px 7px 2px 0;
+}
+
+.og-details p.pays:before {
+    content: " / ";
+}
+
+.og-linkSingle a {
+	font-weight: 500;
 	font-size: 16px;
 	color: #333;
+    background-color: #212121;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 10px 20px;
-	border: 3px solid #333;
-	display: none;
 	margin: 30px 0 0;
 	outline: none;
 }
 
-.og-details a::before {
+.og-linkSingle a::before {
 	content: '\2192';
 	display: inline-block;
 	margin-right: 10px;
 }
 
-.og-details a:hover {
-	border-color: #999;
+.og-linkSingle a:hover {
 	color: #999;
+    background-color: #2d2d2d;
 }
 
 .og-loading {
