@@ -167,27 +167,37 @@
     content: " / ";
 }
 
+.og-linkSingle{
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
 .og-linkSingle a {
 	font-weight: 500;
 	font-size: 16px;
 	color: #333;
     background-color: #212121;
+    border: 1px solid #212121;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 10px 20px;
 	margin: 30px 0 0;
 	outline: none;
+    transition: 300ms;
 }
 
 .og-linkSingle a::before {
-	content: '\2192';
+    content: '\2192';
 	display: inline-block;
 	margin-right: 10px;
 }
 
 .og-linkSingle a:hover {
-	color: #999;
+    color: #F9FFC1;
     background-color: #2d2d2d;
+    border: 1px solid #F9FFC1;
+    transition: 300ms;
 }
 
 .og-loading {

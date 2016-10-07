@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     $('body').on('mouseout', 'header .main-nav ul li a', function (e){
 
-        $(this).removeClass('MenuItemSelected')
-        $('.main-nav ul li:first-child a').addClass('MenuItemSelected');
+        $(this).removeClass('MenuItemSelected');
+        $('#current').addClass('MenuItemSelected');
     })
 });

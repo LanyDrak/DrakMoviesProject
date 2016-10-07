@@ -2,9 +2,22 @@ front_homepage:
     path:     /
     defaults: { _controller: frontBundle:Default:index }
 
+news_page:
+    path:     /news
+    defaults: { _controller: frontBundle:News:index }
+
+about_page:
+    path:     /about
+    defaults: { _controller: frontBundle:About:index }
+
+contact_page:
+    path:     /contact
+    defaults: { _controller: frontBundle:Contact:index }
+
 frontByGenre_homepage:
     path:     /{genre}
     defaults: { _controller: frontBundle:Default:indexByGenre }
+
 
 #frontByDecade_homepage:
  #   path:     /{decade1}{decade2}

@@ -347,7 +347,7 @@ var Grid = (function() {
             this.$year = $( '<p class="dateDeSortie"></p>' );
             this.$country = $( '<p class="pays"></p>');
 			this.$description = $( '<p class="synopsis"></p>' );
-			this.$href = $( '<a href="#">Voir Fiche</a>' );
+			this.$href = $( '<a href="#">Voir la fiche</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$director, this.$year, this.$country, this.$description);
             this.$linkSingle = $( '<div class="og-linkSingle"></div>' ).append(this.$href);
 			this.$loading = $( '<div class="og-loading"></div>' );

@@ -3,56 +3,53 @@
 {% block title %}NEXUS-6{% endblock %}
 
 {% block body %}
-    <div style="background-color: #fff;">
-        {% for film in films %}
-            {{ dump(film.id) }}
-        {% endfor %}
-    </div>
     <div class="container">
         <header class="clearfix">
-            <h1><a href="#">Nexus-6</a></h1>
+            <h1><a href="{{ path('front_homepage') }}">Nexus-6</a></h1>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#" class="MenuItemSelected">movies</a></li>
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
+                    {% block mainMenu %}
+                        <li><a href="{{ path('front_homepage') }}" id="current" class="MenuItemSelected">movies</a></li>
+                        <li><a href="{{ path('news_page') }}">news</a></li>
+                        <li><a href="{{ path('about_page') }}">about</a></li>
+                        <li><a href="{{ path('contact_page') }}">contact</a></li>
+                    {% endblock %}
                 </ul>
             </nav>
         </header>
         <div class="main">
-            <nav class="selector-nav">
-                <ul>
-                    <li><a href="{{ path('front_homepage') }}">all</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 1} ) }}">horror</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 2} ) }}">sci-fi</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 6} ) }}">drama</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 9} ) }}">anticipation</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 5} ) }}">thriller</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 18} ) }}">martial arts</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 11} ) }}">romance</a></li>
+            {% block content %}
+                <nav class="selector-nav">
+                    <ul>
+                        <li><a href="{{ path('front_homepage') }}">all</a></li>
+                        <li><a href="{{ path('frontByGenre_homepage', {genre : 1} ) }}">horror</a></li>
+                        <li><a href="{{ path('frontByGenre_homepage', {genre : 2} ) }}">sci-fi</a></li>
+                        <li><a href="{{ path('frontByGenre_homepage', {genre : 6} ) }}">drama</a></li>
+                        <li><a href="{{ path('frontByGenre_homepage', {genre : 9} ) }}">anticipation</a></li>
+                        <li><a href="{{ path('frontByGenre_homepage', {genre : 5} ) }}">thriller</a></li>
+                        <li><a href="{{ path('frontByGenre_homepage', {genre : 18} ) }}">martial arts</a></li>
+                        <li><a href="{{ path('frontByGenre_homepage', {genre : 11} ) }}">romance</a></li>
+                    </ul>
+                </nav>
+                <ul id="og-grid" class="og-grid">
+                    {% for film in films %}
+                        <li>
+                            <a href=""  data-largesrc="{{ asset(film.webPath("md")) }}"
+                               data-title="{{ film.nom }}"
+                               data-director="{{ film.director }}"
+                               data-year="{{ film.dateSortie|date("Y") }}"
+                               data-country="{{ film.pays }}"
+                               data-description="{{ film.synopsis }}">
+
+
+                                <img src="{{ asset(film.webPath2) }}" alt="film">
+                            </a>
+                        </li>
+                    {% endfor %}
                 </ul>
-            </nav>
-            <ul id="og-grid" class="og-grid">
-                {% for film in films %}
-                    <li>
-                        <a href=""  data-largesrc="{{ asset(film.webPath("md")) }}"
-                                    data-title="{{ film.nom }}"
-                                    data-director="{{ film.director }}"
-                                    data-year="{{ film.dateSortie|date("Y") }}"
-                                    data-country="{{ film.pays }}"
-                                    data-description="{{ film.synopsis }}">
-
-
-                            <img src="{{ asset(film.webPath2) }}" alt="film">
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
+            {% endblock %}
         </div>
-        <footer>
-
-        </footer>
+        <footer></footer>
     </div>
 
 {% endblock %}
