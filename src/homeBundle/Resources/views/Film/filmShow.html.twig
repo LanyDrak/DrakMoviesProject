@@ -1,7 +1,6 @@
 {% extends 'homeBundle::layout.html.twig' %}
 
 {%  block content %}
-    {{ dump(film.noteSpectateurRound) }}
     <div style="display: none;">{{ film.noteSpectateur }}</div>
     <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="box box-solid">
@@ -41,7 +40,7 @@
                             {% for i in (film.noteSpectateurRound+1)..5  if film.noteSpectateurRound<5 %}
                                     <i class="fa fa-star-o" style="color: #000"></i>
                             {% endfor %}
-                            ({{ film.noteSpectateur|round(2, "floor") }})
+                            ({{ film.noteSpectateur|round(2, "floor")|number_format(2, '.', ',') }})
                             </span></a></li>
                     <li><a href="#">Box Office France <span class="pull-right badge bg-gray">{{ film.boxOfficeFrance|number_format(0, '.', ' ') }} entrées</span></a></li>
                 </ul>
