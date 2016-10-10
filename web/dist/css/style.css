@@ -6,6 +6,13 @@
     width: 300px;
 }
 
+.box-tools i.fa-star,
+.box-tools i.fa-star-o{
+    color: #fff;
+    font-size: 14px;
+    vertical-align: -5px;
+}
+
 .btn-spaced{
     margin: 8% 20%;
 }

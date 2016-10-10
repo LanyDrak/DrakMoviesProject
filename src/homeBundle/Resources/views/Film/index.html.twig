@@ -51,7 +51,7 @@
                                     <th class="sorting">{{ 'Genre'|trans }}</th>
                                     <th class="sorting">{{ 'Date de sortie'|trans }}</th>
                                     <th class="sorting">{{ 'Durée'|trans }}</th>
-                                    <th class="sorting">{{ 'Note Spectateurs'|trans }}</th>
+                                    <th class="sorting">{{ 'Note Nexus-6'|trans }}</th>
                                     {% if is_granted('ROLE_ADMIN') %}
                                         <th>Actions</th>
                                     {% endif %}
@@ -59,6 +59,7 @@
                             </thead>
                             <tbody>
                                 {% for film in films %}
+                                    <div style="display: none;">{{ film.noteSpectateur }}</div>
                                     <tr>
                                         <td>{{ film.id }}</td>
                                         <td><a href="{{ path('film_showName', {nom : film.nom} ) }}"><strong style="color: #3c8dbc">{{ film.nom }}</strong></a></td>
@@ -67,10 +68,10 @@
                                         <td>{{ film.dateSortie|date("d m Y") }}</td>
                                         <td>{{ film.duree }} min</td>
                                         <td>
-                                            {% for i in 1..film.noteSpectateur if film.noteSpectateur>0 %}
+                                            {% for i in 1..film.noteSpectateurRound if film.noteSpectateurRound>0 %}
                                                 <i class="fa fa-star" style="color: #3c8dbc"></i>
                                             {% endfor %}
-                                            {% for i in (film.noteSpectateur+1)..5  if film.noteSpectateur<5 %}
+                                            {% for i in (film.noteSpectateurRound+1)..5  if film.noteSpectateurRound<5 %}
                                                <i class="fa fa-star-o" style="color: #3c8dbc"></i>
                                             {% endfor %}
                                         </td>

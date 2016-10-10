@@ -53,7 +53,10 @@ class FormFilmType extends AbstractType
             ->add('boxOfficeFrance', Type\NumberType::class)
             ->add('numVisa', Type\NumberType::class)
             ->add('duree', Type\NumberType::class)
-            ->add('noteSpectateur', Type\ChoiceType::class, array(
+            ->add('trailer', Type\TextType::class)
+            ->add('frontThumbnail', Type\TextType::class)
+            ->add( "reviewN6tyrell", Type\TextareaType::class)
+            ->add('noteN6Tyrell', Type\ChoiceType::class, array(
                 'choices'  => array(
                     0 => '0',
                     1 => '1',
@@ -65,12 +68,33 @@ class FormFilmType extends AbstractType
                 'expanded'  => false,
                 'multiple'  =>false,
             ))
-            ->add('trailer', Type\TextType::class)
-            ->add('frontThumbnail', Type\TextType::class)
-            ->add( "reviewN6tyrell", Type\TextareaType::class)
-            /*->add( "reviewN6tyrell", "froala")*/
             ->add('reviewN6marzoni', Type\TextareaType::class)
-            ->add('reviewN6palm', Type\TextareaType::class);
+            ->add('noteN6Marzoni', Type\ChoiceType::class, array(
+                'choices'  => array(
+                    0 => '0',
+                    1 => '1',
+                    2 => '2',
+                    3 => '3',
+                    4 => '4',
+                    5 => '5',
+                ),
+                'expanded'  => false,
+                'multiple'  =>false,
+            ))
+            ->add('reviewN6palm', Type\TextareaType::class)
+            ->add('noteN6Palm', Type\ChoiceType::class, array(
+                'choices'  => array(
+                    0 => '0',
+                    1 => '1',
+                    2 => '2',
+                    3 => '3',
+                    4 => '4',
+                    5 => '5',
+                ),
+                'expanded'  => false,
+                'multiple'  =>false,
+            ));
+
     }
 
     /**

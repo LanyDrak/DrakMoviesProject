@@ -115,7 +115,7 @@ class Film
     /**
      * @var string
      *
-     * @ORM\Column(name="boxOfficeFrance", type="bigint")
+     * @ORM\Column(name="boxOfficeFrance", type="bigint", nullable=true)
      */
     private $boxOfficeFrance;
 
@@ -155,6 +155,34 @@ class Film
      * @ORM\Column(name="noteSpectateur", type="integer", nullable=true)
      */
     private $noteSpectateur;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="noteSpectateurRound", type="integer", nullable=true)
+     */
+    private $noteSpectateurRound;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="noteN6Tyrell", type="integer", nullable=true)
+     */
+    private $noteN6Tyrell;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="noteN6Marzoni", type="integer", nullable=true)
+     */
+    private $noteN6Marzoni;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="noteN6Palm", type="integer", nullable=true)
+     */
+    private $noteN6Palm;
 
     /**
      * @var int
@@ -406,7 +434,60 @@ class Film
      */
     public function getNoteSpectateur()
     {
+        $numberOfN6 = [ $this->getNoteN6Tyrell(),
+                        $this->getNoteN6Marzoni(),
+                        $this->getNoteN6Palm()
+                        ];
+
+        $counterNull = 0;
+
+        foreach ($numberOfN6 as $n6)
+        {
+            if($n6 == null){
+                $counterNull++;
+            }
+        }
+
+        $numberOfN6on = count($numberOfN6) - $counterNull;
+
+        if ($numberOfN6on == 0){
+
+            $this->noteSpectateur = 0;
+
+        } else{
+
+            $this->noteSpectateur = (
+                                    ($this->getNoteN6Tyrell()) +
+                                    ($this->getNoteN6Marzoni()) +
+                                    ($this->getNoteN6Palm())
+                                    ) /$numberOfN6on;
+        }
+
         return $this->noteSpectateur;
+    }
+
+    /**
+     * Set noteSpectateurRound
+     *
+     * @param integer $noteSpectateurRound
+     *
+     * @return Film
+     */
+    public function setNoteSpectateurRound($noteSpectateurRound)
+    {
+        $this->noteSpectateurRound = $noteSpectateurRound;
+
+        return $this;
+    }
+
+    /**
+     * Get noteSpectateurRound
+     *
+     * @return integer
+     */
+    public function getNoteSpectateurRound()
+    {
+        return round($this->noteSpectateur);
     }
 
     /**
@@ -949,5 +1030,77 @@ class Film
     public function getReviewN6palm()
     {
         return $this->reviewN6palm;
+    }
+
+    /**
+     * Set noteN6Tyrell
+     *
+     * @param integer $noteN6Tyrell
+     *
+     * @return Film
+     */
+    public function setNoteN6Tyrell($noteN6Tyrell)
+    {
+        $this->noteN6Tyrell = $noteN6Tyrell;
+
+        return $this;
+    }
+
+    /**
+     * Get noteN6Tyrell
+     *
+     * @return integer
+     */
+    public function getNoteN6Tyrell()
+    {
+        return $this->noteN6Tyrell;
+    }
+
+    /**
+     * Set noteN6Marzoni
+     *
+     * @param integer $noteN6Marzoni
+     *
+     * @return Film
+     */
+    public function setNoteN6Marzoni($noteN6Marzoni)
+    {
+        $this->noteN6Marzoni = $noteN6Marzoni;
+
+        return $this;
+    }
+
+    /**
+     * Get noteN6Marzoni
+     *
+     * @return integer
+     */
+    public function getNoteN6Marzoni()
+    {
+        return $this->noteN6Marzoni;
+    }
+
+    /**
+     * Set noteN6Palm
+     *
+     * @param integer $noteN6Palm
+     *
+     * @return Film
+     */
+    public function setNoteN6Palm($noteN6Palm)
+    {
+        $this->noteN6Palm = $noteN6Palm;
+
+        return $this;
+    }
+
+    /**
+     * Get noteN6Palm
+     *
+     * @return integer
+     */
+    public function getNoteN6Palm()
+    {
+        return $this->noteN6Palm;
     }
 }

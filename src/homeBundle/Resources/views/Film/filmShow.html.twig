@@ -1,7 +1,8 @@
 {% extends 'homeBundle::layout.html.twig' %}
 
 {%  block content %}
-
+    {{ dump(film.noteSpectateurRound) }}
+    <div style="display: none;">{{ film.noteSpectateur }}</div>
     <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="box box-solid">
             <div class="box-header bg-black">
@@ -34,12 +35,13 @@
                     <li><a href="#">Durée <span class="pull-right badge bg-gray">{{ film.duree }} min</span></a></li>
                     <li><a href="#">Note NEXUS-6
                             <span class="pull-right">
-                            {% for i in 1..film.noteSpectateur if film.noteSpectateur>0 %}
+                            {% for i in 1..film.noteSpectateurRound if film.noteSpectateurRound>0 %}
                                 <i class="fa fa-star" style="color: #000"></i>
                             {% endfor %}
-                            {% for i in (film.noteSpectateur+1)..5  if film.noteSpectateur<5 %}
+                            {% for i in (film.noteSpectateurRound+1)..5  if film.noteSpectateurRound<5 %}
                                     <i class="fa fa-star-o" style="color: #000"></i>
                             {% endfor %}
+                            ({{ film.noteSpectateur|round(2, "floor") }})
                             </span></a></li>
                     <li><a href="#">Box Office France <span class="pull-right badge bg-gray">{{ film.boxOfficeFrance|number_format(0, '.', ' ') }} entrées</span></a></li>
                 </ul>
@@ -93,6 +95,16 @@
         <div class="box box-solid">
             <div class="box-header bg-blue">
                 <h3 class="box-title">l'avis de N6TYRELL</h3>
+                {% if film.noteN6Tyrell is not null %}
+                <div class="box-tools pull-right">
+                    {% for i in 1..film.noteN6Tyrell if film.noteN6Tyrell>0 %}
+                        <i class="fa fa-star"></i>
+                    {% endfor %}
+                    {% for i in (film.noteN6Tyrell+1)..5  if film.noteN6Tyrell<5 %}
+                        <i class="fa fa-star-o"></i>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
             <div class="box-body">
                 <p>{{ film.reviewN6tyrell|raw|default("pas de critique pour le moment") }}</p>
@@ -103,6 +115,16 @@
         <div class="box box-solid">
             <div class="box-header bg-blue">
                 <h3 class="box-title">l'avis de N6MARZONI</h3>
+                {% if film.noteN6Marzoni is not null %}
+                <div class="box-tools pull-right">
+                    {% for i in 1..film.noteN6Marzoni if film.noteN6Marzoni>0 %}
+                        <i class="fa fa-star"></i>
+                    {% endfor %}
+                    {% for i in (film.noteN6Marzoni+1)..5  if film.noteN6Marzoni<5 %}
+                        <i class="fa fa-star-o"></i>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
             <div class="box-body">
                 <p>{{ film.reviewN6marzoni|raw|default("pas de critique pour le moment") }}</p>
@@ -113,6 +135,16 @@
         <div class="box box-solid">
             <div class="box-header bg-blue">
                 <h3 class="box-title">l'avis de N6PALM</h3>
+                {% if film.noteN6Palm is not null %}
+                <div class="box-tools pull-right">
+                    {% for i in 1..film.noteN6Palm if film.noteN6Palm>0 %}
+                        <i class="fa fa-star"></i>
+                    {% endfor %}
+                    {% for i in (film.noteN6Palm+1)..5  if film.noteN6Palm<5 %}
+                        <i class="fa fa-star-o"></i>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
             <div class="box-body">
                 <p>{{ film.reviewN6palm|raw|default("pas de critique pour le moment") }}</p>

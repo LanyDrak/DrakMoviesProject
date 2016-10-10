@@ -73,11 +73,6 @@
                     {{ form_widget(editFormFilm.duree,  {attr: {class:"form-control"}}) }}
                 </div>
                 <div  class="form-group">
-                    {{ form_label(editFormFilm.noteSpectateur,  "Note Spectateur :", {label_attr: {class:"label label-default"}}) }}
-                    {{ form_errors(editFormFilm.noteSpectateur) }}
-                    {{ form_widget(editFormFilm.noteSpectateur) }}
-                </div>
-                <div  class="form-group">
                     {{ form_label(editFormFilm.trailer,  "ID url trailer YouTube :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(editFormFilm.trailer) }}
                     {{ form_widget(editFormFilm.trailer) }}
@@ -103,14 +98,28 @@
                     {{ form_widget(editFormFilm.reviewN6tyrell,  {attr: {class:"form-control"}}) }}
                 </div>
                 <div  class="form-group">
+                    {{ form_label(editFormFilm.noteN6Tyrell,  "Note N6TYRELL :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.noteN6Tyrell) }}
+                    {{ form_widget(editFormFilm.noteN6Tyrell) }}
+                </div>
+                <div  class="form-group">
                     {{ form_label(editFormFilm.reviewN6marzoni,  "l'avis de N6MARZONI :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(editFormFilm.reviewN6marzoni) }}
                     {{ form_widget(editFormFilm.reviewN6marzoni,  {attr: {class:"form-control"}}) }}
                 </div>
                 <div  class="form-group">
+                    {{ form_label(editFormFilm.noteN6Marzoni,  "Note N6MARZONI :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.noteN6Marzoni) }}
+                    {{ form_widget(editFormFilm.noteN6Marzoni) }}
+                </div>
+                <div  class="form-group">
                     {{ form_label(editFormFilm.reviewN6palm,  "l'avis de N6PALM :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(editFormFilm.reviewN6palm) }}
                     {{ form_widget(editFormFilm.reviewN6palm,  {attr: {class:"form-control"}}) }}
+                </div><div  class="form-group">
+                    {{ form_label(editFormFilm.noteN6Palm,  "Note N6PALM :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.noteN6Palm) }}
+                    {{ form_widget(editFormFilm.noteN6Palm) }}
                 </div>
             {{ form_end(editFormFilm) }}
             </div>
