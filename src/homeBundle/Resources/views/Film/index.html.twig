@@ -23,10 +23,10 @@
             <div class="col-sm-12 col-md-9 col-lg-9">
                 <div class="box box-primary">
                     <div class="box-header">
-                        <h3 class="box-title">{{ 'Tableau des films'|trans }}</h3>
+                        <h3 class="box-title">{{ 'Films'|trans }}</h3>
 
                         <div class="box-tools">
-                            <div class="input-group input-group-sm" style="width: 300px;">
+                            <div class="input-group input-group-sm">
 
                                 <input type="text" name="table_search" class="form-control pull-right" placeholder="Search">
                                 <div class="input-group-btn">
@@ -42,7 +42,7 @@
                         <div>
                             {{ knp_pagination_render(films) }}
                         </div>
-                        <table class="table table-bordered table-hover">
+                        <table class="table table-bordered table-hover film">
                             <thead>
                                 <tr role="row">
                                     <th class="sorting">ID</th>
@@ -99,7 +99,7 @@
                     </div>
                     <div class="box-body">
                         {% for film in films %}
-                            <a class="poster-link" href="{{ path('film_show_homepage', {id : film.id} ) }}"><img src="{{ asset(film.webPath) }}" style="width: 80px;"></a>
+                            <a class="poster-link" href="{{ path('film_show_homepage', {id : film.id} ) }}"><img src="{{ asset(film.webPath) }}"></a>
                         {% endfor %}
                     </div>
                 </div>

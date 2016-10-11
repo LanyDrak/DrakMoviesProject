@@ -3,7 +3,7 @@
 }
 
 .box-tools .input-group{
-    width: 300px;
+    width: 33rem;
 }
 
 .box-tools i.fa-star,
@@ -175,18 +175,18 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
 
-    .table > thead:first-child > tr:first-child > th{
+    .table.film > thead:first-child > tr:first-child > th{
         width: 25%;
     }
 
-    .table tbody tr td:nth-child(1),
-    .table tbody tr td:nth-child(4),
-    .table tbody tr td:nth-child(5),
-    .table tbody tr td:nth-child(6),
-    .table thead tr th:nth-child(1),
-    .table thead tr th:nth-child(4),
-    .table thead tr th:nth-child(5),
-    .table thead tr th:nth-child(6){
+    .table.film tbody tr td:nth-child(1),
+    .table.film tbody tr td:nth-child(4),
+    .table.film tbody tr td:nth-child(5),
+    .table.film tbody tr td:nth-child(6),
+    .table.film thead tr th:nth-child(1),
+    .table.film thead tr th:nth-child(4),
+    .table.film thead tr th:nth-child(5),
+    .table.film thead tr th:nth-child(6){
         display: none;
     }
 
@@ -198,6 +198,29 @@ and (-webkit-min-device-pixel-ratio: 1) {
         width: 45%;
     }
 
+    .table.acteur > thead:first-child > tr:first-child > th{
+        width: 25%;
+    }
+
+    .table.acteur tbody tr td:nth-child(1),
+    .table.acteur tbody tr td:nth-child(4),
+    .table.acteur tbody tr td:nth-child(5),
+    .table.acteur thead tr th:nth-child(1),
+    .table.acteur thead tr th:nth-child(4),
+    .table.acteur thead tr th:nth-child(5){
+        display: none;
+    }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .poster-link>img{
+        width: 18%;
+    }
 }
 
 
@@ -215,22 +238,22 @@ and (-webkit-min-device-pixel-ratio: 2) {
         width: 100%;
     }
 
-    .table > thead:first-child > tr:first-child > th{
+    .table.film > thead:first-child > tr:first-child > th{
         width: 25%;
     }
 
-    .table tbody tr td:nth-child(1),
-    .table tbody tr td:nth-child(3),
-    .table tbody tr td:nth-child(4),
-    .table tbody tr td:nth-child(5),
-    .table tbody tr td:nth-child(6),
-    .table tbody tr td:nth-child(7),
-    .table thead tr th:nth-child(1),
-    .table thead tr th:nth-child(3),
-    .table thead tr th:nth-child(4),
-    .table thead tr th:nth-child(5),
-    .table thead tr th:nth-child(6),
-    .table thead tr th:nth-child(7),
+    .table.film tbody tr td:nth-child(1),
+    .table.film tbody tr td:nth-child(3),
+    .table.film tbody tr td:nth-child(4),
+    .table.film tbody tr td:nth-child(5),
+    .table.film tbody tr td:nth-child(6),
+    .table.film tbody tr td:nth-child(7),
+    .table.film thead tr th:nth-child(1),
+    .table.film thead tr th:nth-child(3),
+    .table.film thead tr th:nth-child(4),
+    .table.film thead tr th:nth-child(5),
+    .table.film thead tr th:nth-child(6),
+    .table.film thead tr th:nth-child(7),
     .input-group-btn>a{
         display: none;
     }
