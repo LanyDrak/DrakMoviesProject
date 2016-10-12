@@ -17,6 +17,11 @@
     margin: 8% 20%;
 }
 
+.fa-star,
+.fa-star-o{
+    color: #3C8DBC;
+}
+
 .poster-link:hover{
     opacity: 0.5;
     transition: all 200ms;
@@ -234,6 +239,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
         width: 100%;
     }
 
+    .poster-link > img {
+        width: 30%;
+    }
+
     .poster-link.actor>img{
         width: 100%;
     }
@@ -256,5 +265,33 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .table.film thead tr th:nth-child(7),
     .input-group-btn>a{
         display: none;
+    }
+
+    .table.acteur tbody tr td{
+        font-size: 1.2rem;
+    }
+
+    .table.acteur tbody tr td:nth-child(1),
+    .table.acteur tbody tr td:nth-child(4),
+    .table.acteur tbody tr td:nth-child(5),
+    .table.acteur tbody tr td:nth-child(6) a:first-child,
+    table.acteur tbody tr td:nth-child(6) a:nth-child(3),
+    .table.acteur thead tr th:nth-child(1),
+    .table.acteur thead tr th:nth-child(4),
+    .table.acteur thead tr th:nth-child(5){
+        display: none;
+    }
+
+    .profile-film-img{
+        height: 170px;
+    }
+
+    .fa-star,
+    .fa-star-o{
+        font-size: 1rem;
+    }
+
+    .box-tools .input-group{
+        width: 19rem;
     }
 }
