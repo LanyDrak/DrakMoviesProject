@@ -79,10 +79,13 @@ class FilmController extends Controller
             return $this->redirectToRoute('film_homepage');
         }
 
+        $user= $this->container->get('security.context')->getToken()->getUser();
+
         return $this->render('homeBundle:Film:filmEdit.html.twig', array(
             'film' => $film,
             'editFormFilm' => $editFormFilm->createView(),
-            'delete_form' => $deleteForm->createView()));
+            'delete_form' => $deleteForm->createView(),
+            'user' => $user));
     }
 
 

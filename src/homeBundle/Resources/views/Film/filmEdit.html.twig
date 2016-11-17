@@ -1,6 +1,7 @@
 {% extends 'homeBundle::layout.html.twig' %}
 
 {%  block content %}
+    {{ dump(user) }}
     <div class="col-lg-6">
         <div class="box box-primary">
             <div class="box-header with-border">
@@ -92,26 +93,30 @@
                 <h3 class="box-title"><span class="fa fa-pencil-square-o"></span>  Critiques :</h3>
             </div>
             <div class="box-body">
-                <div  class="form-group">
-                    {{ form_label(editFormFilm.reviewN6tyrell,  "l'avis de N6TYRELL :", {label_attr: {class:"label label-default"}}) }}
-                    {{ form_errors(editFormFilm.reviewN6tyrell) }}
-                    {{ form_widget(editFormFilm.reviewN6tyrell,  {attr: {class:"form-control"}}) }}
-                </div>
-                <div  class="form-group">
-                    {{ form_label(editFormFilm.noteN6Tyrell,  "Note N6TYRELL :", {label_attr: {class:"label label-default"}}) }}
-                    {{ form_errors(editFormFilm.noteN6Tyrell) }}
-                    {{ form_widget(editFormFilm.noteN6Tyrell) }}
-                </div>
-                <div  class="form-group">
-                    {{ form_label(editFormFilm.reviewN6marzoni,  "l'avis de N6MARZONI :", {label_attr: {class:"label label-default"}}) }}
-                    {{ form_errors(editFormFilm.reviewN6marzoni) }}
-                    {{ form_widget(editFormFilm.reviewN6marzoni,  {attr: {class:"form-control"}}) }}
-                </div>
-                <div  class="form-group">
-                    {{ form_label(editFormFilm.noteN6Marzoni,  "Note N6MARZONI :", {label_attr: {class:"label label-default"}}) }}
-                    {{ form_errors(editFormFilm.noteN6Marzoni) }}
-                    {{ form_widget(editFormFilm.noteN6Marzoni) }}
-                </div>
+                {% if user.id == 1 %}
+                    <div  class="form-group">
+                        {{ form_label(editFormFilm.reviewN6tyrell,  "l'avis de N6TYRELL :", {label_attr: {class:"label label-default"}}) }}
+                        {{ form_errors(editFormFilm.reviewN6tyrell) }}
+                        {{ form_widget(editFormFilm.reviewN6tyrell,  {attr: {class:"form-control"}}) }}
+                    </div>
+                    <div  class="form-group">
+                        {{ form_label(editFormFilm.noteN6Tyrell,  "Note N6TYRELL :", {label_attr: {class:"label label-default"}}) }}
+                        {{ form_errors(editFormFilm.noteN6Tyrell) }}
+                        {{ form_widget(editFormFilm.noteN6Tyrell) }}
+                    </div>
+                {% endif %}
+                {% if user.id == 3 %}
+                    <div  class="form-group">
+                        {{ form_label(editFormFilm.reviewN6marzoni,  "l'avis de N6MARZONI :", {label_attr: {class:"label label-default"}}) }}
+                        {{ form_errors(editFormFilm.reviewN6marzoni) }}
+                        {{ form_widget(editFormFilm.reviewN6marzoni,  {attr: {class:"form-control"}}) }}
+                    </div>
+                    <div  class="form-group">
+                        {{ form_label(editFormFilm.noteN6Marzoni,  "Note N6MARZONI :", {label_attr: {class:"label label-default"}}) }}
+                        {{ form_errors(editFormFilm.noteN6Marzoni) }}
+                        {{ form_widget(editFormFilm.noteN6Marzoni) }}
+                    </div>
+                {% endif %}
                 <div  class="form-group">
                     {{ form_label(editFormFilm.reviewN6palm,  "l'avis de N6PALM :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(editFormFilm.reviewN6palm) }}

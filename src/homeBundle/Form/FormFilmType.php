@@ -18,6 +18,7 @@ class FormFilmType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+
         $builder
             ->add('nom', Type\TextType::class)
             ->add('file', Type\FileType::class)
