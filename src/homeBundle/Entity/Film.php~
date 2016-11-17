@@ -76,6 +76,12 @@ class Film
      */
     private $reviewN6palm;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reviewN6nikita", type="text", nullable=true)
+     */
+    private $reviewN6nikita;
 
     /**
      * @var string
@@ -183,6 +189,13 @@ class Film
      * @ORM\Column(name="noteN6Palm", type="integer", nullable=true)
      */
     private $noteN6Palm;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="noteN6Nikita", type="integer", nullable=true)
+     */
+    private $noteN6Nikita;
 
     /**
      * @var int
@@ -434,14 +447,61 @@ class Film
      */
     public function getNoteSpectateur()
     {
-        $this->noteSpectateur = (($this->getNoteN6Tyrell()) +
-                                ($this->getNoteN6Marzoni()) +
-                                ($this->getNoteN6Palm())) /3;
+        $numberOfN6 = [ $this->getNoteN6Tyrell(),
+                        $this->getNoteN6Marzoni(),
+                        $this->getNoteN6Palm()
+                        ];
+
+        $counterNull = 0;
+
+        foreach ($numberOfN6 as $n6)
+        {
+            if($n6 == null){
+                $counterNull++;
+            }
+        }
+
+        $numberOfN6on = count($numberOfN6) - $counterNull;
+
+        if ($numberOfN6on == 0){
+
+            $this->noteSpectateur = 0;
+
+        } else{
+
+            $this->noteSpectateur = (
+                                    ($this->getNoteN6Tyrell()) +
+                                    ($this->getNoteN6Marzoni()) +
+                                    ($this->getNoteN6Palm())
+                                    ) /$numberOfN6on;
+        }
 
         return $this->noteSpectateur;
     }
 
+    /**
+     * Set noteSpectateurRound
+     *
+     * @param integer $noteSpectateurRound
+     *
+     * @return Film
+     */
+    public function setNoteSpectateurRound($noteSpectateurRound)
+    {
+        $this->noteSpectateurRound = $noteSpectateurRound;
 
+        return $this;
+    }
+
+    /**
+     * Get noteSpectateurRound
+     *
+     * @return integer
+     */
+    public function getNoteSpectateurRound()
+    {
+        return round($this->noteSpectateur);
+    }
 
     /**
      * Set censure
@@ -1055,5 +1115,29 @@ class Film
     public function getNoteN6Palm()
     {
         return $this->noteN6Palm;
+    }
+
+    /**
+     * Set reviewN6nikita
+     *
+     * @param string $reviewN6nikita
+     *
+     * @return Film
+     */
+    public function setReviewN6nikita($reviewN6nikita)
+    {
+        $this->reviewN6nikita = $reviewN6nikita;
+
+        return $this;
+    }
+
+    /**
+     * Get reviewN6nikita
+     *
+     * @return string
+     */
+    public function getReviewN6nikita()
+    {
+        return $this->reviewN6nikita;
     }
 }

@@ -349,12 +349,32 @@ var Grid = (function() {
 			this.$description = $( '<p class="synopsis"></p>' );
 			this.$href = $( '<a href="#">Voir la fiche</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$director, this.$year, this.$country, this.$description);
-            this.$linkSingle = $( '<div class="og-linkSingle"></div>' ).append(this.$href);
+
+            // review tabs
+
+            this.$reviewN6NIKITA = $('<p class="review"></p>');
+            this.$reviewN6MARZONI = $('<p class="review"></p>');
+            this.$reviewN6PALM = $('<p class="review"></p>');
+            this.$reviewN6TYRELL = $('<p class="review"></p>');
+            this.$reviewContent1 = $('<div class="content-1"></div>').append(this.$reviewN6NIKITA);
+            this.$reviewContent2 = $('<div class="content-2"></div>').append(this.$reviewN6MARZONI);
+            this.$reviewContent3 = $('<div class="content-3"></div>').append(this.$reviewN6PALM);
+            this.$reviewContent4 = $('<div class="content-4"></div>').append(this.$reviewN6TYRELL);
+            this.$reviewContent = $('<div class="content-review"></div>').append(this.$reviewContent1, this.$reviewContent2, this.$reviewContent3, this.$reviewContent4);
+            this.$reviewInputs = $('<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" /><label for="tab-1" class="tab-label-1">N6NIKITA</label><input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" /><label for="tab-2" class="tab-label-2">N6MARZONI</label><input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" /><label for="tab-3" class="tab-label-3">N6PALM</label><input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" /><label for="tab-4" class="tab-label-4">N6TYRELL</label>');
+            this.$reviewClearShadow = $('<div class="clear-shadow"></div>');
+
+            this.$reviewTabs = $('<section class="tabs"></section>').append( this.$reviewInputs, this.$reviewClearShadow, this.$reviewContent);
+
+            this.$linkSingle = $( '<div class="og-linkSingle"></div>' ).append(this.$reviewTabs);
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
-			this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details, this.$linkSingle );
+			this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details, this.$linkSingle);
 			this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
+
+
+
 			// append preview element to the item
 			this.$item.append( this.getEl() );
 			// set the transitions for the preview and the item
@@ -389,15 +409,29 @@ var Grid = (function() {
                     director: $itemEl.data ('director'),
 					description : $itemEl.data( 'description' ),
                     year : $itemEl.data( 'year'),
-                    country : $itemEl.data( 'country')
+                    country : $itemEl.data( 'country'),
+                    reviewN6Nikita : $itemEl.data('reviewn6nikita'),
+                    reviewN6Marzoni : $itemEl.data('reviewn6marzoni'),
+                    reviewN6Palm : $itemEl.data('reviewn6palm'),
+                    reviewN6Tyrell : $itemEl.data('reviewn6tyrell')
 				};
 
 			this.$title.html( eldata.title );
+
+            console.log($itemEl);
+
             this.$director.html (eldata.director);
 			this.$description.html( eldata.description );
             this.$year.html(eldata.year);
             this.$country.html(eldata.country);
 			this.$href.attr( 'href', eldata.href );
+            
+            // reviews
+
+            this.$reviewN6NIKITA.html(eldata.reviewN6Nikita);
+            this.$reviewN6MARZONI.html(eldata.reviewN6Marzoni);
+            this.$reviewN6PALM.html(eldata.reviewN6Palm);
+            this.$reviewN6TYRELL.html(eldata.reviewN6Tyrell);
 
 			var self = this;
 			

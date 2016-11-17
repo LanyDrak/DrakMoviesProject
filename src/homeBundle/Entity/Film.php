@@ -76,6 +76,12 @@ class Film
      */
     private $reviewN6palm;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="reviewN6nikita", type="text", nullable=true)
+     */
+    private $reviewN6nikita;
 
     /**
      * @var string
@@ -183,6 +189,13 @@ class Film
      * @ORM\Column(name="noteN6Palm", type="integer", nullable=true)
      */
     private $noteN6Palm;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="noteN6Nikita", type="integer", nullable=true)
+     */
+    private $noteN6Nikita;
 
     /**
      * @var int
@@ -1102,5 +1115,53 @@ class Film
     public function getNoteN6Palm()
     {
         return $this->noteN6Palm;
+    }
+
+    /**
+     * Set reviewN6nikita
+     *
+     * @param string $reviewN6nikita
+     *
+     * @return Film
+     */
+    public function setReviewN6nikita($reviewN6nikita)
+    {
+        $this->reviewN6nikita = $reviewN6nikita;
+
+        return $this;
+    }
+
+    /**
+     * Get reviewN6nikita
+     *
+     * @return string
+     */
+    public function getReviewN6nikita()
+    {
+        return $this->reviewN6nikita;
+    }
+
+    /**
+     * Set noteN6Nikita
+     *
+     * @param integer $noteN6Nikita
+     *
+     * @return Film
+     */
+    public function setNoteN6Nikita($noteN6Nikita)
+    {
+        $this->noteN6Nikita = $noteN6Nikita;
+
+        return $this;
+    }
+
+    /**
+     * Get noteN6Nikita
+     *
+     * @return integer
+     */
+    public function getNoteN6Nikita()
+    {
+        return $this->noteN6Nikita;
     }
 }
