@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5479fbcd-a514-4893-8cb3-fb3e27c47fac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/drakmovies.iml" afterPath="$PROJECT_DIR$/.idea/drakmovies.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Entity/Film.php" afterPath="$PROJECT_DIR$/src/homeBundle/Entity/Film.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/css/front/default.css" afterPath="$PROJECT_DIR$/web/dist/css/front/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/js/front/grid.js" afterPath="$PROJECT_DIR$/web/dist/js/front/grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php" afterPath="$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig" afterPath="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmEdit.html.twig" afterPath="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmEdit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/dist/css/style.css" afterPath="$PROJECT_DIR$/web/dist/css/style.css" />
     </list>
     <ignored path="drakmovies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +36,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="60">
               <caret line="13" column="77" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filmCreate.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="723">
+              <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filmEdit.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmEdit.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="893">
+              <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/dist/js/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormFilmType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="59" column="110" selection-start-line="59" selection-start-column="110" selection-end-line="59" selection-end-column="110" />
               <folding />
             </state>
           </provider>
@@ -56,26 +96,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/dist/css/front/default.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="166" column="21" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grid.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/dist/js/front/grid.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="415" column="67" selection-start-line="415" selection-start-column="67" selection-end-line="415" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -84,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/homeBundle/Form/FormActeurType.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
@@ -104,7 +123,6 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/config/routing/films.yml" />
         <option value="$PROJECT_DIR$/src/homeBundle/Form/FormSearchType.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="/var/www/html/GitKraken/DrakMoviesProject/web/dist/js/front/nexusGlobal.js" />
         <option value="$PROJECT_DIR$/src/homeBundle/Controller/ActeurController.php" />
         <option value="$PROJECT_DIR$/src/homeBundle/Repository/FilmRepository.php" />
@@ -121,20 +139,22 @@
         <option value="$PROJECT_DIR$/src/frontBundle/Resources/views/Default/about.html.twig" />
         <option value="$PROJECT_DIR$/web/dist/css/front/component.css" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmShow.html.twig" />
         <option value="$PROJECT_DIR$/web/dist/js/front/nexusGlobal.js" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/index.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Acteur/index.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/web/dist/css/style.css" />
         <option value="$PROJECT_DIR$/src/homeBundle/Controller/FilmController.php" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php" />
-        <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmEdit.html.twig" />
         <option value="$PROJECT_DIR$/src/homeBundle/Entity/Film.php" />
         <option value="$PROJECT_DIR$/web/dist/css/front/default.css" />
         <option value="$PROJECT_DIR$/web/dist/js/front/grid.js" />
         <option value="$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/dist/css/style.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmEdit.html.twig" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig" />
+        <option value="$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php" />
+        <option value="$PROJECT_DIR$/web/dist/js/functions.js" />
       </list>
     </option>
   </component>
@@ -184,6 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,6 +281,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="front" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -301,32 +348,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drakmovies" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DrakMoviesProject" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -458,6 +479,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homeBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -554,10 +597,63 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drakmovies" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DrakMoviesProject" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -659,11 +755,13 @@
       <workItem from="1477995777323" duration="3676000" />
       <workItem from="1479372919725" duration="8175000" />
       <workItem from="1479389947063" duration="7001000" />
+      <workItem from="1479462064994" duration="4091000" />
+      <workItem from="1479484659548" duration="1624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177614000" />
+    <option name="totallyTimeSpent" value="183329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1873" height="1056" extended-state="6" />
@@ -704,22 +802,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///var/www/html/GitKraken/DrakMoviesProject/web/dist/js/front-js/app.js" />
-    <entry file="file:///var/www/html/GitKraken/DrakMoviesProject/web/dist/js/front/nexusGlobal.js" />
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Repository/ActeurRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Controller/ActeurController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -818,13 +900,6 @@
     <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/views/Default/news.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/views/Default/contact.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/views/Default/about.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="79" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -846,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="97" column="42" selection-start-line="97" selection-start-column="42" selection-end-line="97" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -860,24 +928,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/dist/js/front/nexusGlobal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Entity/Acteur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1164">
           <caret line="114" column="20" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dist/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="254" column="41" selection-start-line="254" selection-start-column="41" selection-end-line="254" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -930,25 +984,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Controller/UserControler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmEdit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,6 +1019,157 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/js/front/grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6919">
+          <caret line="415" column="67" selection-start-line="415" selection-start-column="67" selection-end-line="415" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/css/front/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="166" column="21" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="169" column="18" selection-start-line="169" selection-start-column="18" selection-end-line="169" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1474967956500" expanded="true" signature="3741:3792" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="3871:3944" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="3988:4040" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="4096:4170" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="4192:4266" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="4584:4635" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="4708:4743" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="4775:4848" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="4870:4943" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="4999:5070" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="5092:5166" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="5488:5539" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="5618:5670" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="5735:5787" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="5843:5917" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="5939:6013" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="6335:6386" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="6465:6517" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="6580:6632" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="6688:6762" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="6784:6858" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="7174:7225" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="7304:7356" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="7415:7467" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="7523:7597" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="7619:7693" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="8011:8062" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="8141:8193" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="8258:8310" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="8366:8440" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="8462:8536" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="8893:8944" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="9023:9096" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="9140:9192" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="9248:9322" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="9344:9418" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="9523:9538" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="9784:9835" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="9908:9943" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="9975:10048" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="10070:10143" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="10199:10273" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="10295:10369" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="10474:10489" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="10739:10790" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="10869:10921" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="10986:11038" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="11094:11168" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="11190:11264" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="11369:11384" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="11634:11685" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="11764:11816" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="11879:11931" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="11987:12061" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="12083:12157" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="12262:12277" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="12521:12572" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="12651:12703" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="12762:12814" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="12870:12944" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="12966:13040" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="13145:13160" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="13406:13457" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="13536:13588" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="13653:13705" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="13761:13835" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="13857:13931" ph="..." />
+            <marker date="1474967956500" expanded="true" signature="14036:14052" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/js/front/nexusGlobal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="60" column="71" selection-start-line="60" selection-start-column="71" selection-end-line="60" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmEdit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dist/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/homeBundle/Entity/Film.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -988,26 +1178,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/dist/css/front/default.css">
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Form/FormFilmType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="166" column="21" selection-start-line="166" selection-start-column="21" selection-end-line="166" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/dist/js/front/grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="415" column="67" selection-start-line="415" selection-start-column="67" selection-end-line="415" selection-end-column="67" />
+        <state relative-caret-position="187">
+          <caret line="59" column="110" selection-start-line="59" selection-start-column="110" selection-end-line="59" selection-end-column="110" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frontBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="60">
           <caret line="13" column="77" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homeBundle/Resources/views/Film/filmCreate.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
           <folding />
         </state>
       </provider>

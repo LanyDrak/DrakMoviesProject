@@ -93,9 +93,21 @@
             </div>
             <div class="box-body">
                 <div  class="form-group">
+                    {{ form_label(formFilm.reviewN6nikita,  "l'avis de N6NIKITA :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formFilm.reviewN6nikita) }}
+                    {{ form_widget(formFilm.reviewN6nikita,  {attr: {class:"form-control"}}) }}
+                    <p id="countN6nikita"><span id="caracteresN6nikita">2100</span> caractères restants</p>
+                </div>
+                <div  class="form-group">
+                    {{ form_label(formFilm.noteN6Nikita,  "Note N6NIKITA :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formFilm.noteN6Nikita) }}
+                    {{ form_widget(formFilm.noteN6Nikita) }}
+                </div>
+                <div  class="form-group">
                     {{ form_label(formFilm.reviewN6tyrell,  "l'avis de N6TYRELL :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(formFilm.reviewN6tyrell) }}
                     {{ form_widget(formFilm.reviewN6tyrell,  {attr: {class:"form-control"}}) }}
+                    <p id="countN6tyrell"><span id="caracteresN6tyrell">2100</span> caractères restants</p>
                 </div>
                 <div  class="form-group">
                     {{ form_label(formFilm.noteN6Tyrell,  "Note N6TYRELL :", {label_attr: {class:"label label-default"}}) }}
@@ -106,6 +118,7 @@
                     {{ form_label(formFilm.reviewN6marzoni,  "l'avis de N6MARZONI :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(formFilm.reviewN6marzoni) }}
                     {{ form_widget(formFilm.reviewN6marzoni,  {attr: {class:"form-control"}}) }}
+                    <p id="countN6marzoni"><span id="caracteresN6marzoni">2100</span> caractères restants</p>
                 </div>
                 <div  class="form-group">
                     {{ form_label(formFilm.noteN6Marzoni,  "Note N6MARZONI :", {label_attr: {class:"label label-default"}}) }}
@@ -116,6 +129,7 @@
                     {{ form_label(formFilm.reviewN6palm,  "l'avis de N6PALM :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(formFilm.reviewN6palm) }}
                     {{ form_widget(formFilm.reviewN6palm,  {attr: {class:"form-control"}}) }}
+                    <p id="countN6palm"><span id="caracteresN6palm">2100</span> caractères restants</p>
                 </div><div  class="form-group">
                     {{ form_label(formFilm.noteN6Palm,  "Note N6PALM :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(formFilm.noteN6Palm) }}

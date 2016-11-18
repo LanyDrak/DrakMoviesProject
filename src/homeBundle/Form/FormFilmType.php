@@ -56,7 +56,21 @@ class FormFilmType extends AbstractType
             ->add('duree', Type\NumberType::class)
             ->add('trailer', Type\TextType::class)
             ->add('frontThumbnail', Type\TextType::class)
-            ->add( "reviewN6tyrell", Type\TextareaType::class)
+
+            ->add('reviewN6nikita', Type\TextareaType::class, array('attr' => array('onkeyup' => 'restN6nikita(this.value);', 'rows' => '10'),))
+            ->add('noteN6Nikita', Type\ChoiceType::class, array(
+                'choices'  => array(
+                    0 => '0',
+                    1 => '1',
+                    2 => '2',
+                    3 => '3',
+                    4 => '4',
+                    5 => '5',
+                ),
+                'expanded'  => false,
+                'multiple'  =>false,
+            ))
+            ->add( "reviewN6tyrell", Type\TextareaType::class, array('attr' => array('onkeyup' => 'restN6tyrell(this.value);', 'rows' => '10'),))
             ->add('noteN6Tyrell', Type\ChoiceType::class, array(
                 'choices'  => array(
                     0 => '0',
@@ -69,7 +83,7 @@ class FormFilmType extends AbstractType
                 'expanded'  => false,
                 'multiple'  =>false,
             ))
-            ->add('reviewN6marzoni', Type\TextareaType::class)
+            ->add('reviewN6marzoni', Type\TextareaType::class, array('attr' => array('onkeyup' => 'restN6marzoni(this.value);', 'rows' => '10'),))
             ->add('noteN6Marzoni', Type\ChoiceType::class, array(
                 'choices'  => array(
                     0 => '0',
@@ -82,7 +96,7 @@ class FormFilmType extends AbstractType
                 'expanded'  => false,
                 'multiple'  =>false,
             ))
-            ->add('reviewN6palm', Type\TextareaType::class)
+            ->add('reviewN6palm', Type\TextareaType::class, array('attr' => array('onkeyup' => 'restN6palm(this.value);', 'rows' => '10'),))
             ->add('noteN6Palm', Type\ChoiceType::class, array(
                 'choices'  => array(
                     0 => '0',
