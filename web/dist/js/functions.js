@@ -1,5 +1,5 @@
 function restN6nikita(texte)
-    {
+{
         var remainingText=2100-texte.length;
         document.getElementById('caracteresN6nikita').innerHTML=remainingText;
         if (remainingText < 0){
@@ -7,7 +7,7 @@ function restN6nikita(texte)
         } else{
             document.getElementById('countN6nikita').style.color = "#000";
         }
-    }
+}
 
 function restN6tyrell(texte)
 {
@@ -41,6 +41,13 @@ function restN6palm(texte)
         document.getElementById('countN6palm').style.color = "#000";
     }
 }
+
+
+/*var ratingArea;
+ratingArea = $('div.content-4 p.rating');
+var note = ratingArea.text();*/
+
+
 
 restN6nikita();
 restN6tyrell();

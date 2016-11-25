@@ -352,14 +352,18 @@ var Grid = (function() {
 
             // review tabs
 
+            this.$noteN6NIKITA = $('<p class="rating"></p>');
+            this.$noteN6MARZONI = $('<p class="rating"></p>');
+            this.$noteN6PALM = $('<p class="rating"></p>');
+            this.$noteN6TYRELL = $('<p class="rating"></p>');
             this.$reviewN6NIKITA = $('<p class="review"></p>');
             this.$reviewN6MARZONI = $('<p class="review"></p>');
             this.$reviewN6PALM = $('<p class="review"></p>');
             this.$reviewN6TYRELL = $('<p class="review"></p>');
-            this.$reviewContent1 = $('<div class="content-1"></div>').append(this.$reviewN6NIKITA);
-            this.$reviewContent2 = $('<div class="content-2"></div>').append(this.$reviewN6MARZONI);
-            this.$reviewContent3 = $('<div class="content-3"></div>').append(this.$reviewN6PALM);
-            this.$reviewContent4 = $('<div class="content-4"></div>').append(this.$reviewN6TYRELL);
+            this.$reviewContent1 = $('<div class="content-1"></div>').append(this.$reviewN6NIKITA, this.$noteN6NIKITA);
+            this.$reviewContent2 = $('<div class="content-2"></div>').append(this.$reviewN6MARZONI, this.$noteN6MARZONI);
+            this.$reviewContent3 = $('<div class="content-3"></div>').append(this.$reviewN6PALM, this.$noteN6PALM);
+            this.$reviewContent4 = $('<div class="content-4"></div>').append(this.$reviewN6TYRELL, this.$noteN6TYRELL);
             this.$reviewContent = $('<div class="content-review"></div>').append(this.$reviewContent1, this.$reviewContent2, this.$reviewContent3, this.$reviewContent4);
             this.$reviewInputs = $('<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" /><label for="tab-1" class="tab-label-1">N6NIKITA</label><input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" /><label for="tab-2" class="tab-label-2">N6MARZONI</label><input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" /><label for="tab-3" class="tab-label-3">N6PALM</label><input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" /><label for="tab-4" class="tab-label-4">N6TYRELL</label>');
             this.$reviewClearShadow = $('<div class="clear-shadow"></div>');
@@ -411,14 +415,16 @@ var Grid = (function() {
                     year : $itemEl.data( 'year'),
                     country : $itemEl.data( 'country'),
                     reviewN6Nikita : $itemEl.data('reviewn6nikita'),
+                    noteN6Nikita : $itemEl.data('noten6nikita'),
                     reviewN6Marzoni : $itemEl.data('reviewn6marzoni'),
+                    noteN6Marzoni : $itemEl.data('noten6marzoni'),
                     reviewN6Palm : $itemEl.data('reviewn6palm'),
-                    reviewN6Tyrell : $itemEl.data('reviewn6tyrell')
+                    noteN6Palm : $itemEl.data('noten6palm'),
+                    reviewN6Tyrell : $itemEl.data('reviewn6tyrell'),
+                    noteN6Tyrell : $itemEl.data('noten6tyrell')
 				};
 
 			this.$title.html( eldata.title );
-
-            console.log($itemEl);
 
             this.$director.html (eldata.director);
 			this.$description.html( eldata.description );
@@ -429,9 +435,13 @@ var Grid = (function() {
             // reviews
 
             this.$reviewN6NIKITA.html(eldata.reviewN6Nikita);
+            this.$noteN6NIKITA.html(eldata.noteN6Nikita);
             this.$reviewN6MARZONI.html(eldata.reviewN6Marzoni);
+            this.$noteN6MARZONI.html(eldata.noteN6Marzoni);
             this.$reviewN6PALM.html(eldata.reviewN6Palm);
+            this.$noteN6PALM.html(eldata.noteN6Palm);
             this.$reviewN6TYRELL.html(eldata.reviewN6Tyrell);
+            this.$noteN6TYRELL.html(eldata.noteN6Tyrell);
 
 			var self = this;
 			
