@@ -435,13 +435,65 @@ var Grid = (function() {
             // reviews
 
             this.$reviewN6NIKITA.html(eldata.reviewN6Nikita);
-            this.$noteN6NIKITA.html(eldata.noteN6Nikita);
             this.$reviewN6MARZONI.html(eldata.reviewN6Marzoni);
-            this.$noteN6MARZONI.html(eldata.noteN6Marzoni);
             this.$reviewN6PALM.html(eldata.reviewN6Palm);
-            this.$noteN6PALM.html(eldata.noteN6Palm);
             this.$reviewN6TYRELL.html(eldata.reviewN6Tyrell);
-            this.$noteN6TYRELL.html(eldata.noteN6Tyrell);
+
+            var ratingTyrell = eldata.noteN6Tyrell;
+            var ratingNikita = eldata.noteN6Nikita;
+            var ratingMarzoni = eldata.noteN6Marzoni;
+            var ratingPalm = eldata.noteN6Palm;
+
+            for (var i=1; i<=ratingTyrell; i++){
+                this.$noteN6TYRELL.append('<i class="fa fa-star"></i>');
+            }
+
+            for(var i=1; i<=(5 - ratingTyrell); i++){
+                if (ratingTyrell != 0) {
+                    this.$noteN6TYRELL.append('<i class="fa fa-star-o"></i>');
+                }else{
+                    this.$noteN6TYRELL.hide();
+                }
+            }
+
+            for (var i=1; i<=ratingNikita; i++){
+                this.$noteN6NIKITA.append('<i class="fa fa-star"></i>');
+            }
+
+            for(var i=1; i<=(5 - ratingNikita); i++){
+                if (ratingNikita != 0) {
+                    this.$noteN6NIKITA.append('<i class="fa fa-star-o"></i>');
+                }else{
+                    this.$noteN6NIKITA.hide();
+                }
+            }
+
+            for (var i=1; i<=ratingMarzoni; i++){
+                this.$noteN6MARZONI.append('<i class="fa fa-star"></i>');
+            }
+
+            for(var i=1; i<=(5 - ratingMarzoni); i++){
+                if (ratingNikita != 0) {
+                    this.$noteN6MARZONI.append('<i class="fa fa-star-o"></i>');
+                }else{
+                    this.$noteN6MARZONI.hide();
+                }
+
+
+            for (var i=1; i<=ratingPalm; i++){
+                this.$noteN6PALM.append('<i class="fa fa-star"></i>');
+            }
+
+            for(var i=1; i<=(5 - ratingPalm); i++){
+                if (ratingPalm != 0) {
+                    this.$noteN6PALM.append('<i class="fa fa-star-o"></i>');
+                }else{
+                    this.$noteN6PALM.hide();
+                }
+            }
+            }
+
+
 
 			var self = this;
 			

@@ -45,6 +45,20 @@
 	margin: -20px 0 0 -15px;
 }
 
+.og-grid li p.rating i.fa-star,
+.og-grid li p.rating i.fa-star-o{
+    color: #F9FFC1;
+    margin: 0 3px 0 0;
+    font-size: 1.5rem;
+}
+
+.og-grid li p.rating{
+    position: absolute;
+    bottom: -15px;
+    right: 42px;
+    border: none;
+}
+
 .og-expander {
 	position: absolute;
 	background: #2d2d2d;
