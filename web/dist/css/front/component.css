@@ -261,3 +261,12 @@
 	.og-details { float: none; width: 100%; }
 	
 }
+
+/*About page*/
+
+div.about{
+	width: 70%;
+	height: 250px;
+	margin: 0 auto;
+	background-color: #262626;
+}

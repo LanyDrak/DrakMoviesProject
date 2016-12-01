@@ -294,6 +294,8 @@ var Grid = (function() {
 			// item´s offset top
 			position = $item.data( 'offsetTop' );
 
+		$item.find("img").css('opacity', '1');
+
 		scrollExtra = 0;
 
 		// if a preview exists and previewPos is different (different row) from item´s top then close it
@@ -395,6 +397,7 @@ var Grid = (function() {
 			// if already expanded remove class "og-expanded" from current item and add it to new item
 			if( current !== -1 ) {
 				var $currentItem = $items.eq( current );
+				$currentItem.find("img").css('opacity', '.25');
 				$currentItem.removeClass( 'og-expanded' );
 				this.$item.addClass( 'og-expanded' );
 				// position the preview correctly
@@ -438,6 +441,11 @@ var Grid = (function() {
             this.$reviewN6MARZONI.html(eldata.reviewN6Marzoni);
             this.$reviewN6PALM.html(eldata.reviewN6Palm);
             this.$reviewN6TYRELL.html(eldata.reviewN6Tyrell);
+			this.$noteN6NIKITA.empty();
+			this.$noteN6MARZONI.empty();
+			this.$noteN6PALM.empty();
+			this.$noteN6TYRELL.empty();
+
 
             var ratingTyrell = eldata.noteN6Tyrell;
             var ratingNikita = eldata.noteN6Nikita;
@@ -513,7 +521,7 @@ var Grid = (function() {
 					if( $img.attr( 'src' ) === self.$item.children('a').data( 'largesrc' ) ) {
 						self.$loading.hide();
 						self.$fullimage.find( 'img' ).remove();
-						self.$largeImg = $img.fadeIn( 350 );
+						self.$largeImg = $img.fadeIn( 200 );
 						self.$fullimage.append( self.$largeImg );
 					}
 				} ).attr( 'src', eldata.largesrc );	
@@ -537,6 +545,7 @@ var Grid = (function() {
 					if( support ) {
 						$( this ).off( transEndEventName );
 					}
+					self.$item.find("img").css('opacity', '.25');
 					self.$item.removeClass( 'og-expanded' );
 					self.$previewEl.remove();
 				};
