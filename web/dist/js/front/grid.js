@@ -444,6 +444,8 @@ var Grid = (function() {
             var ratingMarzoni = eldata.noteN6Marzoni;
             var ratingPalm = eldata.noteN6Palm;
 
+            // reviews rating
+
             for (var i=1; i<=ratingTyrell; i++){
                 this.$noteN6TYRELL.append('<i class="fa fa-star"></i>');
             }
@@ -472,12 +474,13 @@ var Grid = (function() {
                 this.$noteN6MARZONI.append('<i class="fa fa-star"></i>');
             }
 
-            for(var i=1; i<=(5 - ratingMarzoni); i++){
+            for(var i=1; i<=(5 - ratingMarzoni); i++) {
                 if (ratingNikita != 0) {
                     this.$noteN6MARZONI.append('<i class="fa fa-star-o"></i>');
-                }else{
+                } else {
                     this.$noteN6MARZONI.hide();
                 }
+            }
 
 
             for (var i=1; i<=ratingPalm; i++){
@@ -490,7 +493,6 @@ var Grid = (function() {
                 }else{
                     this.$noteN6PALM.hide();
                 }
-            }
             }
 
 
