@@ -1,6 +1,6 @@
 function restN6nikita(texte)
 {
-        var remainingText=2100-texte.length;
+        var remainingText=1500-texte.length;
         document.getElementById('caracteresN6nikita').innerHTML=remainingText;
         if (remainingText < 0){
             document.getElementById('countN6nikita').style.color = "red";
@@ -11,7 +11,7 @@ function restN6nikita(texte)
 
 function restN6tyrell(texte)
 {
-    var remainingText=2100-texte.length;
+    var remainingText=1500-texte.length;
     document.getElementById('caracteresN6tyrell').innerHTML=remainingText;
     if (remainingText < 0){
         document.getElementById('countN6tyrell').style.color = "red";
@@ -22,7 +22,7 @@ function restN6tyrell(texte)
 
 function restN6marzoni(texte)
 {
-    var remainingText=2100-texte.length;
+    var remainingText=1500-texte.length;
     document.getElementById('caracteresN6marzoni').innerHTML=remainingText;
     if (remainingText < 0){
         document.getElementById('countN6marzoni').style.color = "red";
@@ -33,7 +33,7 @@ function restN6marzoni(texte)
 
 function restN6palm(texte)
 {
-    var remainingText=2100-texte.length;
+    var remainingText=1500-texte.length;
     document.getElementById('caracteresN6palm').innerHTML=remainingText;
     if (remainingText < 0){
         document.getElementById('countN6palm').style.color = "red";

@@ -265,8 +265,44 @@
 /*About page*/
 
 div.about{
-	width: 70%;
-	height: 250px;
+	width: 50%;
 	margin: 0 auto;
-	background-color: #262626;
+	/*background-color: #262626;*/
+}
+
+div.about p.presentation{
+    color: #F9FFC1;
+    opacity: .6;
+    text-align: justify;
+}
+
+div.reviewer-card{
+    display: flex;
+    width: 87%;
+    margin: 60px auto;
+}
+
+div.reviewer-card img{
+    max-height: 250px;
+}
+
+div.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #999;
+    padding: 0 30px;
+}
+
+div.infos ul{
+    list-style-type: none;
+    font-weight: 500;
+}
+
+div.infos h2{
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 0;
+    color: #F9FFC1;
 }
