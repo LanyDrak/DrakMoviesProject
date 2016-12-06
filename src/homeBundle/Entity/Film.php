@@ -449,7 +449,8 @@ class Film
     {
         $numberOfN6 = [ $this->getNoteN6Tyrell(),
                         $this->getNoteN6Marzoni(),
-                        $this->getNoteN6Palm()
+                        $this->getNoteN6Palm(),
+                        $this->getNoteN6Nikita()
                         ];
 
         $counterNull = 0;
@@ -472,7 +473,8 @@ class Film
             $this->noteSpectateur = (
                                     ($this->getNoteN6Tyrell()) +
                                     ($this->getNoteN6Marzoni()) +
-                                    ($this->getNoteN6Palm())
+                                    ($this->getNoteN6Palm()) +
+                                    ($this->getNoteN6Nikita())
                                     ) /$numberOfN6on;
         }
 

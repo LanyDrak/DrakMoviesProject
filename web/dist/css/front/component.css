@@ -27,7 +27,7 @@
 
 .og-grid li > a:hover img{
     border-bottom: 2px solid #F9FFC1;
-    opacity: 1;
+    opacity: 1!important;
 }
 
 

@@ -346,11 +346,12 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
             this.$director = $( '<h4></h4>');
+            this.$generalRating = $('<p class="generalRating"></p>');
             this.$year = $( '<p class="dateDeSortie"></p>' );
             this.$country = $( '<p class="pays"></p>');
 			this.$description = $( '<p class="synopsis"></p>' );
 			this.$href = $( '<a href="#">Voir la fiche</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$director, this.$year, this.$country, this.$description);
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$director, this.$generalRating, this.$year, this.$country, this.$description);
 
             // review tabs
 
@@ -414,6 +415,7 @@ var Grid = (function() {
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
                     director: $itemEl.data ('director'),
+                    generalrating : $itemEl.data ('generalrating'),
 					description : $itemEl.data( 'description' ),
                     year : $itemEl.data( 'year'),
                     country : $itemEl.data( 'country'),
@@ -430,6 +432,7 @@ var Grid = (function() {
 			this.$title.html( eldata.title );
 
             this.$director.html (eldata.director);
+            this.$generalRating.html (eldata.generalrating);
 			this.$description.html( eldata.description );
             this.$year.html(eldata.year);
             this.$country.html(eldata.country);
@@ -483,7 +486,7 @@ var Grid = (function() {
             }
 
             for(var i=1; i<=(5 - ratingMarzoni); i++) {
-                if (ratingNikita != 0) {
+                if (ratingMarzoni != 0) {
                     this.$noteN6MARZONI.append('<i class="fa fa-star-o"></i>');
                 } else {
                     this.$noteN6MARZONI.hide();
