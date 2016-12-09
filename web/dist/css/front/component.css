@@ -300,6 +300,11 @@ div.infos ul{
     font-weight: 500;
 }
 
+div.infos ul li span{
+    color: #F9FFC1;
+    font-weight: 300;
+}
+
 div.infos h2{
     font-size: 50px;
     font-weight: 300;
