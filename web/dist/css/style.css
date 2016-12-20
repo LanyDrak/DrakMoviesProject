@@ -170,6 +170,11 @@ header .main-nav ul li a.MenuItemSelected{
     margin: 5px 0;
 }
 
+table.film tbody tr td:first-child.published{
+    background-color: #3c8dbc;
+    color: #fff;
+}
+
 /******* footer *******/
 footer{
     width: 100%;

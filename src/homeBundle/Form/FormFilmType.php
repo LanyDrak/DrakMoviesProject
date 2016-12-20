@@ -56,6 +56,7 @@ class FormFilmType extends AbstractType
             ->add('duree', Type\NumberType::class)
             ->add('trailer', Type\TextType::class)
             ->add('frontThumbnail', Type\TextType::class)
+            ->add('published', Type\CheckboxType::class)
 
             ->add('reviewN6nikita', Type\TextareaType::class, array('attr' => array('onkeyup' => 'restN6nikita(this.value);', 'rows' => '10'),))
             ->add('noteN6Nikita', Type\ChoiceType::class, array(

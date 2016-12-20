@@ -61,7 +61,7 @@
                                 {% for film in films %}
                                     <div style="display: none;">{{ film.noteSpectateur }}</div>
                                     <tr>
-                                        <td>{{ film.id }}</td>
+                                        <td class="{% if film.published == true %}published{% endif %}">{{ film.id }}</td>
                                         <td><a href="{{ path('film_showName', {nom : film.nom} ) }}"><strong style="color: #3c8dbc">{{ film.nom }}</strong></a></td>
                                         <td>{{ film.pays }}</td>
                                         <td>{{ film.genre.nom }}</td>

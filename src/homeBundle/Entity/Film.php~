@@ -211,6 +211,13 @@ class Film
      */
     private $aLaffiche;
 
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="published", type="boolean", nullable=false)
+     */
+    private $published;
+
 
     /**
      * Attribut "virtuel" qui représentera mon fichier uploadé.
@@ -449,7 +456,8 @@ class Film
     {
         $numberOfN6 = [ $this->getNoteN6Tyrell(),
                         $this->getNoteN6Marzoni(),
-                        $this->getNoteN6Palm()
+                        $this->getNoteN6Palm(),
+                        $this->getNoteN6Nikita()
                         ];
 
         $counterNull = 0;
@@ -472,7 +480,8 @@ class Film
             $this->noteSpectateur = (
                                     ($this->getNoteN6Tyrell()) +
                                     ($this->getNoteN6Marzoni()) +
-                                    ($this->getNoteN6Palm())
+                                    ($this->getNoteN6Palm()) +
+                                    ($this->getNoteN6Nikita())
                                     ) /$numberOfN6on;
         }
 
@@ -1139,5 +1148,29 @@ class Film
     public function getReviewN6nikita()
     {
         return $this->reviewN6nikita;
+    }
+
+    /**
+     * Set noteN6Nikita
+     *
+     * @param integer $noteN6Nikita
+     *
+     * @return Film
+     */
+    public function setNoteN6Nikita($noteN6Nikita)
+    {
+        $this->noteN6Nikita = $noteN6Nikita;
+
+        return $this;
+    }
+
+    /**
+     * Get noteN6Nikita
+     *
+     * @return integer
+     */
+    public function getNoteN6Nikita()
+    {
+        return $this->noteN6Nikita;
     }
 }

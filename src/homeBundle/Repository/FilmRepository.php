@@ -74,6 +74,14 @@ class FilmRepository extends EntityRepository
         return $query->getResult();
     }
 
+    public function allFilmsbyDatePublished()
+    {
+        $em = $this->getEntityManager();
+        $query = $em->createQuery("SELECT f FROM homeBundle:Film f WHERE f.published = 1 ORDER BY f.creationTimestamp DESC");
+
+        return $query->getResult();
+    }
+
     /*public function allFilmsByDecade1980()
     {
         $em = $this->getEntityManager();

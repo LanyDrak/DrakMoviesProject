@@ -9,7 +9,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $films = $em->getRepository("homeBundle:Film")->allFilmsbyDate();
+        $films = $em->getRepository("homeBundle:Film")->allFilmsbyDatePublished();
 
         return $this->render('frontBundle:Default:index.html.twig', ['films' => $films]);
     }

@@ -211,6 +211,13 @@ class Film
      */
     private $aLaffiche;
 
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="published", type="boolean", nullable=false)
+     */
+    private $published;
+
 
     /**
      * Attribut "virtuel" qui représentera mon fichier uploadé.
@@ -1165,5 +1172,29 @@ class Film
     public function getNoteN6Nikita()
     {
         return $this->noteN6Nikita;
+    }
+
+    /**
+     * Set published
+     *
+     * @param boolean $published
+     *
+     * @return Film
+     */
+    public function setPublished($published)
+    {
+        $this->published = $published;
+
+        return $this;
+    }
+
+    /**
+     * Get published
+     *
+     * @return boolean
+     */
+    public function getPublished()
+    {
+        return $this->published;
     }
 }
