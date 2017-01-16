@@ -75,11 +75,13 @@
                                                <i class="fa fa-star-o" style="color: #3c8dbc"></i>
                                             {% endfor %}
                                         </td>
-                                        {% if is_granted('ROLE_ADMIN') %}
+                                        {% if is_granted('ROLE_USER') %}
                                             <td>
                                                 <a href="{{ path('film_show_homepage', {id : film.id} ) }}" class="btn btn-xs btn-default"><i class="fa fa-eye"></i></a>
                                                 <a href="{{ path('film_edit_homepage', {id : film.id} ) }}" class="btn btn-xs btn-default"><i class="fa fa-edit"></i></a>
+                                                {% if is_granted('ROLE_ADMIN') %}
                                                 <a onclick="return confirm('Etes-vous sûr ?')" href="{{ path('film_delete_homepage', {id : film.id} ) }}" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></a>
+                                                {% endif %}
                                             </td>
                                         {% endif %}
                                     </tr>

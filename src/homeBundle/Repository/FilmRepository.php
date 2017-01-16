@@ -82,6 +82,47 @@ class FilmRepository extends EntityRepository
         return $query->getResult();
     }
 
+
+    /****************************/
+    /***** COUNTERS REVIEWS *****/
+    /****************************/
+
+    public function countReviewsLeftTyrell()
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery('SELECT COUNT(f) FROM homeBundle:Film f WHERE f.reviewN6tyrell IS NULL');
+
+        return $query->getSingleScalarResult();
+    }
+
+    public function countReviewsLeftNikita()
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery('SELECT COUNT(f) FROM homeBundle:Film f WHERE f.reviewN6nikita IS NULL');
+
+        return $query->getSingleScalarResult();
+    }
+
+    public function countReviewsLeftMarzoni()
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery('SELECT COUNT(f) FROM homeBundle:Film f WHERE f.reviewN6marzoni IS NULL');
+
+        return $query->getSingleScalarResult();
+    }
+
+    public function countReviewsLeftPalm()
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery('SELECT COUNT(f) FROM homeBundle:Film f WHERE f.reviewN6palm IS NULL');
+
+        return $query->getSingleScalarResult();
+    }
+
     /*public function allFilmsByDecade1980()
     {
         $em = $this->getEntityManager();

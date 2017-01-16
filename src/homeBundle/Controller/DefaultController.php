@@ -20,6 +20,10 @@ class DefaultController extends Controller
         $users = $em->getRepository("homeBundle:User")          ->findAll();
         $countUsers = $em->getRepository("homeBundle:User")     ->countUsers();
         $filmsByGenre = $em->getRepository("homeBundle:Film")   ->countFilmsByCategory();
+        $counterReviewsLeftTyrell = $em->getRepository("homeBundle:Film")     ->countReviewsLeftTyrell();
+        $counterReviewsLeftNikita = $em->getRepository("homeBundle:Film")     ->countReviewsLeftNikita();
+        $counterReviewsLeftMarzoni = $em->getRepository("homeBundle:Film")     ->countReviewsLeftMarzoni();
+        $counterReviewsLeftPalm = $em->getRepository("homeBundle:Film")     ->countReviewsLeftPalm();
 
         return $this->render('homeBundle:Default:index.html.twig',
            [
@@ -32,7 +36,11 @@ class DefaultController extends Controller
                'genres' => $genres,
                'users'  => $users,
                'countUsers' => $countUsers,
-               'filmsByGenre' => $filmsByGenre
+               'filmsByGenre' => $filmsByGenre,
+               'counterReviewsLeftTyrell' => $counterReviewsLeftTyrell,
+               'counterReviewsLeftNikita' => $counterReviewsLeftNikita,
+               'counterReviewsLeftMarzoni' => $counterReviewsLeftMarzoni,
+               'counterReviewsLeftPalm' => $counterReviewsLeftPalm
            ] );
     }
 }
