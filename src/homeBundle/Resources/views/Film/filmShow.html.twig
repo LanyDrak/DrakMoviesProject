@@ -8,8 +8,9 @@
             <div class="box-header bg-black">
                 <h3 class="box-title">Affiche du film</h3>
             </div>
-            <div class="box-body">
+            <div class="box-body affiche">
                 <img src="{{ asset(film.webPath("lg")) }}" style="width: 100%;">
+                <a href="{{ path('film_edit_homepage', {id : film.id} ) }}" class="edit-large btn btn-lg btn-primary"><i class="fa fa-edit"></i></a>
             </div>
         </div>
     </div>

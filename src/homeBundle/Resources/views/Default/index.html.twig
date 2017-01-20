@@ -75,10 +75,9 @@
 
 {% block content %}
 <section class="content-header">
-    <h1>
-        Dashboard
-        <small>de {% if is_granted('ROLE_USER') %}{{ app.user.login }}{% else %}Anonyme{% endif %}</small>
-    </h1>
+    <h1><strong>{% if is_granted('ROLE_USER') %}{{ app.user.login|upper }}{% else %}Anonyme{% endif %}
+        <small>'s dashboard</small>
+    </strong></h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
@@ -149,9 +148,12 @@
 </section>#}
 
 <section class="content">
-    <div class="row">
-        <div class="col-xs-3">
-            <div class="info-box bg-purple">
+    <div class="reviewCounters row">
+        <div class="col-xs-3"
+            {% if app.user %}
+                {% if app.user.login != ("nikita") %}style="opacity: .3;"{% else %}style="order: 1;"{% endif %}
+            {% endif %}>
+            <div class="info-box bg-{% if app.user %}{% if app.user.login == ("nikita") %}navy-active{% else %}purple{% endif %}{% endif %}">
                 <span class="info-box-icon"><i class="ion-ios-compose-outline"></i></span>
                 <div class="info-box-content">
                     <span class="info-box-text">N6NIKITA</span>
@@ -161,8 +163,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-3">
-            <div class="info-box bg-olive">
+        <div class="col-xs-3"
+             {% if app.user %}
+                {% if app.user.login != ("marzoni") %}style="opacity: .3;"{% else %}style="order: 1;"{% endif %}
+             {% endif %}>
+            <div class="info-box bg-{% if app.user %}{% if app.user.login == ("marzoni") %}navy-active{% else %}olive{% endif %}{% endif %}">
                 <span class="info-box-icon"><i class="ion-ios-compose-outline"></i></span>
                 <div class="info-box-content">
                     <span class="info-box-text">N6MARZONI</span>
@@ -172,8 +177,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-3">
-            <div class="info-box bg-aqua">
+        <div class="col-xs-3"
+            {% if app.user %}
+                {% if app.user.login != ("palm") %}style="opacity: .3;"{% else %}style="order: 1;"{% endif %}
+            {% endif %}>
+            <div class="info-box bg-{% if app.user %}{% if app.user.login == ("palm") %}navy-active{% else %}aqua{% endif %}{% endif %}">
                 <span class="info-box-icon"><i class="ion-ios-compose-outline"></i></span>
                 <div class="info-box-content">
                     <span class="info-box-text">N6PALM</span>
@@ -183,8 +191,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-3">
-            <div class="info-box bg-teal">
+        <div class="col-xs-3"
+            {% if app.user %}
+                {% if app.user.login != ("tyrell") %}style="opacity: .3;"{% else %}style="order: 1;"{% endif %}
+            {% endif %}>
+            <div class="info-box bg-{% if app.user %}{% if app.user.login == ("tyrell") %}navy-active{% else %}teal{% endif %}{% endif %}">
                 <span class="info-box-icon"><i class="ion-ios-compose-outline"></i></span>
                 <div class="info-box-content">
                     <span class="info-box-text">N6TYRELL</span>
@@ -198,7 +209,7 @@
 </section>
 
 <section class="content-header">
-    <h1>{{ 'Les 5 derniers films mis en ligne'|trans }} <small>{{ 'A voir absolument (comme tous les autres)'|trans }}</small></h1>
+    <h2>{{ 'Les 5 derniers films'|trans }} <small>{{ '(mis en base)'|trans }}</small></h2>
 </section>
 <section class="content">
     <div class="row">
@@ -227,6 +238,7 @@
                             </li>
                         </ul>
                         <a href="{{ path('film_show_homepage', {id : last5Film.id} ) }}" class="btn btn-primary btn-block"><b>{{ 'Voir la fiche'|trans }}</b></a>
+                        <a href="{{ path('film_edit_homepage', {id : last5Film.id} ) }}" class="btn btn-default btn-block"><b>{{ 'Rédiger ma critique'|trans }}</b></a>
                     </div>
                 </div>
             </div>

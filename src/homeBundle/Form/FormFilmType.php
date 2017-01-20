@@ -3,6 +3,7 @@
 namespace homeBundle\Form;
 
 use homeBundle\Repository\ActeurRepository;
+use homeBundle\Repository\UserRepository;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -18,7 +19,6 @@ class FormFilmType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-
         $builder
             ->add('nom', Type\TextType::class)
             ->add('file', Type\FileType::class)
@@ -57,7 +57,7 @@ class FormFilmType extends AbstractType
             ->add('trailer', Type\TextType::class)
             ->add('frontThumbnail', Type\TextType::class)
             ->add('published', Type\CheckboxType::class)
-            
+
             ->add('reviewN6nikita', Type\TextareaType::class, array('attr' => array('onkeyup' => 'restN6nikita(this.value);', 'rows' => '10'),))
             ->add('noteN6Nikita', Type\ChoiceType::class, array(
                 'choices'  => array(

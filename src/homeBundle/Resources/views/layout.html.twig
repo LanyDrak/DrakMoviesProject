@@ -5,7 +5,7 @@
         <header class="main-header">
 
             <!-- Logo -->
-            <a href="{{ path('home_homepage') }}" class="logo">
+            <a href="{{ path('home_homepage') }}" class="logo" {% if is_granted('ROLE_SUPERADMIN') %}style="background-color: #0b0b0b;"{% endif %}>
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>N</b>6</span>
                 <!-- logo for regular state and mobile devices -->
@@ -13,7 +13,7 @@
             </a>
 
             <!-- Header Navbar: style can be found in header.less -->
-            <nav class="navbar navbar-static-top" role="navigation">
+            <nav class="navbar navbar-static-top" role="navigation" {% if is_granted('ROLE_SUPERADMIN') %}style="background-color: #0b0b0b;"{% endif %}>
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
@@ -63,7 +63,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
-                                <li class="user-header">
+                                <li class="user-header" {% if is_granted('ROLE_SUPERADMIN') %}style="background-color: #0b0b0b;"{% endif %}>
                                     <img src="{% if is_granted('ROLE_USER') %}{{ asset(app.user.webPath) }}{% else %}{{ asset('dist/img/anonyme.jpg') }}{% endif %}" class="img-circle" alt="User Image">
                                     {% if is_granted('ROLE_USER') %}
                                         <p class="user-name">
@@ -105,14 +105,14 @@
                     </div>
                 </div>
                 <!-- search form -->
-                <form action="#" method="get" class="sidebar-form">
+                {#<form action="#" method="get" class="sidebar-form">
                     <div class="input-group">
                         <input type="text" name="q" class="form-control" placeholder="Search...">
               <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
               </span>
                     </div>
-                </form>
+                </form>#}
                 <!-- /.search form -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu">
@@ -129,12 +129,12 @@
                             <span>{{ 'Liste des acteurs'|trans }}</span>
                         </a>
                     </li>
-                    <li>
+                    {#<li>
                         <a href="{{ path('contact_homepage') }}">
                             <i class="fa fa-envelope-o"></i>
                             <span>{{ 'Formulaire de contact'|trans }}</span>
                         </a>
-                    </li>
+                    </li>#}
                     {% if is_granted('ROLE_SUPERADMIN') %}
                         <li class="header">ACTIONS</li>
                         <li>

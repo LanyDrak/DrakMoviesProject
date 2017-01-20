@@ -108,6 +108,26 @@
     font-size: 28px;
 }
 
+.affiche{
+    position: relative;
+}
+
+a.edit-large{
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    right: 30px;
+    border: 2px solid #fff;
+}
+
+.reviewCounters{
+    display: flex;
+}
+
+.reviewCounters > div{
+    order: 3;
+}
+
 /******* front *******/
 /******* header *******/
 
