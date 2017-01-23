@@ -93,6 +93,13 @@ class Film
     /**
      * @var string
      *
+     * @ORM\Column(name="titreFrance", type="string", length=100)
+     */
+    private $titreFrance;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="trailer", type="string", length=255)
      */
     private $trailer;
@@ -128,7 +135,7 @@ class Film
     /**
      * @var string
      *
-     * @ORM\Column(name="budget", type="bigint")
+     * @ORM\Column(name="budget", type="bigint", nullable=true)
      */
     private $budget;
 
@@ -1196,5 +1203,29 @@ class Film
     public function getPublished()
     {
         return $this->published;
+    }
+
+    /**
+     * Set titreFrance
+     *
+     * @param string $titreFrance
+     *
+     * @return Film
+     */
+    public function setTitreFrance($titreFrance)
+    {
+        $this->titreFrance = $titreFrance;
+
+        return $this;
+    }
+
+    /**
+     * Get titreFrance
+     *
+     * @return string
+     */
+    public function getTitreFrance()
+    {
+        return $this->titreFrance;
     }
 }

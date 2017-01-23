@@ -32,7 +32,7 @@
                             </span>
                         </a>
                     </li>
-                    <li><a href="#">Budget <span class="pull-right badge bg-gray">{{ film.budget|number_format(0, '.', ' ') }} $</span></a></li>
+                    <li><a href="#">Budget <span class="pull-right badge bg-gray">{{ film.budget|default('NC')|number_format(0, '.', ' ') }} {% if film.budget != null %}${% endif %}</span></a></li>
                     <li><a href="#">Durée <span class="pull-right badge bg-gray">{{ film.duree }} min</span></a></li>
                     <li><a href="#">Note NEXUS-6
                             {{ dump(film.noteSpectateurRound) }}

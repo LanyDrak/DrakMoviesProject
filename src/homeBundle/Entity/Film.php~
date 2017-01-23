@@ -93,6 +93,13 @@ class Film
     /**
      * @var string
      *
+     * @ORM\Column(name="titreFrance", type="string", length=100)
+     */
+    private $titreFrance;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="trailer", type="string", length=255)
      */
     private $trailer;
@@ -1172,5 +1179,29 @@ class Film
     public function getNoteN6Nikita()
     {
         return $this->noteN6Nikita;
+    }
+
+    /**
+     * Set published
+     *
+     * @param boolean $published
+     *
+     * @return Film
+     */
+    public function setPublished($published)
+    {
+        $this->published = $published;
+
+        return $this;
+    }
+
+    /**
+     * Get published
+     *
+     * @return boolean
+     */
+    public function getPublished()
+    {
+        return $this->published;
     }
 }

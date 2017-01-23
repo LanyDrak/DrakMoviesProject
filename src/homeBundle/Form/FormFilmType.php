@@ -21,6 +21,7 @@ class FormFilmType extends AbstractType
     {
         $builder
             ->add('nom', Type\TextType::class)
+            ->add('titreFrance', Type\TextType::class)
             ->add('file', Type\FileType::class)
             ->add('pays', Type\TextType::class)
             ->add('director', Type\TextType::class)

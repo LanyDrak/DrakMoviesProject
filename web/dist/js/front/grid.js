@@ -345,13 +345,14 @@ var Grid = (function() {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
+			this.$titreFr = $('<em></em>');
             this.$director = $( '<h4></h4>');
             // this.$generalRating = $('<p class="generalRating"></p>');
             this.$year = $( '<p class="dateDeSortie"></p>' );
             this.$country = $( '<p class="pays"></p>');
 			this.$description = $( '<p class="synopsis"></p>' );
 			this.$href = $( '<a href="#">Voir la fiche</a>' );
-			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$director, this.$year, this.$country, this.$description);
+			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$titreFr, this.$director, this.$year, this.$country, this.$description);
 
             // review tabs
 
@@ -414,6 +415,7 @@ var Grid = (function() {
 					href : $itemEl.attr( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
+					titrefr : $itemEl.data('titrefr'),
                     director: $itemEl.data ('director'),
                     generalrating : $itemEl.data ('generalrating'),
 					description : $itemEl.data( 'description' ),
@@ -430,6 +432,9 @@ var Grid = (function() {
 				};
 
 			this.$title.html( eldata.title );
+			this.$titreFr.html( eldata.titrefr);
+
+			console.log(eldata.title);
 
             this.$director.html (eldata.director);
             // this.$generalRating.html (eldata.generalrating);

@@ -10,9 +10,14 @@
                 {{ form_start(editFormFilm, {attr: {novalidate: 'novalidate'}}) }}
                 {{ form_errors(editFormFilm) }}
                 <div class="form-group">
-                    {{ form_label(editFormFilm.nom, "Titre du film :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_label(editFormFilm.nom, "Titre original du film :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(editFormFilm.nom) }}
                     {{ form_widget(editFormFilm.nom, {attr: {class:"form-control"}}) }}
+                </div>
+                <div class="form-group">
+                    {{ form_label(editFormFilm.titreFrance, "Titre de sortie française :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(editFormFilm.titreFrance) }}
+                    {{ form_widget(editFormFilm.titreFrance, {attr: {class:"form-control"}}) }}
                 </div>
                 <div  class="form-group">
                     {{ form_label(editFormFilm.published,  "Publié :", {label_attr: {class:"label label-primary"}}) }}

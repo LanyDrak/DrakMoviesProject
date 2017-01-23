@@ -140,7 +140,13 @@
     color: #F9FFC1;
 	font-weight: 300;
 	font-size: 52px;
-    margin: 0;
+    margin: 0 0 13px 0;
+}
+
+.og-details em{
+	color: #F9FFC1;
+	padding-left: 9px;
+	opacity: .7;
 }
 
 .og-details h4 {
