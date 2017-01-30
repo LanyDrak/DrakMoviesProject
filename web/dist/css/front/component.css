@@ -270,10 +270,10 @@
 
 /*About page*/
 
-div.about{
+div.about,
+div.news{
 	width: 50%;
 	margin: 0 auto;
-	/*background-color: #262626;*/
 }
 
 div.about p.presentation{
