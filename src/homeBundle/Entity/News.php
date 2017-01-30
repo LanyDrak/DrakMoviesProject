@@ -54,7 +54,7 @@ class News
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=50)
+     * @ORM\Column(name="news_author", type="string", length=50)
      */
     private $news_author;
 
@@ -64,7 +64,7 @@ class News
      * @ORM\Column(name="news_content", type="text")
      */
     private $news_content;
-    
+
 
     /**
      * Get newsId
@@ -146,6 +146,17 @@ class News
     public function getNewsIntro()
     {
         return $this->news_intro;
+    }
+
+    public function newsWebPath()
+    {
+        $output = "dist/img/uploads/newsImages/news_null.jpg";
+
+        if ($this->news_featuredImage != null){
+            $output = "dist/img/uploads/newsImages/".$this->news_featuredImage.".jpg";
+        }
+
+        return $output;
     }
 
     /**
