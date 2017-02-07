@@ -11,9 +11,8 @@ class NewsController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $newInfos = $em->getRepository("homeBundle:NewInfo")->findAll();
-        $films = $em->getRepository("homeBundle:Film")->findAll();
 
-        return $this->render('frontBundle:Default:news.html.twig', ['newInfos' => $newInfos, 'films' => $films]);
+        return $this->render('frontBundle:Default:news.html.twig', ['newInfos' => $newInfos]);
         
     }
 

@@ -10,24 +10,14 @@
 {% block content %}
 
     <div class="news">
-        {#{{ dump(newInfos) }}
-        {{ dump(films) }}#}
-
-        {% for film in films %}
-            {{ dump(films) }}
-            {#<p style="color: #fff;">{{ film.nom }}</p>#}
-        {% endfor %}
-
-
-        {% for key in newInfos %}
-            {{ dump(newInfos) }}
-            {#<article style="color: #fff;">
-                <img src="{{ asset(new.newsWebPath) }}">
-                <h2 class="newsTitle">{{ new.news_title }}</h2>
-                <span>{{ new.news_author }} <small>{{ new.news_creationTimestamp }}</small></span>
-                <p><strong>{{ new.news_intro }}</strong></p>
-                <p>{{ new.news_content }}</p>
-            </article>#}
+        {% for newInfo in newInfos %}
+            <article style="color: #fff;">
+                {#<img src="{{ asset(newInfo.newsWebPath) }}">#}
+                <h2 class="newsTitle">{{ newInfo.newsTitle }}</h2>
+                <span>{{ newInfo.newsAuthor }} <small>{{ newInfo.newsCreationTimestamp|date("d m Y") }}</small></span>
+                <p><strong>{{ newInfo.newsIntro }}</strong></p>
+                <p>{{ newInfo.newsContent }}</p>
+            </article>
         {% endfor %}
     </div>
 
