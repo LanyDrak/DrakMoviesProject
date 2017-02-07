@@ -1,0 +1,16 @@
+{% extends 'frontBundle:Default:index.html.twig' %}
+
+{% block mainMenu %}
+    <li><a href="{{ path('front_homepage') }}">movies</a></li>
+    <li><a href="{{ path('news_page') }}" id="current" class="MenuItemSelected">news</a></li>
+    <li><a href="{{ path('about_page') }}">about</a></li>
+    <li><a href="{{ path('contact_page') }}">contact</a></li>
+{% endblock %}
+
+{% block content %}
+
+    <div class="news">
+
+    </div>
+
+{% endblock %}

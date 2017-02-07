@@ -12,11 +12,11 @@
     <div class="news">
         {% for newInfo in newInfos %}
             <article style="color: #fff;">
-                {#<img src="{{ asset(newInfo.newsWebPath) }}">#}
+                <img src="{{ asset(newInfo.newsWebPath) }}">
                 <h2 class="newsTitle">{{ newInfo.newsTitle }}</h2>
-                <span>{{ newInfo.newsAuthor }} <small>{{ newInfo.newsCreationTimestamp|date("d m Y") }}</small></span>
-                <p><strong>{{ newInfo.newsIntro }}</strong></p>
-                <p>{{ newInfo.newsContent }}</p>
+                {#<span>{{ newInfo.newsAuthor }} <small>{{ newInfo.newsCreationTimestamp|date("d m Y") }}</small></span>#}
+                <p>{{ newInfo.newsIntro|slice(0, 90) ~ '...' }}{#<a href="#"> lire la suite</a>#}</p>
+                {#<p>{{ newInfo.newsContent }}</p>#}
             </article>
         {% endfor %}
     </div>
