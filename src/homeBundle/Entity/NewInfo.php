@@ -6,14 +6,15 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * News
+ * NewInfo
  *
- * @ORM\Table(name="news")
- * @ORM\Entity(repositoryClass="homeBundle\Repository\NewsRepository")
+ * @ORM\Table(name="new")
+ * @ORM\Entity(repositoryClass="homeBundle\Repository\NewRepository")
  * @ORM\HasLifecycleCallbacks()
  */
-class News
+class NewInfo
 {
+
     /**
      * @var int
      *
@@ -81,7 +82,7 @@ class News
      *
      * @param \DateTime $newsCreationTimestamp
      *
-     * @return News
+     * @return NewInfo
      */
     public function setNewsCreationTimestamp($newsCreationTimestamp)
     {
@@ -105,7 +106,7 @@ class News
      *
      * @param string $newsTitle
      *
-     * @return News
+     * @return NewInfo
      */
     public function setNewsTitle($newsTitle)
     {
@@ -129,7 +130,7 @@ class News
      *
      * @param string $newsIntro
      *
-     * @return News
+     * @return NewInfo
      */
     public function setNewsIntro($newsIntro)
     {
@@ -164,7 +165,7 @@ class News
      *
      * @param string $newsFeaturedImage
      *
-     * @return News
+     * @return NewInfo
      */
     public function setNewsFeaturedImage($newsFeaturedImage)
     {
@@ -188,7 +189,7 @@ class News
      *
      * @param string $newsAuthor
      *
-     * @return News
+     * @return NewInfo
      */
     public function setNewsAuthor($newsAuthor)
     {
@@ -212,7 +213,7 @@ class News
      *
      * @param string $newsContent
      *
-     * @return News
+     * @return NewInfo
      */
     public function setNewsContent($newsContent)
     {

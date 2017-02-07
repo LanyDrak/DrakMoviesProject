@@ -23,6 +23,8 @@ class DefaultController extends Controller
 
         return $this->render('frontBundle:Default:index.html.twig', ['films' => $films]);
     }
+    
+    
 
     /*public function indexByDecadeAction($decade1, $decade2)
     {

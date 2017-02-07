@@ -10,9 +10,11 @@ class NewsController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $news = $em->getRepository("homeBundle:News")->findAll();
+        $newInfos = $em->getRepository("homeBundle:NewInfo")->findAll();
+        $films = $em->getRepository("homeBundle:Film")->findAll();
 
-        return $this->render('frontBundle:Default:news.html.twig', ['news' => $news]);
+        return $this->render('frontBundle:Default:news.html.twig', ['newInfos' => $newInfos, 'films' => $films]);
+        
     }
 
 }

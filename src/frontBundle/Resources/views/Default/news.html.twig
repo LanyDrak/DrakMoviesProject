@@ -10,8 +10,17 @@
 {% block content %}
 
     <div class="news">
-        {% for new in news %}
-            {{ dump(new) }}
+        {#{{ dump(newInfos) }}
+        {{ dump(films) }}#}
+
+        {% for film in films %}
+            {{ dump(films) }}
+            {#<p style="color: #fff;">{{ film.nom }}</p>#}
+        {% endfor %}
+
+
+        {% for key in newInfos %}
+            {{ dump(newInfos) }}
             {#<article style="color: #fff;">
                 <img src="{{ asset(new.newsWebPath) }}">
                 <h2 class="newsTitle">{{ new.news_title }}</h2>
