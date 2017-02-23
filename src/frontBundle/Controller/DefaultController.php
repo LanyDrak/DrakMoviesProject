@@ -17,9 +17,15 @@ class DefaultController extends Controller
     public function indexByGenreAction($genre)
     {
         $em = $this->getDoctrine()->getManager();
+        $films = $em->getRepository("homeBundle:Film")->allFilmsbyGenreAndDatePublished($genre);
+
+        // query plus simple avec findby mais sans published = true
+        
+        /* $em = $this->getDoctrine()->getManager();
         $films = $em->getRepository("homeBundle:Film")->findBy(
             array('genre' => $genre),
-            array('creationTimestamp' => 'DESC'));
+            array('published' => 1),
+            array('creationTimestamp' => 'DESC')); */
 
         return $this->render('frontBundle:Default:index.html.twig', ['films' => $films]);
     }

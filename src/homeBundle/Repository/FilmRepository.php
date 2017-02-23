@@ -82,6 +82,14 @@ class FilmRepository extends EntityRepository
         return $query->getResult();
     }
 
+    public function allFilmsbyGenreAndDatePublished($genre)
+    {
+        $em = $this->getEntityManager();
+        $query = $em->createQuery("SELECT f FROM homeBundle:Film f WHERE f.published = 1 AND f.genre = $genre ORDER BY f.creationTimestamp DESC");
+
+        return $query->getResult();
+    }
+
 
     /****************************/
     /***** COUNTERS REVIEWS *****/
