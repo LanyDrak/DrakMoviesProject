@@ -13,6 +13,7 @@
 
             <!-- Stylesheet -->
             <link href="{{ asset('dist/css/gallery-materialize.min.css') }}" rel="stylesheet">
+            <link href="{{ asset('dist/css/materialize-custom.css') }}" rel="stylesheet">
 
             <!-- Material Icons -->
             <link href="{{ asset('https://fonts.googleapis.com/icon?family=Material+Icons') }}" rel="stylesheet">
@@ -20,10 +21,7 @@
         {% endblock %}
 
     </head>
-    {% block bodyclass %}
-        <body class="blog">
-
-    {% endblock %}
+    {% block bodyclass %}{% endblock %}
 
         {% block body %}{% endblock %}
 

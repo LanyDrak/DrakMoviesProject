@@ -1,0 +1,17 @@
+.invisible{
+	display: none;
+}
+
+.nav-header{
+	font-size: 92px;
+	color: #202020;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+	letter-spacing: .5em;
+	font-weight: 300;
+	text-shadow:
+		-1px -1px 1px #111,
+		2px 2px 1px #363636;
+	transition: 800ms;
+}

@@ -3,12 +3,12 @@
 {% block title %}NEXUS-6{% endblock %}
 
 {% block body %}
-    <nav class="nav-extended green">
-        <div class="nav-background">
-            <div class="pattern active" style="background-image: url('http://placehold.it/1400x300');"></div>
+    <nav class="nav-extended grey black">
+        <div class="nav-background black">
+            {#<div class="pattern active" style="background-image: url('http://placehold.it/1400x300');"></div>#}
         </div>
         <div class="nav-wrapper container">
-            <a href="#" class="brand-logo"><i class="material-icons">camera</i>Gallery</a>
+            {#<a href="#" class="brand-logo"><i class="material-icons">camera</i>Gallery</a>#}
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
@@ -31,17 +31,17 @@
         </div>
 
         <!-- Fixed Masonry Filters -->
-        <div class="categories-wrapper green darken-1">
+        <div class="categories-wrapper grey darken-4">
             <div class="categories-container">
                 <ul class="categories container">
-                    <li class="active"><a href="{{ path('front_homepage') }}">All</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 1} ) }}">horror</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 2} ) }}">sci-fi</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 6} ) }}">drama</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 9} ) }}">anticipation</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 5} ) }}">thriller</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 18} ) }}">martial arts</a></li>
-                    <li><a href="{{ path('frontByGenre_homepage', {genre : 11} ) }}">romance</a></li>
+                    <li class="active"><a href="#all">All</a></li>
+                    <li><a href="#Horreur">horror</a></li>
+                    <li><a href="#Science-Fiction">sci-fi</a></li>
+                    <li><a href="#Drame">drama</a></li>
+                    <li><a href="#Anticipation">anticipation</a></li>
+                    <li><a href="#Thriller">thriller</a></li>
+                    <li><a href="#">martial arts</a></li>
+                    <li><a href="#Romance">romance</a></li>
                 </ul>
             </div>
         </div>
@@ -55,5 +55,57 @@
         <li><a href="horizontal.html"><i class="material-icons">swap_horiz</i>Horizontal Style</a></li>
         <li><a href="no-image.html"><i class="material-icons">texture</i>No Image Expand</a></li>
     </ul>
+
+    <div id="portfolio" class="section black">
+        <div class="container">
+            <div class="gallery row">
+            {% for film in films %}
+                <div class="col l3 m6 s12 gallery-item gallery-expand gallery-filter {{ film.genre.nom }}">
+                    <div class="gallery-curve-wrapper">
+                        <a class="gallery-cover gray">
+                            <img src="{{ asset(film.webPath2) }}" alt="{{ film.nom }}" title="{{ film.nom }}">
+                        </a>
+                        {#<div class="gallery-header">
+                            <span>Workspace</span>
+                        </div>#}
+                        <div class="gallery-body">
+                            <div class="title-wrapper">
+                                <h3>{{ film.nom }}</h3>
+                                <p class="price">Titre Fr. : {{ film.titreFrance }}</p>
+                            </div>
+                            <p class="price">Réalisateur : {{ film.director }}</p>
+                            <p class="price">Année : {{ film.dateSortie|date("Y") }}</p>
+                            <p class="price">Pays : {{ film.pays }}</p>
+                            <img src="{{ asset(film.webPath("md")) }}" alt="{{ film.nom }}-poster" title="Affiche de {{ film.nom }}">
+                            <p class="description">{{ film.synopsis }}</p>
+                            <ul class="collapsible" data-collapsible="expandable">
+                                <li>
+                                    <div class="collapsible-header" style="text-align: center">Critique de N6NIKITA</div>
+                                    <div class="collapsible-body"><blockquote>{{ film.reviewN6nikita|raw|default("pas de critique pour le moment") }}</blockquote></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header" style="text-align: center">Critique de N6MARZONI</div>
+                                    <div class="collapsible-body"><blockquote>{{ film.reviewN6marzoni|raw|default("pas de critique pour le moment") }}</blockquote></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header" style="text-align: center">Critique de N6TYRELL</div>
+                                    <div class="collapsible-body"><blockquote>{{ film.reviewN6tyrell|raw|default("pas de critique pour le moment") }}</blockquote></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header" style="text-align: center">Critique de N6PALM</div>
+                                    <div class="collapsible-body"><blockquote>{{ film.reviewN6palm|raw|default("pas de critique pour le moment") }}</blockquote></div>
+                                </li>
+                            </ul>
+                            {#<iframe width="640" height="360" src="https://www.youtube.com/embed/{{ film.trailer }}" frameborder="0" allowfullscreen></iframe>#}
+                        </div>
+                        <div class="gallery-action">
+                            <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div> <!-- gallery -->
+        </div> <!-- container -->
+    </div> <!-- portfolio -->
 
 {% endblock %}
