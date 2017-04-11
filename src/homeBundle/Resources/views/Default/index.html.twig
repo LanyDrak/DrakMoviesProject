@@ -228,12 +228,12 @@
                             <li class="list-group-item">
                                 <small>{{ 'Note N6 :'|trans }} </small>
                                 <small class="pull-right">
-                                    {% for i in 1..last5Film.noteSpectateur if last5Film.noteSpectateur>0 %}
+                                    {#{% for i in 1..last5Film.noteSpectateur if last5Film.noteSpectateur>0 %}
                                         <i class="fa fa-star"></i>
                                     {% endfor %}
                                     {% for i in (last5Film.noteSpectateur+1)..5  if last5Film.noteSpectateur<5 %}
                                         <i class="fa fa-star-o"></i>
-                                    {% endfor %}
+                                    {% endfor %}#}
                                 </small>
                             </li>
                         </ul>

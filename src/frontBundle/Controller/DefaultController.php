@@ -11,7 +11,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $films = $em->getRepository("homeBundle:Film")->allFilmsbyDatePublished();
 
-        return $this->render('frontBundle:Default:index.html.twig', ['films' => $films]);
+        return $this->render('frontBundle:MatVersion:indexMat.html.twig', ['films' => $films]);
     }
 
     public function indexByGenreAction($genre)
@@ -27,7 +27,7 @@ class DefaultController extends Controller
             array('published' => 1),
             array('creationTimestamp' => 'DESC')); */
 
-        return $this->render('frontBundle:Default:index.html.twig', ['films' => $films]);
+        return $this->render('frontBundle:MatVersion:indexMat.html.twig', ['films' => $films]);
     }
     
     

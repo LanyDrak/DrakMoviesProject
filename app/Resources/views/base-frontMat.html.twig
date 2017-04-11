@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <title>{% block title %}{% endblock %}</title>
+
+        {% block stylesheets %}
+
+            <!-- Lato Font -->
+            <link href="{{ asset('http://fonts.googleapis.com/css?family=Lato:300,400,700') }}" rel="stylesheet" type='text/css'>
+
+            <!-- Stylesheet -->
+            <link href="{{ asset('dist/css/gallery-materialize.min.css') }}" rel="stylesheet">
+
+            <!-- Material Icons -->
+            <link href="{{ asset('https://fonts.googleapis.com/icon?family=Material+Icons') }}" rel="stylesheet">
+
+        {% endblock %}
+
+    </head>
+    {% block bodyclass %}
+        <body class="blog">
+
+    {% endblock %}
+
+        {% block body %}{% endblock %}
+
+
+        {% block javascripts %}
+
+            <!-- Core Javascript -->
+            <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js') }}"></script>
+            <script src="{{ asset('dist/js/imagesloaded.pkgd.min.js') }}"></script>
+            <script src="{{ asset('dist/js/masonry.pkgd.min.js') }}"></script>
+            <script src="{{ asset('dist/js/materialize.js') }}"></script>
+            <script src="{{ asset('dist/js/color-thief.min.js') }}"></script>
+            <script src="{{ asset('dist/js/galleryExpand.js') }}"></script>
+            <script src="{{ asset('dist/js/init.js') }}"></script>
+
+        {% endblock %}
+    </body>
+</html>
