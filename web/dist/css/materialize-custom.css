@@ -15,3 +15,40 @@
 		2px 2px 1px #363636;
 	transition: 800ms;
 }
+
+.collapsible-body{
+    background-color: #FAFAFA;
+}
+
+nav ul a{
+    color: #777;
+    text-transform: capitalize;
+    transition: 300ms;
+}
+
+nav ul a:hover{
+    color: #F9FFC1;
+    transition: 300ms;
+}
+
+nav ul:not(.indicators) li.active::before{
+    background-color: #F9FFC1;
+}
+
+.movie-poster{
+    min-width: 230px;
+    height: auto;
+}
+
+.movie-resume{
+    padding:15px;
+}
+
+.movie-data{
+    max-width: 30%;
+    margin-left: 15px;
+}
+
+.synopsis{
+    margin-left: 15px;
+}
