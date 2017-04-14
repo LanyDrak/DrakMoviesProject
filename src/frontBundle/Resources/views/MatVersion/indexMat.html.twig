@@ -5,7 +5,7 @@
 {% block body %}
     <nav class="nav-extended grey darken-4">
         <div class="nav-background">
-            {#<div class="pattern active" style="background-image: url('http://placehold.it/1400x300');"></div>#}
+            <div class="pattern active" style="background-image: url('{{ asset('dist/img/backgrounds/bg-test-1.jpg') }}');"></div>
         </div>
         <div class="nav-wrapper container">
             {#<a href="#" class="brand-logo"><i class="material-icons">camera</i>Gallery</a>#}
@@ -100,7 +100,7 @@
                                 <ul class="collapsible" data-collapsible="accordion">
                                     <li>
                                         <div class="collapsible-header center-align">Critique de N6NIKTA</div>
-                                        <div class="collapsible-body"><blockquote>{{ film.reviewN6nikita|raw|default("pas de critique pour le moment") }}</blockquote></div>
+                                        <div class="collapsible-body"><p class="description">{{ film.reviewN6nikita|raw|default("pas de critique pour le moment") }}</p></div>
                                     </li>
                                     <li>
                                         <div class="collapsible-header center-align">Critique de N6MARZONI</div>

@@ -52,3 +52,11 @@ nav ul:not(.indicators) li.active::before{
 .synopsis{
     margin-left: 15px;
 }
+
+@media only screen and (min-width: 764px){
+
+    nav.nav-extended .nav-wrapper{
+        min-height: 500px;
+    }
+
+}
