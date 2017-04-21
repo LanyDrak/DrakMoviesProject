@@ -40,8 +40,11 @@
                     <li><a href="#Drame">drama</a></li>
                     <li><a href="#Anticipation">anticipation</a></li>
                     <li><a href="#Thriller">thriller</a></li>
-                    <li><a href="#">martial arts</a></li>
-                    <li><a href="#Romance">romance</a></li>
+                    <li><a href="#Arts-Martiaux">martial arts</a></li>
+                    <li><a href="#Comédie">comédie</a></li>
+                    <li><a href="#Fantastique">fantastique</a></li>
+                    <li><a href="#Guerre">guerre</a></li>
+                    <li><a href="#Biopic">biopic</a></li>
                 </ul>
             </div>
         </div>
@@ -58,7 +61,7 @@
 
     <div id="portfolio" class="section grey darken-4">
         <div class="container">
-            <div class="gallery row">
+            <div class="gallery row moviesList">
             {% for film in films %}
                 <div class="col l2 m3 s6 gallery-item gallery-expand gallery-filter {{ film.genre.nom }}">
                     <div class="gallery-curve-wrapper">
@@ -68,17 +71,23 @@
                         <div class="gallery-body">
                             <div class="title-wrapper">
                                 <h3>{{ film.nom }}</h3>
-                                <i class="material-icons right yellow-text">grade</i>
-                                <i class="material-icons right yellow-text">grade</i>
-                                <i class="material-icons right yellow-text">grade</i>
-                                <i class="material-icons right yellow-text">grade</i>
-                                <i class="material-icons right yellow-text">grade</i>
+                                {{ dump(film.noteSpectateurRound) }}
+                                {% for i in 1..film.noteSpectateur if film.noteSpectateur>0 %}
+                                    <i class="n6rating material-icons right black-text">grade</i>
+                                {% endfor %}
+                                {#{% for i in (film.noteSpectateur+1)..5  if film.noteSpectateur<5 %}
+                                    <i class="n6rating material-icons right white-text" style="border: 1px solid #000;">grade</i>
+                                {% endfor %}#}
                             </div>
                             <div class="col l3 m3 s12">
                                 <img src="{{ asset(film.webPath("md")) }}">
                             </div>
                             <div class="col l4 m4 s12">
                                 <table class="bordered">
+                                    <tr>
+                                        <td class="grey-text">Titre FR</td>
+                                        <td>{{ film.titreFrance }}</td>
+                                    </tr>
                                     <tr>
                                         <td class="grey-text">Réalisateur</td>
                                         <td>{{ film.director }}</td>
@@ -104,15 +113,15 @@
                                     </li>
                                     <li>
                                         <div class="collapsible-header center-align">Critique de N6MARZONI</div>
-                                        <div class="collapsible-body"><blockquote>{{ film.reviewN6marzoni|raw|default("pas de critique pour le moment") }}</blockquote></div>
+                                        <div class="collapsible-body"><p class="description">{{ film.reviewN6marzoni|raw|default("pas de critique pour le moment") }}</p></div>
                                     </li>
                                     <li>
                                         <div class="collapsible-header center-align">Critique de N6TYRELL</div>
-                                        <div class="collapsible-body"><blockquote>{{ film.reviewN6tyrell|raw|default("pas de critique pour le moment") }}</blockquote></div>
+                                        <div class="collapsible-body"><p class="description">{{ film.reviewN6tyrell|raw|default("pas de critique pour le moment") }}</p></div>
                                     </li>
                                     <li>
                                         <div class="collapsible-header center-align">Critique de N6PALM</div>
-                                        <div class="collapsible-body"><blockquote>{{ film.reviewN6palm|raw|default("pas de critique pour le moment") }}</blockquote></div>
+                                        <div class="collapsible-body"><p class="description">{{ film.reviewN6palm|raw|default("pas de critique pour le moment") }}</p></div>
                                     </li>
                                 </ul>
                             </div>
