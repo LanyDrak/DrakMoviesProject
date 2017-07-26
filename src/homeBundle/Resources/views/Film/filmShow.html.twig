@@ -1,7 +1,6 @@
 {% extends 'homeBundle::layout.html.twig' %}
 
 {%  block content %}
-    {{ dump(film.noteSpectateur) }}
     <div style="display: none;">{{ film.noteSpectateur }}</div>
     <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="box box-solid">
@@ -35,7 +34,6 @@
                     <li><a href="#">Budget <span class="pull-right badge bg-gray">{{ film.budget|default('NC')|number_format(0, '.', ' ') }} {% if film.budget != null %}${% endif %}</span></a></li>
                     <li><a href="#">Durée <span class="pull-right badge bg-gray">{{ film.duree }} min</span></a></li>
                     <li><a href="#">Note NEXUS-6
-                            {{ dump(film.noteSpectateurRound) }}
                             <span class="pull-right">
                             {% for i in 1..film.noteSpectateurRound if film.noteSpectateurRound>0 %}
                                 <i class="fa fa-star" style="color: #000"></i>

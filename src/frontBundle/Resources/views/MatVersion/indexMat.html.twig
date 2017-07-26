@@ -69,61 +69,85 @@
                             <img src="{{ asset(film.webPath2) }}" style="max-width: 100%;height: auto;" alt="{{ film.nom }}" title="{{ film.nom }}">
                         </a>
                         <div class="gallery-body">
-                            <div class="title-wrapper">
-                                <h3>{{ film.nom }}</h3>
-                                {{ dump(film.noteSpectateurRound) }}
-                                {% for i in 1..film.noteSpectateur if film.noteSpectateur>0 %}
-                                    <i class="n6rating material-icons right black-text">grade</i>
-                                {% endfor %}
-                                {#{% for i in (film.noteSpectateur+1)..5  if film.noteSpectateur<5 %}
-                                    <i class="n6rating material-icons right white-text" style="border: 1px solid #000;">grade</i>
-                                {% endfor %}#}
+                            <div class="row">
+                                <div class="title-wrapper">
+                                    <h3>{{ film.nom }}</h3>
+                                    <div class="rating">
+                                    {% for i in 1..film.noteSpectateur if film.noteSpectateur>0 %}
+                                        <i class="n6rating material-icons right black-text">grade</i>
+                                    {% endfor %}</div>
+                                    {#{% for i in (film.noteSpectateur+1)..5  if film.noteSpectateur<5 %}
+                                        <i class="n6rating material-icons right white-text" style="border: 1px solid #000;">grade</i>
+                                    {% endfor %}#}
+                                </div>
                             </div>
-                            <div class="col l3 m3 s12">
-                                <img src="{{ asset(film.webPath("md")) }}" style="max-width: 100%">
+                            <div class="row infos-film">
+                                <div class="col l3 m3 s12">
+                                    <img src="{{ asset(film.webPath("md")) }}" style="max-width: 100%">
+                                </div>
+                                <div class="col l4 m4 s12">
+                                    <table class="bordered">
+                                        <tr>
+                                            <td class="title-film">Titre FR</td>
+                                            <td>{{ film.titreFrance }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="director-film">Réalisateur</td>
+                                            <td>{{ film.director }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="year-film">Année</td>
+                                            <td>{{ film.dateSortie|date("Y") }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="country-film">Pays</td>
+                                            <td>{{ film.pays }}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="col l8 m8 s12">
+                                    <p class="description">{{ film.synopsis }}</p>
+                                </div>
                             </div>
-                            <div class="col l4 m4 s12">
-                                <table class="bordered">
-                                    <tr>
-                                        <td class="grey-text">Titre FR</td>
-                                        <td>{{ film.titreFrance }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-text">Réalisateur</td>
-                                        <td>{{ film.director }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-text">Année</td>
-                                        <td>{{ film.dateSortie|date("Y") }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="grey-text">Pays</td>
-                                        <td>{{ film.pays }}</td>
-                                    </tr>
-                                </table>
+                            <div class="row reviews-film">
+                                <div class="nikita-review col s12">
+                                    <ul class="collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="collapsible-header center-align">N6NIKTA</div>
+                                            <div class="collapsible-body">
+                                                <img class="reviewer-avatar" src="{{ asset('dist/img/nikita.jpg') }}" />
+                                                <p class="description">{{ film.reviewN6nikita|raw|default("pas de critique pour le moment") }}</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header center-align">N6MARZONI</div>
+                                            <div class="collapsible-body">
+                                                <img class="reviewer-avatar" src="{{ asset('dist/img/marzoni.jpg') }}" />
+                                                <p class="description">{{ film.reviewN6marzoni|raw|default("pas de critique pour le moment") }}</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header center-align">N6TYRELL</div>
+                                            <div class="collapsible-body">
+                                                <img class="reviewer-avatar" src="{{ asset('dist/img/tyrell.jpg') }}" />
+                                                <p class="description">{{ film.reviewN6tyrell|raw|default("pas de critique pour le moment") }}</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header center-align">N6PALM</div>
+                                            <div class="collapsible-body">
+                                                <img class="reviewer-avatar" src="{{ asset('dist/img/palm.jpg') }}" />
+                                                <p class="description">{{ film.reviewN6palm|raw|default("pas de critique pour le moment") }}</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col l8 m8 s12">
-                                <p class="description">{{ film.synopsis }}</p>
-                            </div>
-                            <div class="col s12">
-                                <ul class="collapsible" data-collapsible="accordion">
-                                    <li>
-                                        <div class="collapsible-header center-align">Critique de N6NIKTA</div>
-                                        <div class="collapsible-body"><p class="description">{{ film.reviewN6nikita|raw|default("pas de critique pour le moment") }}</p></div>
-                                    </li>
-                                    <li>
-                                        <div class="collapsible-header center-align">Critique de N6MARZONI</div>
-                                        <div class="collapsible-body"><p class="description">{{ film.reviewN6marzoni|raw|default("pas de critique pour le moment") }}</p></div>
-                                    </li>
-                                    <li>
-                                        <div class="collapsible-header center-align">Critique de N6TYRELL</div>
-                                        <div class="collapsible-body"><p class="description">{{ film.reviewN6tyrell|raw|default("pas de critique pour le moment") }}</p></div>
-                                    </li>
-                                    <li>
-                                        <div class="collapsible-header center-align">Critique de N6PALM</div>
-                                        <div class="collapsible-body"><p class="description">{{ film.reviewN6palm|raw|default("pas de critique pour le moment") }}</p></div>
-                                    </li>
-                                </ul>
+                            <div class="trailer-wrapper col s8 offset-s2">
+                                <span>Bande-Annonce Officielle</span>
+                                <div class="youtube" data-embed="{{ film.trailer }}">
+                                    <div class="play-button"></div>
+                                </div>
                             </div>
                         </div>
                     </div> {#gallery-wrapper#}

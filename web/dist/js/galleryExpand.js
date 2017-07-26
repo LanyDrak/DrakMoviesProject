@@ -762,8 +762,8 @@
 
     var movieNumber = $('.moviesList>.gallery-item').length;
 
-    for (var i=0; i<=47-movieNumber; i++){
-        $('.moviesList').append('<div class="col l2 m3 s6 gallery-item gallery-expand gallery-filter"><div class="gallery-curve-wrapper"><a class="gallery-cover gray" style="width:203px;height:203px;background-color:#181818;"></a></div></div>');
-    }
+    // for (var i=0; i<=47-movieNumber; i++){
+    //     $('.moviesList').append('<div class="col l2 m3 s6 gallery-item gallery-expand gallery-filter"><div class="gallery-curve-wrapper"><a class="gallery-cover gray" style="width:203px;height:203px;background-color:#181818;"></a></div></div>');
+    // }
 
 }( jQuery ));

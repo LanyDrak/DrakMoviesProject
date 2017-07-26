@@ -55,14 +55,147 @@ nav ul:not(.indicators) li.active::before{
 
 i.n6rating{
     margin-left: 5px;
-    font-size: 50px;
+    font-size: 35px;
+    color: #F9FFC1!important;
 }
 
-/*
-@media only screen and (min-width: 764px){
+a.gallery-cover{
+    color: #F9FFC1;
+    opacity: .4;
+    transition: 300ms;
+}
 
-    nav.nav-extended .nav-wrapper{
-        min-height: 500px;
-    }
+a.gallery-cover:hover{
+    border: 1px solid #F9FFC1;
+    opacity: 1;
+    transition: 300ms;
+}
 
-}*/
+.gallery-curve-wrapper a.static{
+    opacity: 1;
+    border: 2px solid #F9FFC1;
+}
+
+a.static:hover{
+}
+
+img.reviewer-avatar{
+    width: 250px;
+    height: 250px;
+}
+
+#placeholder-navbar{
+    background-color: #000!important;
+}
+
+#placeholder-overlay{
+    background-color: #222!important;
+}
+
+.gallery .gallery-body{
+    background-color: #000;
+}
+
+.gallery .gallery-body h3,
+.gallery .gallery-body p,
+.gallery .gallery-body td{
+    color: #F9FFC1;
+}
+
+.gallery .gallery-body td.title-film,
+.gallery .gallery-body td.director-film,
+.gallery .gallery-body td.year-film,
+.gallery .gallery-body td.country-film{
+    color: #959973;
+}
+
+.infos-film{
+    padding: 10px;
+}
+
+.reviews-film ul{
+    border: none;
+}
+
+.reviews-film .collapsible-header{
+    background-color: #111;
+    border:none;
+    border-bottom: 1px solid #F9FFC1;
+    color: #F9FFC1;
+    opacity: .4;
+}
+
+.reviews-film .collapsible-body{
+    background-color: #000;
+    border-bottom: none;
+}
+
+/************ youtube wrapper start *************/
+
+.trailer-wrapper{
+    margin-top: 30px;
+}
+
+.youtube {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.youtube img {
+    width: 100%;
+    top: -16.84%;
+    left: 0;
+    opacity: 0.7;
+}
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/************ youtube wrapper end *************/
+
+.gallery-body td,
+.gallery-body th{
+    padding: 9px 5px;
+}
+
+.gallery .gallery-body .description{
+    font-size: 18px;
+    margin: 18px 35px;
+}
