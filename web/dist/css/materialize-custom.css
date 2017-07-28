@@ -37,6 +37,10 @@ nav ul:not(.indicators) li.active::before{
 
 /*#portfolio .container{
     min-height: 60vh;
+}
+
+.gallery-curve-wrapper{
+    z-index:999;
 }*/
 
 .movie-poster{

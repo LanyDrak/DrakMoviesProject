@@ -11,6 +11,6 @@ class AboutController extends Controller
         $em = $this->getDoctrine()->getManager();
         $films = $em->getRepository("homeBundle:Film")->allFilmsbyDate();
 
-        return $this->render('frontBundle:Default:about.html.twig', ['films' => $films]);
+        return $this->render('frontBundle:MatVersion:aboutMat.html.twig', ['films' => $films]);
     }
 }
