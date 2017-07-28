@@ -171,5 +171,25 @@
             </div>
         </div>
     </div>
+    <div class="col-xs-12 col-sm-12 col-lg-3">
+        <div class="box box-solid">
+            <div class="box-header bg-blue">
+                <h3 class="box-title">l'avis de N6HITCHMAN</h3>
+                {% if film.noteN6Hitchman is not null %}
+                    <div class="box-tools pull-right">
+                        {% for i in 1..film.noteN6Hitchman if film.noteN6Hitchman>0 %}
+                            <i class="fa fa-star"></i>
+                        {% endfor %}
+                        {% for i in (film.noteN6Hitchman+1)..5  if film.noteN6Hitchman<5 %}
+                            <i class="fa fa-star-o"></i>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            <div class="box-body">
+                <p>{{ film.reviewN6hitchman|raw|default("pas de critique pour le moment") }}</p>
+            </div>
+        </div>
+    </div>
 <div class="clearfix"></div>
 {% endblock %}

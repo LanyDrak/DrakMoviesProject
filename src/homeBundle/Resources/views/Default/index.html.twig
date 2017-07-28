@@ -84,69 +84,6 @@
     </ol>
 </section>
 
-
-
-{#<section class="content">
-    <div class="row">
-        <div class="col-xs-6 col-lg-3">
-            <div class="small-box bg-purple">
-                <div class="inner">
-                    <h3>{{ nbFilms.nbFilms }}</h3>
-                    <p>{{ 'Films dans la base'|trans }}</p>
-                </div>
-                <div class="icon">
-                    <i class="fa fa-film"></i>
-                </div>
-                <a href="{{ path('film_homepage') }}" class="small-box-footer">
-                    {{ 'Voir la liste'|trans }} <i class="fa fa-arrow-circle-right"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-6 col-lg-3">
-            <div class="small-box bg-aqua">
-                <div class="inner">
-                    <h3>{{ nbActeurs.nbActeurs }}</h3>
-                    <p>{{ 'Acteur dans la base'|trans }}</p>
-                </div>
-                <div class="icon">
-                    <i class="fa fa-users"></i>
-                </div>
-                <a href="{{ path('acteur_homepage') }}" class="small-box-footer">
-                    {{ 'Voir la liste'|trans }} <i class="fa fa-arrow-circle-right"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-6 col-lg-3">
-            <div class="small-box bg-teal">
-                <div class="inner">
-                    <h3>{{ counterReviewsLeftTyrell }}</h3>
-                    <p>{{ 'Critiques restantes pour Tyrell'|trans }}</p>
-                </div>
-                <div class="icon">
-                    <i class="fa fa-ticket"></i>
-                </div>
-                <a href="#" class="small-box-footer">
-                    {{ 'Voir la liste'|trans }} <i class="fa fa-arrow-circle-right"></i>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-6 col-lg-3">
-            <div class="small-box bg-orange">
-                <div class="inner">
-                    <h3>{{ countUsers }}</h3>
-                    <p>{{ 'Contributeurs'|trans }}</p>
-                </div>
-                <div class="icon">
-                    <i class="fa fa-user"></i>
-                </div>
-                <a href="#" class="small-box-footer">
-                    {{ 'Voir la liste'|trans }} <i class="fa fa-arrow-circle-right"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>#}
-
 <section class="content">
     <div class="reviewCounters row">
         <div class="col-xs-3"
@@ -206,6 +143,22 @@
             </div>
         </div>
     </div>
+    <div class="reviewCounters row">
+        <div class="col-xs-3"
+                {% if app.user %}
+            {% if app.user.login != ("hitchman") %}style="opacity: .3;"{% else %}style="order: 1;"{% endif %}
+                {% endif %}>
+            <div class="info-box bg-{% if app.user %}{% if app.user.login == ("hitchman") %}navy-active{% else %}orange{% endif %}{% endif %}">
+                <span class="info-box-icon"><i class="ion-ios-compose-outline"></i></span>
+                <div class="info-box-content">
+                    <span class="info-box-text">N6HITCHMAN</span>
+                    <span class="info-box-number">{{ counterReviewsLeftHitchman }}<small> critiques restantes</small></span>
+                    {% set percent = (nbFilms.nbFilms - counterReviewsLeftHitchman) / nbFilms.nbFilms * 100 %}
+                    <span class="progress-description">{{ percent|round }} % de films critiqués</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="content-header">
@@ -228,12 +181,12 @@
                             <li class="list-group-item">
                                 <small>{{ 'Note N6 :'|trans }} </small>
                                 <small class="pull-right">
-                                    {#{% for i in 1..last5Film.noteSpectateur if last5Film.noteSpectateur>0 %}
+                                    {% for i in 1..last5Film.noteSpectateur if last5Film.noteSpectateur>0 %}
                                         <i class="fa fa-star"></i>
                                     {% endfor %}
                                     {% for i in (last5Film.noteSpectateur+1)..5  if last5Film.noteSpectateur<5 %}
                                         <i class="fa fa-star-o"></i>
-                                    {% endfor %}#}
+                                    {% endfor %}
                                 </small>
                             </li>
                         </ul>

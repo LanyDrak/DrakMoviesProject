@@ -35,6 +35,10 @@ nav ul:not(.indicators) li.active::before{
     background-color: #F9FFC1;
 }
 
+/*#portfolio .container{
+    min-height: 60vh;
+}*/
+
 .movie-poster{
     min-width: 230px;
     height: auto;
@@ -96,6 +100,7 @@ img.reviewer-avatar{
     background-color: #000;
 }
 
+.gallery .gallery-body h2,
 .gallery .gallery-body h3,
 .gallery .gallery-body p,
 .gallery .gallery-body td{
@@ -107,6 +112,11 @@ img.reviewer-avatar{
 .gallery .gallery-body td.year-film,
 .gallery .gallery-body td.country-film{
     color: #959973;
+}
+
+.gallery .gallery-body h3{
+    font-size: 30px;
+    text-align: center;
 }
 
 .infos-film{
@@ -198,4 +208,26 @@ img.reviewer-avatar{
 .gallery .gallery-body .description{
     font-size: 18px;
     margin: 18px 35px;
+}
+
+@media only screen and (max-device-width: 667px){
+
+    .gallery .gallery-body .description{
+        font-size: 16px;
+        margin: 18px 0;
+    }
+
+    .reviews-film .collapsible-body{
+        flex-direction: column;
+    }
+
+    #portfolio .container{
+        min-height: inherit;
+    }
+
+    img.reviewer-avatar{
+        width: 140px;
+        height: 140px;
+    }
+
 }

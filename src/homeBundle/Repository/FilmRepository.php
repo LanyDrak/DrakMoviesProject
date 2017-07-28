@@ -131,6 +131,15 @@ class FilmRepository extends EntityRepository
         return $query->getSingleScalarResult();
     }
 
+    public function countReviewsLeftHitchman()
+    {
+        $em = $this->getEntityManager();
+
+        $query = $em->createQuery('SELECT COUNT(f) FROM homeBundle:Film f WHERE f.reviewN6hitchman IS NULL');
+
+        return $query->getSingleScalarResult();
+    }
+
     /*public function allFilmsByDecade1980()
     {
         $em = $this->getEntityManager();

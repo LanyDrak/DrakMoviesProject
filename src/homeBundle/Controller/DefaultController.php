@@ -24,6 +24,7 @@ class DefaultController extends Controller
         $counterReviewsLeftNikita = $em->getRepository("homeBundle:Film")     ->countReviewsLeftNikita();
         $counterReviewsLeftMarzoni = $em->getRepository("homeBundle:Film")     ->countReviewsLeftMarzoni();
         $counterReviewsLeftPalm = $em->getRepository("homeBundle:Film")     ->countReviewsLeftPalm();
+        $counterReviewsLeftHitchman = $em->getRepository("homeBundle:Film")     ->countReviewsLeftHitchman();
 
         return $this->render('homeBundle:Default:index.html.twig',
            [
@@ -40,7 +41,8 @@ class DefaultController extends Controller
                'counterReviewsLeftTyrell' => $counterReviewsLeftTyrell,
                'counterReviewsLeftNikita' => $counterReviewsLeftNikita,
                'counterReviewsLeftMarzoni' => $counterReviewsLeftMarzoni,
-               'counterReviewsLeftPalm' => $counterReviewsLeftPalm
+               'counterReviewsLeftPalm' => $counterReviewsLeftPalm,
+               'counterReviewsLeftHitchman' => $counterReviewsLeftHitchman
            ] );
     }
 }

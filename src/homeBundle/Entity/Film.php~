@@ -86,6 +86,13 @@ class Film
     /**
      * @var string
      *
+     * @ORM\Column(name="reviewN6hitchman", type="text", nullable=true)
+     */
+    private $reviewN6hitchman;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="nom", type="string", length=50)
      */
     private $nom;
@@ -135,7 +142,7 @@ class Film
     /**
      * @var string
      *
-     * @ORM\Column(name="budget", type="bigint")
+     * @ORM\Column(name="budget", type="bigint", nullable=true)
      */
     private $budget;
 
@@ -203,6 +210,13 @@ class Film
      * @ORM\Column(name="noteN6Nikita", type="integer", nullable=true)
      */
     private $noteN6Nikita;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="noteN6Hitchman", type="integer", nullable=true)
+     */
+    private $noteN6Hitchman;
 
     /**
      * @var int
@@ -1203,5 +1217,29 @@ class Film
     public function getPublished()
     {
         return $this->published;
+    }
+
+    /**
+     * Set titreFrance
+     *
+     * @param string $titreFrance
+     *
+     * @return Film
+     */
+    public function setTitreFrance($titreFrance)
+    {
+        $this->titreFrance = $titreFrance;
+
+        return $this;
+    }
+
+    /**
+     * Get titreFrance
+     *
+     * @return string
+     */
+    public function getTitreFrance()
+    {
+        return $this->titreFrance;
     }
 }

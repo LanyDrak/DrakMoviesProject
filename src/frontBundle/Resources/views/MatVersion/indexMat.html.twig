@@ -60,7 +60,7 @@
     </ul>
 
     <div id="portfolio" class="section grey darken-4">
-        <div class="container">
+        <div class="container ">
             <div class="gallery row moviesList">
             {% for film in films %}
                 <div class="col l2 m3 s6 gallery-item gallery-expand gallery-filter {{ film.genre.nom }}">
@@ -71,7 +71,7 @@
                         <div class="gallery-body">
                             <div class="row">
                                 <div class="title-wrapper">
-                                    <h3>{{ film.nom }}</h3>
+                                    <h2>{{ film.nom }}</h2>
                                     <div class="rating">
                                     {% for i in 1..film.noteSpectateur if film.noteSpectateur>0 %}
                                         <i class="n6rating material-icons right black-text">grade</i>
@@ -110,6 +110,7 @@
                                 </div>
                             </div>
                             <div class="row reviews-film">
+                                <h3>Critiques</h3>
                                 <div class="nikita-review col s12">
                                     <ul class="collapsible" data-collapsible="accordion">
                                         <li>
@@ -134,6 +135,13 @@
                                             </div>
                                         </li>
                                         <li>
+                                            <div class="collapsible-header center-align">N6HITCHMAN</div>
+                                            <div class="collapsible-body">
+                                                <img class="reviewer-avatar" style="border: 1px solid rgba(249,255,193,.1)" src="{{ asset('dist/img/hitchman.jpg') }}" />
+                                                <p class="description">{{ film.reviewN6hitchman|raw|default("pas de critique pour le moment") }}</p>
+                                            </div>
+                                        </li>
+                                        <li>
                                             <div class="collapsible-header center-align">N6PALM</div>
                                             <div class="collapsible-body">
                                                 <img class="reviewer-avatar" src="{{ asset('dist/img/palm.jpg') }}" />
@@ -143,7 +151,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="trailer-wrapper col s8 offset-s2">
+                            <div class="trailer-wrapper col l8 m8 s12 offset-l2 offset-m2">
                                 <span>Bande-Annonce Officielle</span>
                                 <div class="youtube" data-embed="{{ film.trailer }}">
                                     <div class="play-button"></div>
@@ -155,6 +163,9 @@
             {% endfor %}
             </div> <!-- gallery -->
         </div> <!-- container -->
+        <footer>
+            <p style="color:#fff;">Coucou ! je suis le footer !</p>
+        </footer>
     </div> <!-- portfolio -->
 
 {% endblock %}

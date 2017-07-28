@@ -86,6 +86,13 @@ class Film
     /**
      * @var string
      *
+     * @ORM\Column(name="reviewN6hitchman", type="text", nullable=true)
+     */
+    private $reviewN6hitchman;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="nom", type="string", length=50)
      */
     private $nom;
@@ -203,6 +210,13 @@ class Film
      * @ORM\Column(name="noteN6Nikita", type="integer", nullable=true)
      */
     private $noteN6Nikita;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="noteN6Hitchman", type="integer", nullable=true)
+     */
+    private $noteN6Hitchman;
 
     /**
      * @var int
@@ -1227,5 +1241,53 @@ class Film
     public function getTitreFrance()
     {
         return $this->titreFrance;
+    }
+
+    /**
+     * Set reviewN6hitchman
+     *
+     * @param string $reviewN6hitchman
+     *
+     * @return Film
+     */
+    public function setReviewN6hitchman($reviewN6hitchman)
+    {
+        $this->reviewN6hitchman = $reviewN6hitchman;
+
+        return $this;
+    }
+
+    /**
+     * Get reviewN6hitchman
+     *
+     * @return string
+     */
+    public function getReviewN6hitchman()
+    {
+        return $this->reviewN6hitchman;
+    }
+
+    /**
+     * Set noteN6Hitchman
+     *
+     * @param integer $noteN6Hitchman
+     *
+     * @return Film
+     */
+    public function setNoteN6Hitchman($noteN6Hitchman)
+    {
+        $this->noteN6Hitchman = $noteN6Hitchman;
+
+        return $this;
+    }
+
+    /**
+     * Get noteN6Hitchman
+     *
+     * @return integer
+     */
+    public function getNoteN6Hitchman()
+    {
+        return $this->noteN6Hitchman;
     }
 }

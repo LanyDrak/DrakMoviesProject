@@ -110,6 +110,19 @@ class FormFilmType extends AbstractType
                 ),
                 'expanded'  => false,
                 'multiple'  =>false,
+            ))
+            ->add('reviewN6hitchman', Type\TextareaType::class, array('attr' => array('onkeyup' => 'restN6hitchman(this.value);', 'rows' => '10'),))
+            ->add('noteN6Hitchman', Type\ChoiceType::class, array(
+                'choices'  => array(
+                    0 => '0',
+                    1 => '1',
+                    2 => '2',
+                    3 => '3',
+                    4 => '4',
+                    5 => '5',
+                ),
+                'expanded'  => false,
+                'multiple'  =>false,
             ));
 
     }

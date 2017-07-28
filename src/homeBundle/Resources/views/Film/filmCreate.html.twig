@@ -136,6 +136,16 @@
                     {{ form_widget(formFilm.noteN6Marzoni) }}
                 </div>
                 <div  class="form-group">
+                    {{ form_label(formFilm.reviewN6hitchman,  "l'avis de N6HITCHMAN :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formFilm.reviewN6hitchman) }}
+                    {{ form_widget(formFilm.reviewN6hitchman,  {attr: {class:"form-control"}}) }}
+                    <p id="countN6hitchman"><span id="caracteresN6hitchman">1500</span> caractères restants</p>
+                </div><div  class="form-group">
+                    {{ form_label(formFilm.noteN6Hitchman,  "Note N6HITCHMAN :", {label_attr: {class:"label label-default"}}) }}
+                    {{ form_errors(formFilm.noteN6Hitchman) }}
+                    {{ form_widget(formFilm.noteN6Hitchman) }}
+                </div>
+                <div  class="form-group">
                     {{ form_label(formFilm.reviewN6palm,  "l'avis de N6PALM :", {label_attr: {class:"label label-default"}}) }}
                     {{ form_errors(formFilm.reviewN6palm) }}
                     {{ form_widget(formFilm.reviewN6palm,  {attr: {class:"form-control"}}) }}
