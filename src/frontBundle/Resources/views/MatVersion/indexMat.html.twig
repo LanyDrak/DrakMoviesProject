@@ -11,10 +11,10 @@
             {#<a href="#" class="brand-logo"><i class="material-icons">camera</i>Gallery</a>#}
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="{{ path('front_homepage') }}">Home</a></li>
+                <li><a href="#" style="opacity:.2;" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Soon !">News</a></li>
                 <li><a href="{{ path('about_page') }}">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" style="opacity:.2;" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Soon !">Contact</a></li>
                 {#<li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Features<i class="material-icons right">arrow_drop_down</i></a></li>#}
             </ul>
             <!-- Dropdown Structure -->
@@ -25,7 +25,7 @@
             </ul>#}
 
             <div class="nav-header center">
-                <h1>NEXUS-6</h1>
+                <h1><a href="{{ path('front_homepage') }}">NEXUS-6 cinema</a></h1>
                 {#<div class="tagline">My life</div>#}
             </div>
         </div>
@@ -59,26 +59,28 @@
         <li><a href="no-image.html"><i class="material-icons">texture</i>No Image Expand</a></li>
     </ul>
 
-    <div id="portfolio" class="section grey darken-4">
+    <div id="portfolio" class="section black">
         <div class="container ">
             <div class="gallery row moviesList">
             {% for film in films %}
                 <div class="col l2 m3 s6 gallery-item gallery-expand gallery-filter {{ film.genre.nom }}">
                     <div class="gallery-curve-wrapper">
-                        <a class="gallery-cover gray">
+                        <a class="gallery-cover gray tooltipped" data-position="top" data-delay="50" data-tooltip="{{ film.nom }}">
                             <img src="{{ asset(film.webPath2) }}" style="max-width: 100%;height: auto;" alt="{{ film.nom }}" title="{{ film.nom }}">
                         </a>
                         <div class="gallery-body">
                             <div class="row">
                                 <div class="title-wrapper">
                                     <h2>{{ film.nom }}</h2>
-                                    <div class="rating">
-                                    {% for i in 1..film.noteSpectateur if film.noteSpectateur>0 %}
-                                        <i class="n6rating material-icons right black-text">grade</i>
-                                    {% endfor %}</div>
-                                    {#{% for i in (film.noteSpectateur+1)..5  if film.noteSpectateur<5 %}
-                                        <i class="n6rating material-icons right white-text" style="border: 1px solid #000;">grade</i>
-                                    {% endfor %}#}
+                                    {% set noteGen = film.noteSpectateur|round(0,'floor') %}
+                                    <div class="rating right-align">
+                                        {% for i in 1..noteGen if noteGen>0 %}
+                                            <i class="small material-icons">star</i>
+                                        {% endfor %}
+                                        {% for i in (noteGen+1)..5  if noteGen<5 %}
+                                            <i class="small material-icons">star_border</i>
+                                        {% endfor %}
+                                    </div>
                                 </div>
                             </div>
                             <div class="row infos-film">
@@ -114,10 +116,22 @@
                                 <div class="nikita-review col s12">
                                     <ul class="collapsible" data-collapsible="accordion">
                                         <li>
-                                            <div class="collapsible-header center-align">N6NIKTA</div>
+                                            <div class="collapsible-header center-align">
+                                                N6NIKITA
+                                            </div>
                                             <div class="collapsible-body">
                                                 <img class="reviewer-avatar" src="{{ asset('dist/img/nikita.jpg') }}" />
                                                 <p class="description">{{ film.reviewN6nikita|raw|default("pas de critique pour le moment") }}</p>
+                                                {% if film.noteN6Nikita is not null %}
+                                                    <div class="individual-rating">
+                                                        {% for i in 1..film.noteN6Nikita if film.noteN6Nikita>0 %}
+                                                            <i class="tiny material-icons">star</i>
+                                                        {% endfor %}
+                                                        {% for i in (film.noteN6Nikita+1)..5  if film.noteN6Nikita<5 %}
+                                                            <i class="tiny material-icons">star_border</i>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% endif %}
                                             </div>
                                         </li>
                                         <li>
@@ -125,6 +139,16 @@
                                             <div class="collapsible-body">
                                                 <img class="reviewer-avatar" src="{{ asset('dist/img/marzoni.jpg') }}" />
                                                 <p class="description">{{ film.reviewN6marzoni|raw|default("pas de critique pour le moment") }}</p>
+                                                {% if film.noteN6Marzoni is not null %}
+                                                    <div class="individual-rating">
+                                                        {% for i in 1..film.noteN6Marzoni if film.noteN6Marzoni>0 %}
+                                                            <i class="tiny material-icons">star</i>
+                                                        {% endfor %}
+                                                        {% for i in (film.noteN6Marzoni+1)..5  if film.noteN6Marzoni<5 %}
+                                                            <i class="tiny material-icons">star_border</i>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% endif %}
                                             </div>
                                         </li>
                                         <li>
@@ -132,6 +156,16 @@
                                             <div class="collapsible-body">
                                                 <img class="reviewer-avatar" src="{{ asset('dist/img/tyrell.jpg') }}" />
                                                 <p class="description">{{ film.reviewN6tyrell|raw|default("pas de critique pour le moment") }}</p>
+                                                {% if film.noteN6Tyrell is not null %}
+                                                    <div class="individual-rating">
+                                                        {% for i in 1..film.noteN6Tyrell if film.noteN6Tyrell>0 %}
+                                                            <i class="tiny material-icons">star</i>
+                                                        {% endfor %}
+                                                        {% for i in (film.noteN6Tyrell+1)..5  if film.noteN6Tyrell<5 %}
+                                                            <i class="tiny material-icons">star_border</i>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% endif %}
                                             </div>
                                         </li>
                                         <li>
@@ -139,6 +173,16 @@
                                             <div class="collapsible-body">
                                                 <img class="reviewer-avatar" style="border: 1px solid rgba(249,255,193,.1)" src="{{ asset('dist/img/hitchman.jpg') }}" />
                                                 <p class="description">{{ film.reviewN6hitchman|raw|default("pas de critique pour le moment") }}</p>
+                                                {% if film.noteN6Hitchman is not null %}
+                                                    <div class="individual-rating">
+                                                        {% for i in 1..film.noteN6Hitchman if film.noteN6Hitchman>0 %}
+                                                            <i class="tiny material-icons">star</i>
+                                                        {% endfor %}
+                                                        {% for i in (film.noteN6Hitchman+1)..5  if film.noteN6Hitchman<5 %}
+                                                            <i class="tiny material-icons">star_border</i>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% endif %}
                                             </div>
                                         </li>
                                         <li>
@@ -146,6 +190,16 @@
                                             <div class="collapsible-body">
                                                 <img class="reviewer-avatar" src="{{ asset('dist/img/palm.jpg') }}" />
                                                 <p class="description">{{ film.reviewN6palm|raw|default("pas de critique pour le moment") }}</p>
+                                                {% if film.noteN6Palm is not null %}
+                                                    <div class="individual-rating">
+                                                        {% for i in 1..film.noteN6Palm if film.noteN6Palm>0 %}
+                                                            <i class="tiny material-icons">star</i>
+                                                        {% endfor %}
+                                                        {% for i in (film.noteN6Palm+1)..5  if film.noteN6Palm<5 %}
+                                                            <i class="tiny material-icons">star_border</i>
+                                                        {% endfor %}
+                                                    </div>
+                                                {% endif %}
                                             </div>
                                         </li>
                                     </ul>
@@ -163,9 +217,10 @@
             {% endfor %}
             </div> <!-- gallery -->
         </div> <!-- container -->
-        <footer>
-            <p style="color:#fff;">Coucou ! je suis le footer !</p>
-        </footer>
     </div> <!-- portfolio -->
+    <footer class="grey darken-4">
+        <p class="center-align"><a href="#">facebook</a><a href="#">twitter</a></p>
+        <p class="center-align copyright">© 2017 | NEXUS-6</p>
+    </footer>
 
 {% endblock %}

@@ -12,7 +12,7 @@ class NewsController extends Controller
         $em = $this->getDoctrine()->getManager();
         $newInfos = $em->getRepository("homeBundle:NewInfo")->findAll();
 
-        return $this->render('frontBundle:Default:news.html.twig', ['newInfos' => $newInfos]);
+        return $this->render('frontBundle:MatVersion:newsMat.html.twig', ['newInfos' => $newInfos]);
         
     }
 

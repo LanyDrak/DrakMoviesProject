@@ -11,10 +11,10 @@
             {#<a href="#" class="brand-logo"><i class="material-icons">camera</i>Gallery</a>#}
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="{{ path('front_homepage') }}">Home</a></li>
+                <li><a href="#" style="opacity:.2;" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Soon !">News</a></li>
+                <li><a href="{{ path('about_page') }}">About</a></li>
+                <li><a href="#" style="opacity:.2;" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Soon !">Contact</a></li>
                 {#<li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Features<i class="material-icons right">arrow_drop_down</i></a></li>#}
             </ul>
             <!-- Dropdown Structure -->
@@ -25,9 +25,203 @@
             </ul>#}
 
             <div class="nav-header center">
-                <h1>NEXUS-6</h1>
+                <h1><a href="{{ path('front_homepage') }}">NEXUS-6 cinema</a></h1>
                 {#<div class="tagline">My life</div>#}
             </div>
         </div>
+
+        <div class="categories-wrapper grey darken-3">
+            <div class="categories-container">
+                <ul class="categories container">
+                </ul>
+            </div>
+        </div>
+
     </nav>
+
+    <div class="section black">
+        <div class="about container">
+            <div class="row">
+                <div id="n6nikita-card" class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ asset('dist/img/nikita.jpg') }}">
+                            <span class="card-title black">N6NIKITA</span>
+                        </div>
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width grey darken-3">
+                                <li class="tab"><a class="active" href="#nikita4">Informations</a></li>
+                                <li class="tab"><a href="#nikita5">Présentation</a></li>
+                                <li class="tab"><a href="#nikita6">Top 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey darken-2">
+                            <div id="nikita4">
+                                <ul>
+                                    <li>Age : <span>37 ans</span></li>
+                                    <li>Profession : <span>Directrice Marketing International</span></li>
+                                    <li><button class="btn waves-effect waves-light" type="email">Lui envoyer un message
+                                            <i class="material-icons right">mail_outline</i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="nikita5"><p><em>Le cinema réunit toutes les émotions et tous les arts : le jeu des acteurs, le dessin,  les costumes, la musique, la photographie. Cette alchimie me fascine c’est pourquoi je suis une spectatrice curieuse de tous les genres de cinema : du plus populaire au plus élitiste. L’attente, le rideau, l’obscurité, le spectacle partagé avec des proches et des inconnus… S’oublier pour vivre une autre vie le temps d’une séance et rire, voyager, apprendre, être surprise, choquée et parfois même bouleversée... C’est pour tout cela que j’aime le cinema.</em></p></div>
+                            <div id="nikita6" class="top5">
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Eternal Sunshine of the Spotless Mind"><img src="{{ asset('dist/img/top5/eternal_sunshine.jpg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Le Roi et l'Oiseau"><img src="{{ asset('dist/img/top5/le-roi-et-l-oiseau.jpg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Les 400 coups"><img src="{{ asset('dist/img/top5/les-quatre-cents-coups.jpg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Blade Runner"><img src="{{ asset('dist/img/top5/sm-57f22d9a48ba67.92302728-Blade Runner.jpeg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tootsie"><img src="{{ asset('dist/img/top5/tootsie.jpg') }}"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="n6marzoni-card" class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ asset('dist/img/marzoni.jpg') }}">
+                            <span class="card-title black">N6MARZONI</span>
+                        </div>
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width grey darken-3">
+                                <li class="tab"><a class="active" href="#marzoni4">Informations</a></li>
+                                <li class="tab"><a href="#marzoni5">Présentation</a></li>
+                                <li class="tab"><a href="#marzoni6">Top 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey darken-2">
+                            <div id="marzoni4">
+                                <ul>
+                                    <li>Age : <span>61 ans</span></li>
+                                    <li>Profession : <span>Cadre de la Fonction Publique</span></li>
+                                    <li><button class="btn waves-effect waves-light" type="email">Lui envoyer un message
+                                            <i class="material-icons right">mail_outline</i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="marzoni5"><p><em>Mon premier film en salle fut Les Tontons Flingueurs, une joyeuse histoire de voyous. C'est à 14 ans avec La canonnière du Yang Tse que le cinéma m'a fait prendre conscience des tragédies humaines, des conflits du monde, des drames intérieurs. Le 7ème art m'a montré ensuite comment sublimer la réalité, aller au-delà des apparences, vivre pleinement ses émotions. Merci Georges Meliès et les Frères Lumière.</em></p></div>
+                            <div id="marzoni6" class="top5">
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Les Demoiselles de Rochefort"><img src="{{ asset('dist/img/top5/demoiselles.jpg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Excalibur"><img src="{{ asset('dist/img/top5/sm-57f3cb678cb9d9.09547421-Excalibur.jpeg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="La Femme d'à Côté"><img src="{{ asset('dist/img/top5/femmeacote.jpg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Scarface"><img src="{{ asset('dist/img/top5/scarface.jpg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Blade Runner"><img src="{{ asset('dist/img/top5/sm-57f22d9a48ba67.92302728-Blade Runner.jpeg') }}"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="n6tyrell-card" class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ asset('dist/img/tyrell.jpg') }}">
+                            <span class="card-title black">N6TYRELL</span>
+                        </div>
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width grey darken-3">
+                                <li class="tab"><a class="active" href="#tyrell4">Informations</a></li>
+                                <li class="tab"><a href="#tyrell5">Présentation</a></li>
+                                <li class="tab"><a href="#tyrell6">Top 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey darken-2">
+                            <div id="tyrell4">
+                                <ul>
+                                    <li>Age : <span>37 ans</span></li>
+                                    <li>Profession : <span>Développeur Front-end</span></li>
+                                    <li><button class="btn waves-effect waves-light" type="email">Lui envoyer un message
+                                            <i class="material-icons right">mail_outline</i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tyrell5"><p><em>Mon premier vrai contact avec le cinéma : "Masters of the Universe". Alors oui c'est pas fameux, mais je garde une certaine affection pour ce film. Vers 10 ans, visionnage du bijou Blade Runner mais à l'époque, il n'avait rien d'un bijou, rien compris. Et puis ensuite vers 12 ans, découverte (en une soirée) de l'Exorcist, Chainsaw Massacre et Evil Dead... Dur, mais s'en suivra une vraie attirance pour le genre.<br>Le cinema est comme tout art, il doit suciter des émotions, s'il ne le fait plus, alors il est un produit de consommation.</em></p></div>
+                            <div id="tyrell6" class="top5">
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="The Fall"><img src="{{ asset('dist/img/top5/sm-58866cdb0772b3.21803178-The Fall.jpeg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Blade Runner"><img src="{{ asset('dist/img/top5/sm-57f22d9a48ba67.92302728-Blade Runner.jpeg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="The Planet of The Apes"><img src="{{ asset('dist/img/top5/planet_of_the_apes.jpg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Schindler's List"><img src="{{ asset('dist/img/top5/sm-5723766d85d7e8.07423134-Schindler_s_List.jpeg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="The Crow"><img src="{{ asset('dist/img/top5/sm-57f4c9f602c4c1.53809171-The Crow.jpeg') }}"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="n6palm-card" class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ asset('dist/img/palm.jpg') }}">
+                            <span class="card-title black">N6PALM</span>
+                        </div>
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width grey darken-3">
+                                <li class="tab"><a class="active" href="#palm4">Informations</a></li>
+                                <li class="tab"><a href="#palm5">Présentation</a></li>
+                                <li class="tab"><a href="#palm6">Top 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey darken-2">
+                            <div id="palm4">
+                                <ul>
+                                    <li>Age : <span>30 ans</span></li>
+                                    <li>Profession : <span>Gestionnaire en assurance</span></li>
+                                    <li><button class="btn waves-effect waves-light" type="email">Lui envoyer un message
+                                            <i class="material-icons right">mail_outline</i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="palm5"><p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis alias earum facilis architecto repellendus tempora explicabo, amet sed rerum molestiae in quod, magnam quidem iusto temporibus. Incidunt ipsum esse velit dolores sapiente. Itaque, placeat, beatae possimus quae nostrum nobis blanditiis, nam a quam veritatis quo saepe consequatur.</em></p></div>
+                            <div id="palm6" class="top5">
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Cinema Paradisio"><img src="{{ asset('dist/img/top5/cinemaparadisio.jpg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Gattaca"><img src="{{ asset('dist/img/top5/sm-57ee82aed286b0.24377450-Gattaca.jpeg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="The Deer Hunter"><img src="{{ asset('dist/img/top5/deer_hunter.jpg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Le Vieux Fusil"><img src="{{ asset('dist/img/top5/vieux_fusil.jpg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Blade Runner"><img src="{{ asset('dist/img/top5/sm-57f22d9a48ba67.92302728-Blade Runner.jpeg') }}"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="n6hitchman-card" class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="{{ asset('dist/img/hitchman.jpg') }}">
+                            <span class="card-title black">N6HITCHMAN</span>
+                        </div>
+                        <div class="card-tabs">
+                            <ul class="tabs tabs-fixed-width grey darken-3">
+                                <li class="tab"><a class="active" href="#hitchman4">Informations</a></li>
+                                <li class="tab"><a href="#hitchman5">Présentation</a></li>
+                                <li class="tab"><a href="#hitchman6">Top 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-content grey darken-2">
+                            <div id="hitchman4">
+                                <ul>
+                                    <li>Age : <span>46 ans</span></li>
+                                    <li>Profession : <span>Directeur produits digitaux</span></li>
+                                    <li><button class="btn waves-effect waves-light" type="email">Lui envoyer un message
+                                            <i class="material-icons right">mail_outline</i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="hitchman5"><p><em>J'aime (presque) tout dans le cinéma, j'aime voir et revoir les classiques, les spectaculaires, les intimistes, les nerveux, les drôles et les tristes, les bons et même parfois les mauvais... j'aime les réalisateurs et les acteurs, les histoires, les images et les émotions...<br>J'aime les voir au cinéma mais aussi chez moi, j'aime les garder en DVD pour les revoir et les partager avec mes proches, j'aime faire des listes de ceux que j'ai aimés, de ceux que je dois voir...</em></p></div>
+                            <div id="hitchman6" class="top5">
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="The Godfather"><img src="{{ asset('dist/img/top5/godfather.jpg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="Vertigo"><img src="{{ asset('dist/img/top5/vertigo.jpg') }}"></a>
+                                <a class="tooltipped" data-position="top" data-delay="50" data-tooltip="2001: A Space Odyssey"><img src="{{ asset('dist/img/top5/2001.jpg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Touch of Evil"><img src="{{ asset('dist/img/top5/touch_evil.jpg') }}"></a>
+                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="The Third Man"><img src="{{ asset('dist/img/top5/3e_homme.jpg') }}"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="grey darken-4">
+        <p class="center-align"><a href="#">facebook</a><a href="#">twitter</a></p>
+        <p class="center-align copyright">© 2017 | NEXUS-6</p>
+    </footer>
 {% endblock %}

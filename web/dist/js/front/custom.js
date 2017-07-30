@@ -29,4 +29,8 @@ $(document).ready(function(){
     jQuery('body').on('click','.collapsible-header',function(e){
         jQuery(this).next().css('display','flex');
     });
+
+    /*jQuery('body').on('click', '.back-btn', function(e)){
+        jQuery('.youtube iframe').get(0).stopVideo();
+    }*/
 });

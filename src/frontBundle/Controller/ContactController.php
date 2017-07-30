@@ -14,7 +14,7 @@ class ContactController extends Controller
         $em = $this->getDoctrine()->getManager();
         $films = $em->getRepository("homeBundle:Film")->allFilmsbyDate();
 
-        return $this->render('frontBundle:Default:contact.html.twig', ['films' => $films]);
+        return $this->render('frontBundle:MatVersion:contactMat.html.twig', ['films' => $films]);
     }
 
     public function feedbackAction(Request $request)
